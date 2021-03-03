@@ -2,18 +2,18 @@
     background-color: #fff;
     position: fixed;
     width: 100%;
-    height: 9rem;
+    height: 7rem;
     display: flex;
     padding: 0 12vw;
     align-items: center;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
         padding: 0 5vw;
-
     }
 
+
     &__logo {
-        width: 15rem;
+        width: 12rem;
         margin-right: auto;
         img {
             width: 100%;
@@ -28,15 +28,19 @@
 
         @media only screen and (max-width: $bp-small) {
             position: absolute;
-            top: 100%;
+            top:0;
             right: 0;
             left: 0;
             transform: translate(-50% -50%);
-            background-color: #fff;
+            background-color: pink;
             flex-direction: column;
             align-self: flex-start;
             align-items: center;
             padding: 4rem 0;
+            transform: translateY(-150%);
+
+            transition: transform .5s cubic-bezier(.74,-0.16,.8,1.24);
+            z-index: -2;
         }
 
     }
@@ -80,13 +84,16 @@
 .hamburger {
     border: none;
     outline: none;
-    position: absolute;
-    top: 30%;
-    right: 5vw;
     cursor: pointer;
     width: 4rem;
     height: 3rem;
     background-color: #fff;
+    z-index: 100;
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
 
     &__line {
     content: "";
@@ -94,7 +101,7 @@
     height: 4px;
     width: 100%;
     background-color: $color-type-1;
-    position: absolute;
+    position: relative;
 
     &::before,
     &::after {
@@ -106,13 +113,26 @@
         position: absolute;
     }
 
-    &::before {
-        top: -1rem;
+        &::before {
+            top: -1rem;
+
+        }
+        &::after {
+            top: 1rem;
+        }
+    }
+
+    &:hover {
 
     }
-    &::after {
-        top: 1rem;
-    }
-}
 
 }
+
+// .xIcon {
+//     display: none;
+//   }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
