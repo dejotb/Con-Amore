@@ -1,0 +1,14 @@
+
+
+.header {
+    background-color: $yellow;
+    padding-top: 9rem;
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+
+    &__logo {
+        width: 40rem;
+    }
+}
