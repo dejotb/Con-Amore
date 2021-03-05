@@ -110,7 +110,7 @@ body {
 }
 @keyframes dogHead {
   0%, 100% {
-    transform: rotate(-2deg) translateX(1px);
+    transform: rotate(-2deg) translateX(1px) scale(1.008);
   }
   40% {
     transform: rotate(0deg);
@@ -270,7 +270,7 @@ body {
 }
 .header__img {
   grid-area: img;
-  width: 50rem;
+  width: 35rem;
   transform-box: fill-box;
   justify-self: center;
 }

@@ -57,9 +57,9 @@
 
   @keyframes dogHead {
 
-    0%, 100%{ transform: rotate(-2deg) translateX(1px);}
+    0%, 100%{ transform: rotate(-2deg) translateX(1px) scale(1.008);}
 
-    40% { transform: rotate(0deg);
+    40% { transform: rotate(0deg) ;
     }
 
   }
