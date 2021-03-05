@@ -1,0 +1,21 @@
+
+.btn,
+.btn:link,
+.btn:visited {
+    font-size: 2rem;
+    color: $color-white;
+    padding: 1rem 2rem;
+    background-color: $color-primary;
+    text-decoration: none;
+    transition: all .2s;
+    box-shadow: $shadow;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: $color-primary;
+    color: $color-white;
+    transform: translateY(-.5rem);
+    box-shadow: $shadow;
+}

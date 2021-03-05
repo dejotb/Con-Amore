@@ -1,14 +1,92 @@
 
 
 .header {
-    background-color: $yellow;
+    background-color: white;
     padding-top: 7rem;
-
     display: grid;
-    justify-items: center;
+    justify-content: center;
+    // justify-items: center;
     align-content: center;
+    align-items: center;
+    // grid-row-gap: 2rem;
+    justify-content: space-evenly;
+    grid-template-areas:
+    "logo    img"
+    "heading img"
+    "btn     img"
+    ;
+    grid-template-columns: max-content max-content;
 
     &__logo {
-        width: 40rem;
+        grid-area: logo;
+        width: 12rem;
+        justify-self: center;
+        animation: heartBeat 2s 1s 3;
     }
+
+    &__heading {
+        grid-area: heading;
+        text-align: center;
+        display: block;
+        width: 35rem;
+        margin-bottom: 5px;
+    }
+
+    &__heading--sub {
+        font-size: 2rem;
+        line-height: 1.5;
+        display: block;
+        color: $color-type-1;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        grid-area: img;
+        width: 50rem;
+        transform-box: fill-box;
+        justify-self: center;
+        // animation: sway 3s infinite;
+    }
+
+    &__btn {
+        grid-area: btn;
+        display: block;
+        justify-self: center;
+    }
+}
+
+#eye-1,
+#eye-2 {
+
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: eye1 10s linear infinite;
+}
+
+// .eye-2 {
+//     transform-box: fill-box;
+//     transform-origin: bottom;
+//     animation: eye1 10s linear infinite;
+// }
+
+
+#dog-head {
+    transform-box: fill-box;
+    transform-origin: bottom right;
+    animation: dogHead 3s linear infinite;
+    backface-visibility: hidden;
+}
+
+
+#tongue {
+    // transform-box: fill-box;
+    // transform-origin: center;
+    animation: dogTongue .8s linear infinite;
+}
+
+
+#cat-yellow {
+    transform-box: content-box;
+    // transform-origin: bottom;
+    animation: sway 5s linear infinite;
 }

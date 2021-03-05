@@ -9,7 +9,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #6D5D4B;
@@ -29,8 +36,8 @@ body {
 }
 
 .heading-1 {
-  font-size: 4.5rem;
-  color: #f9f7f6;
+  font-size: 8.5rem;
+  color: #45A86E;
   line-height: 1;
 }
 
@@ -62,6 +69,61 @@ body {
   color: #54483A;
 }
 
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+@keyframes eye1 {
+  0%, 100% {
+    transform: translate(-6px, 5px);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  70% {
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    transform: translate(-6px, 5px);
+  }
+}
+@keyframes dogHead {
+  0%, 100% {
+    transform: rotate(-2deg) translateX(1px);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes dogTongue {
+  0%, 100% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
 .nav {
   background-color: #fff;
   position: fixed;
@@ -70,6 +132,7 @@ body {
   display: flex;
   padding: 0 12vw;
   align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media only screen and (max-width: 50em) {
   .nav {
@@ -91,19 +154,17 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .nav__list {
+    background-color: #fff;
     position: absolute;
-    top: 0;
+    top: 100%;
     right: 0;
     left: 0;
-    transform: translate(-50% -50%);
-    background-color: pink;
     flex-direction: column;
     align-self: flex-start;
     align-items: center;
     padding: 4rem 0;
-    transform: translateY(-150%);
-    transition: transform 0.5s cubic-bezier(0.74, -0.16, 0.8, 1.24);
-    z-index: -2;
+    transform: translateX(150%);
+    transition: transform 0.8s cubic-bezier(0.25, 0.75, 0.5, 1.25);
   }
 }
 .nav__item:not(:last-child) {
@@ -135,7 +196,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  width: 4rem;
+  width: 3.5rem;
   height: 3rem;
   background-color: #fff;
   z-index: 100;
@@ -168,19 +229,78 @@ body {
 .hamburger__line::after {
   top: 1rem;
 }
+.xIcon {
+  display: none;
+}
+
 .showMenu {
   transform: translateY(0);
 }
 
 .header {
-  background-color: #FFC600;
+  background-color: white;
   padding-top: 7rem;
   display: grid;
-  justify-items: center;
+  justify-content: center;
   align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas: "logo    img" "heading img" "btn     img";
+  grid-template-columns: max-content max-content;
 }
 .header__logo {
-  width: 40rem;
+  grid-area: logo;
+  width: 12rem;
+  justify-self: center;
+  animation: heartBeat 2s 1s 3;
+}
+.header__heading {
+  grid-area: heading;
+  text-align: center;
+  display: block;
+  width: 35rem;
+  margin-bottom: 5px;
+}
+.header__heading--sub {
+  font-size: 2rem;
+  line-height: 1.5;
+  display: block;
+  color: #696969;
+  text-transform: uppercase;
+}
+.header__img {
+  grid-area: img;
+  width: 50rem;
+  transform-box: fill-box;
+  justify-self: center;
+}
+.header__btn {
+  grid-area: btn;
+  display: block;
+  justify-self: center;
+}
+
+#eye-1,
+#eye-2 {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: eye1 10s linear infinite;
+}
+
+#dog-head {
+  transform-box: fill-box;
+  transform-origin: bottom right;
+  animation: dogHead 3s linear infinite;
+  backface-visibility: hidden;
+}
+
+#tongue {
+  animation: dogTongue 0.8s linear infinite;
+}
+
+#cat-yellow {
+  transform-box: content-box;
+  animation: sway 5s linear infinite;
 }
 
 .main {
@@ -190,6 +310,27 @@ body {
 
 .offers {
   background-color: #bada55;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-color: #45A86E;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #45A86E;
+  color: #fff;
+  transform: translateY(-0.5rem);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
