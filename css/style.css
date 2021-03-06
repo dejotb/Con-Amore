@@ -286,16 +286,6 @@ body {
   grid-template-columns: max-content max-content;
   grid-template-areas: "heading   img" "btn       img";
 }
-.header:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #45A86E;
-  clip-path: polygon(82% 92%, 100% 85%, 100% 100%, 0 100%, 0 93%, 57% 90%);
-}
 @media only screen and (max-width: 37.5em) {
   .header {
     padding-top: 15rem;
