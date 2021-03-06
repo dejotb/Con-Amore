@@ -1,8 +1,9 @@
 
 
 .header {
-    // background-color:   white;
+    background-color:   white;
     background-image: url(/img/double-bubble-outline.png);
+    background-repeat: repeat;
     padding-top: 7rem;
     display: grid;
     justify-content: center;
@@ -44,23 +45,11 @@
 
     }
 
-
-
-    &__logo {
-        grid-area: logo;
-        width: 12rem;
-        justify-self: center;
-
-        display: none;
-    }
-
     &__heading {
         grid-area: heading;
         text-align: center;
         display: block;
-        // width: 45rem;
         margin-bottom: 5px;
-        // align-self: end;
 
         @media only screen and (max-width: $bp-small) {
             margin: 0 auto;

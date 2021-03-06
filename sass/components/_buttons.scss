@@ -16,6 +16,6 @@
 .btn:focus {
     background-color: $color-primary;
     color: $color-white;
-    transform: translateY(-.5rem);
+    transform: translate3d(0, -.5rem, 0);
     box-shadow: $shadow;
 }

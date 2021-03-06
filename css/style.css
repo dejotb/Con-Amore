@@ -169,7 +169,7 @@ body {
   background-color: #fff;
   position: fixed;
   width: 100%;
-  height: 7rem;
+  height: 8rem;
   display: flex;
   padding: 0 12vw;
   align-items: center;
@@ -182,7 +182,7 @@ body {
   }
 }
 .nav__logo {
-  width: 12rem;
+  width: 15rem;
   margin-right: auto;
 }
 .nav__logo img {
@@ -281,7 +281,9 @@ body {
 }
 
 .header {
+  background-color: white;
   background-image: url(/img/double-bubble-outline.png);
+  background-repeat: repeat;
   padding-top: 7rem;
   display: grid;
   justify-content: center;
@@ -310,12 +312,6 @@ body {
     grid-row-gap: 3rem;
     grid-template-areas: "img" "heading" "btn";
   }
-}
-.header__logo {
-  grid-area: logo;
-  width: 12rem;
-  justify-self: center;
-  display: none;
 }
 .header__heading {
   grid-area: heading;
@@ -424,7 +420,7 @@ body {
 .btn:focus {
   background-color: #45A86E;
   color: #fff;
-  transform: translateY(-0.5rem);
+  transform: translate3d(0, -0.5rem, 0);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
