@@ -25,13 +25,13 @@
         right: 0;
         bottom: 0;
         background-color: $color-primary;
-        clip-path: polygon(77% 87%, 100% 80%, 100% 100%, 0 100%, 0 87%, 49% 83%);
+        clip-path: polygon(82% 92%, 100% 85%, 100% 100%, 0 100%, 0 93%, 57% 90%);
     }
 
 
     @media only screen and (max-width: $bp-small) {
-        // padding-top: 20rem;
-        // align-content: flex-start;
+        padding-top: 15rem;
+        align-content: flex-start;
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
         grid-template-areas:
