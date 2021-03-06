@@ -1,7 +1,8 @@
 
 
 .header {
-    background-color:   white;
+    // background-color:   white;
+    background-image: url(/img/double-bubble-outline.png);
     padding-top: 7rem;
     display: grid;
     justify-content: center;
@@ -30,7 +31,7 @@
 
 
     @media only screen and (max-width: $bp-small) {
-        padding-top: 15rem;
+        padding-top: 20rem;
         align-content: flex-start;
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
@@ -39,6 +40,7 @@
             "heading"
             "btn"
         ;
+
     }
 
 
@@ -86,6 +88,8 @@
         transform-box: fill-box;
         justify-self: center;
         animation: sway 3s infinite;
+
+
     }
 
     &__btn {
