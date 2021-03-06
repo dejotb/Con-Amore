@@ -20,19 +20,14 @@
 
 
 
-@keyframes sway {
-    0%, 100%{ transform: rotate(-8deg);}
-
-    50%{ transform: rotate(6deg);
-    }
-  }
 
 
-  // DOG EYE
 
-  @keyframes eye1 {
+  // DOG EYES
+
+  @keyframes dogEyes {
     0%, 100% {
-      transform: translate(-6px, 5px) ;
+      transform: translate(-4px, 4px) ;
     }
 
 
@@ -47,7 +42,7 @@
 
 
     80% {
-      transform: translate(-6px, 5px) ;
+      transform: translate(-4px, 4px) ;
     }
 
   }
@@ -57,9 +52,9 @@
 
   @keyframes dogHead {
 
-    0%, 100%{ transform: rotate(-2deg) translateX(1px) scale(1.008);}
+    0%, 100%{ transform: rotate(-1deg) translateX(1px) scale(1.01);}
 
-    40% { transform: rotate(0deg) ;
+    50% { transform: rotate(0deg) translateX(1px) translateY(2px) ;
     }
 
   }
@@ -70,10 +65,83 @@
   @keyframes dogTongue {
 
     0%, 100% {
-      transform: translateX(20px);
+      transform: scale(1.1);
     }
 
-    50%{ transform: scale(1.02);
+    50%{ transform: scale(1.01);
     }
 
   }
+
+  // DOG EYEBROWS
+
+  @keyframes eyebrows {
+
+    0%, 100% {
+        transform: translateY(-20px) translateX(-6px);
+      }
+
+
+    20% {
+      transform: translateY(-20px) translateX(-6px);
+    }
+
+
+    40% {
+      transform: translateY(-20px) translateX(-6px);
+    }
+
+    60% {
+      transform: translateY(-20px) translateX(-6px);
+    }
+
+    70% {
+      transform: translateY(0) translateX(0);
+    }
+
+    90% {
+      transform: translateY(-20px) translateX(-6px);
+    }
+
+  }
+
+
+
+
+
+    // CAT EYES
+
+    @keyframes catEyes {
+      0%, 100% {
+        transform: translate(0, 0) ;
+      }
+
+      20% {
+        transform: translate(-3px, 0);
+      }
+
+
+      40% {
+        transform: translate(-3px, 0);
+      }
+
+
+      60% {
+        transform: translate(-3px, 0);
+      }
+
+
+      80% {
+        transform: translate(-3px, 0);
+      }
+
+    }
+
+
+
+    @keyframes sway {
+      0%, 100%{ transform: scale(1);}
+
+      50%{ transform: scale(1.005);
+      }
+    }
