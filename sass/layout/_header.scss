@@ -17,16 +17,16 @@
 
 
 
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     background-color: $color-primary;
-    //     clip-path: polygon(82% 92%, 100% 85%, 100% 100%, 0 100%, 0 93%, 57% 90%);
-    // }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color-primary;
+        clip-path: polygon(82% 92%, 100% 85%, 100% 100%, 0 100%, 0 93%, 57% 90%);
+    }
 
 
     @media only screen and (max-width: $bp-small) {
@@ -57,7 +57,7 @@
         display: block;
         // width: 45rem;
         margin-bottom: 5px;
-        align-self: end;
+        // align-self: end;
 
         @media only screen and (max-width: $bp-small) {
             margin: 0 auto;
