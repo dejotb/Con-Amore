@@ -30,6 +30,8 @@
 
 
     @media only screen and (max-width: $bp-small) {
+        // padding-top: 20rem;
+        // align-content: flex-start;
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
         grid-template-areas:
@@ -90,6 +92,7 @@
         grid-area: btn;
         display: block;
         justify-self: center;
+        z-index: 2;
         // animation: heartBeat 2s 1s 3;
     }
 }

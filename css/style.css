@@ -347,6 +347,7 @@ body {
   grid-area: btn;
   display: block;
   justify-self: center;
+  z-index: 2;
 }
 
 #dogEyes {
