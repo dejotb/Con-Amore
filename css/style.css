@@ -118,22 +118,22 @@ body {
 }
 @keyframes eyebrows {
   0%, 100% {
-    transform: translateY(-2.3rem) translateX(-0.5rem);
+    transform: translateY(-1.9rem) translateX(-0.5rem);
   }
   20% {
-    transform: translateY(-2.3rem) translateX(-0.5rem);
+    transform: translateY(-1.9rem) translateX(-0.5rem);
   }
   40% {
-    transform: translateY(-2.3rem) translateX(-0.5rem);
+    transform: translateY(-1.9rem) translateX(-0.5rem);
   }
   60% {
-    transform: translateY(-2.3rem) translateX(-0.5rem);
+    transform: translateY(-1.9rem) translateX(-0.5rem);
   }
   70% {
     transform: translateY(0) translateX(0);
   }
   90% {
-    transform: translateY(-2.3rem) translateX(-0.5rem);
+    transform: translateY(-1.9rem) translateX(-0.5rem);
   }
 }
 @keyframes catEyes {
@@ -362,7 +362,6 @@ body {
   transform-box: fill-box;
   transform-origin: bottom right;
   animation: dogHead 2s linear infinite;
-  backface-visibility: hidden;
 }
 
 #dogTongue {
@@ -373,7 +372,7 @@ body {
 
 #dogEyebrows {
   transform-box: fill-box;
-  transform-origin: center;
+  transform-origin: bottom;
   animation: eyebrows 3s infinite;
 }
 
