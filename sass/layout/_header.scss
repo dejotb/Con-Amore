@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-evenly;
     grid-template-columns: max-content max-content;
+    position: relative;
 
     grid-template-areas:
     "heading   img"
@@ -31,7 +32,7 @@
 
 
     @media only screen and (max-width: $bp-small) {
-        padding-top: 20rem;
+        padding-top: 15rem;
         align-content: flex-start;
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
