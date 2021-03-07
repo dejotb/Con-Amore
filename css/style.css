@@ -290,7 +290,7 @@ body {
 
 .header {
   background-color: white;
-  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/double-bubble-outline.png);
+  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/linen.png);
   background-repeat: repeat;
   padding-top: 7rem;
   display: grid;
