@@ -13,6 +13,7 @@
     justify-content: space-evenly;
     grid-template-columns: max-content max-content;
     position: relative;
+    transition: all .2s;
 
     grid-template-areas:
     "heading   img"
@@ -61,6 +62,7 @@
     }
 
     &__heading--sub {
+        font-family: $font-primary;
         font-size: 2.2rem;
         line-height: 1.5;
         display: block;

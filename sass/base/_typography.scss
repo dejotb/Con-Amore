@@ -1,31 +1,38 @@
 
 .heading-1 {
-    @extend %heading;
+    font-family: $font-display;
     font-size: 7.5rem;
     color: $color-primary;
     line-height: 1;
+    font-weight: 400;
 }
 
 .heading-2 {
-    @extend %heading;
+    font-family: $font-display;
     font-size: 4rem;
     font-style: italic;
     line-height: 1;
+    text-transform: uppercase;
+    margin-top: 10rem;
+    font-weight: 400;
 
     &--light { color: $color-grey-light-1; }
     &--dark { color: $color-grey-dark-1; }
 }
 
 .heading-3 {
-    @extend %heading;
-    font-size: 1.6rem;
-    color: $color-primary;
+
+    font-family: $font-primary;
+    font-size: 2rem;
+    color: color-type-1;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .heading-4 {
-    @extend %heading;
+    font-family: $font-display;
     font-size: 1.9rem;
+    font-weight: 400;
 
     &--light { color: $color-grey-light-1; }
     &--dark { color: $color-grey-dark-1; }

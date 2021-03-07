@@ -25,11 +25,16 @@ body {
     font-weight: 400;
     line-height: 1.6;
     // background-color: $color-grey-light-1;
-    // background-color: $color-primary;
+    background-color: $color-primary;
+
 }
 
 
 .container {
     display: grid;
     grid-template-rows: 100vh;
+}
+
+.blur {
+    filter: blur(10px);
 }

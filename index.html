@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
@@ -21,7 +23,7 @@
         </button>
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="" class="nav__link">Oferta</a>
+                <a href="#about" class="nav__link">Oferta</a>
             </li>
             <li class="nav__item">
                 <a href="" class="nav__link">Specjalizacje</a>
@@ -37,7 +39,6 @@
     </nav>
     <header class="header">
         <h1 class="heading-1 header__heading">
-            <!-- <img src="/img/text.png" alt="" class="header__heading"> -->
             <div class="header__heading">Con Amore</div>
             <span class="header__heading--sub">Przychodnia Weterynaryjna</span>
             <span class="header__heading--sub">Salon Strzyżeń</span>
@@ -180,18 +181,25 @@
         </div>
     </header>
     <main class="main">
-        <section class="offers">
-            <div class="offer">
-                <span class="offer__icon"></span>
-                <h3 class="heading-3">Przychodnia Weterynaryjna</h3>
-                <p class="offer__text">Zajmujemy się małymi zwierzętami domowymi i towarzyszącymi – szczególnie psami i kotami. W naszej przychodni weterynaryjnej oferujemy szeroki wachlarz usług z zakresu interny i chirurgii, oraz specjalistyczne usługi z wielu innych dziedzin.</p>
-            </div>
-            <div class="offer">
-                <span class="offer__icon"></span>
-                <h3 class="heading-3">Salon Strzyżeń</h3>
-                <p class="offer__text">W naszym salonie pielęgnacji oferujemy strzyżenie psów i kotów. W cenę zabiegu wliczone jest obcinanie pazurów oraz czyszczenie uszu. Oferujemy bezstresowe strzyżenie psów, także w obecności właściciela psa. Zapraszamy pieski małych i średnich ras oraz wszystkie wielorasowe psiaki do skorzystania z profesjonalnego strzyżenia, w bezstresowej atmosferze.</p>
+        <section id="about" class="about">
+            <h2 class="heading-2 heading-2--light">Oferta</h2>
+            <div class="about__offer-box">
+                <div class="about__offer">
+                    <img class="about__icon" src="img/cross.svg" alt=""></img>
+                    <h3 class="heading-3">Przychodnia Weterynaryjna</h3>
+                    <p class="about__text pg">Zajmujemy się małymi zwierzętami domowymi i towarzyszącymi – szczególnie psami i kotami. </p>
+                    <p class="about__text pg">W naszej przychodni weterynaryjnej oferujemy szeroki wachlarz usług z zakresu interny i chirurgii, oraz specjalistyczne usługi z wielu innych dziedzin.</p>
+                </div>
+                <div class="about__offer">
+                    <img class="about__icon" src="img/cut.svg" alt=""></img>
+                    <h3 class="heading-3">Salon Strzyżeń</h3>
+                    <p class="about__text pg">W naszym salonie pielęgnacji oferujemy strzyżenie psów i kotów. W cenę zabiegu wliczone jest obcinanie pazurów oraz czyszczenie uszu. Oferujemy bezstresowe strzyżenie psów, także w obecności właściciela psa.</p>
+                    <p class="about__text pg">Zapraszamy pieski małych i średnich ras oraz wszystkie wielorasowe psiaki do skorzystania z profesjonalnego strzyżenia, w bezstresowej atmosferze.</p>
+                </div>
             </div>
         </section>
+
+
         <section class="services">
             <div class="service">
                 <a href="#" class="service__link">
