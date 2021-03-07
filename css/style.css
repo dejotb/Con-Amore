@@ -122,22 +122,22 @@ body {
 }
 @keyframes eyebrows {
   0%, 100% {
-    transform: translateY(-1.9rem) translateX(-0.5rem);
+    transform: translateY(0) translateX(-0.5rem);
   }
   20% {
-    transform: translateY(-1.9rem) translateX(-0.5rem);
+    transform: translateY(0) translateX(-0.5rem);
   }
   40% {
-    transform: translateY(-1.9rem) translateX(-0.5rem);
+    transform: translateY(0) translateX(-0.5rem);
   }
   60% {
-    transform: translateY(-1.9rem) translateX(-0.5rem);
+    transform: translateY(0) translateX(-0.5rem);
   }
   70% {
-    transform: translateY(0) translateX(0);
+    transform: translateY(2.5rem) translateX(1.4rem);
   }
   90% {
-    transform: translateY(-1.9rem) translateX(-0.5rem);
+    transform: translateY(0) translateX(-0.5rem);
   }
 }
 @keyframes catEyes {
@@ -159,10 +159,18 @@ body {
 }
 @keyframes sway {
   0%, 100% {
-    transform: scale(1);
+    transform: rotate(-7deg);
   }
   50% {
-    transform: scale(1.005);
+    transform: rotate(6deg);
+  }
+}
+@keyframes sway2 {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(6deg);
   }
 }
 .nav {
@@ -282,7 +290,7 @@ body {
 
 .header {
   background-color: white;
-  background: url(../img/double-bubble-outline.png);
+  background: linear-gradient(rgba(69, 168, 110, 0.01), rgba(69, 168, 110, 0.4)), url(../img/double-bubble-outline.png);
   background-repeat: repeat;
   padding-top: 7rem;
   display: grid;
@@ -340,10 +348,9 @@ body {
 }
 .header__img {
   grid-area: img;
-  width: 35vmin;
+  width: 45vmin;
   transform-box: fill-box;
   justify-self: center;
-  animation: sway 3s infinite;
 }
 .header__btn {
   grid-area: btn;
@@ -376,22 +383,22 @@ body {
   animation: eyebrows 3s infinite;
 }
 
-#dogEyebrowsBottom {
+#catTail {
   transform-box: fill-box;
-  transform-origin: center;
-  animation: eyebrowsBottom 3s infinite;
-}
-
-#catBody {
-  transform-box: fill-box;
-  transform-origin: bottom right;
-  animation: sway 4s infinite;
+  transform-origin: top left;
+  animation: sway2 5s infinite;
 }
 
 #catEyes {
   transform-box: fill-box;
   transform-origin: center;
   animation: catEyes 5s 2s linear infinite;
+}
+
+#catYellow {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: sway 4s infinite;
 }
 
 .main {

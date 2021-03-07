@@ -2,7 +2,8 @@
 
 .header {
     background-color:   white;
-    background: url(../img/double-bubble-outline.png);
+    background: linear-gradient(rgba($color-primary, .01),  rgba($color-primary, .4)), url(../img/double-bubble-outline.png);
+    // background-image: url(../img/double-bubble-outline.png);
     background-repeat: repeat;
     padding-top: 7rem;
     display: grid;
@@ -74,10 +75,9 @@
 
     &__img {
         grid-area: img;
-        width: 35vmin;
+        width: 45vmin;
         transform-box: fill-box;
         justify-self: center;
-        animation: sway 3s infinite;
 
 
     }
@@ -121,22 +121,13 @@
 }
 
 
-#dogEyebrowsBottom {
+
+
+
+#catTail {
     transform-box: fill-box;
-    transform-origin: center;
-    animation: eyebrowsBottom 3s infinite;
-}
-
-
-
-
-
-
-
-#catBody {
-    transform-box: fill-box;
-    transform-origin: bottom right;
-    animation: sway 4s infinite;
+    transform-origin: top left;
+    animation: sway2 5s infinite;
 }
 
 
@@ -144,4 +135,11 @@
     transform-box: fill-box;
     transform-origin: center;
     animation: catEyes 5s 2s linear infinite;
+}
+
+
+#catYellow {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: sway 4s infinite;
 }
