@@ -290,7 +290,7 @@ body {
 
 .header {
   background-color: white;
-  background: linear-gradient(rgba(69, 168, 110, 0.01), rgba(69, 168, 110, 0.4)), url(../img/double-bubble-outline.png);
+  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/double-bubble-outline.png);
   background-repeat: repeat;
   padding-top: 7rem;
   display: grid;
@@ -348,7 +348,7 @@ body {
 }
 .header__img {
   grid-area: img;
-  width: 50vmin;
+  width: 48vmin;
   transform-box: fill-box;
   justify-self: center;
 }
@@ -361,7 +361,7 @@ body {
 
 #dogEyes {
   transform-box: fill-box;
-  transform-origin: bottom;
+  transform-origin: center;
   animation: dogEyes 2.5s linear infinite;
 }
 
@@ -373,7 +373,7 @@ body {
 
 #dogTongue {
   transform-box: fill-box;
-  transform-origin: bottom;
+  transform-origin: top;
   animation: dogTongue 0.45s infinite;
 }
 
