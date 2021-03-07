@@ -92,16 +92,16 @@ body {
 }
 @keyframes dogEyes {
   0%, 100% {
-    transform: translate(-0.3rem, 0.4rem);
+    transform: translate(-6%, 7%);
   }
   20% {
-    transform: translate(-0.1rem, 0.1rem);
+    transform: translate(-1%, 0);
   }
   70% {
-    transform: translate(-0.1rem, 0.1rem);
+    transform: translate(-1%, 0);
   }
   80% {
-    transform: translate(-0.3rem, 0.4rem);
+    transform: translate(-6%, 7%);
   }
 }
 @keyframes dogHead {
@@ -386,7 +386,7 @@ body {
 #catTail {
   transform-box: fill-box;
   transform-origin: top left;
-  animation: sway2 5s infinite;
+  animation: sway2 2.5s infinite;
 }
 
 #catEyes {
