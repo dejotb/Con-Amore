@@ -2,16 +2,17 @@
 
 .about {
     background-color: $color-primary;
-    margin: 0;
+    margin: -4rem 1rem 4rem;
     display: grid;
     justify-items: center;
     grid-row-gap: 4rem;
+    position: relative;
 
     &__offer-box {
         max-width: 126rem;
         background-color: inherit;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 50rem) );
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
         grid-gap: 5rem;
         justify-content: space-evenly;
     }
@@ -19,13 +20,20 @@
     &__offer {
         background-color: $color-white;
         padding: 6rem 4rem;
-        margin: 0 1rem;
         display: grid;
         grid-gap: 4rem;
         justify-items: center;
         align-content: flex-start;
+        border-radius: 3px;
+        box-shadow: $shadow-1;
+        transition: all .2s;
+        backface-visibility: hidden;
 
 
+        &:hover {
+            transform: translate3d(0, -1rem, 0) scale(1.01);
+            box-shadow: $shadow-2;
+        }
     }
 
     &__icon {

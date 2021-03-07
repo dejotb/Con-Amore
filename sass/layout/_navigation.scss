@@ -6,7 +6,7 @@
     display: flex;
     padding: 0 12vw;
     align-items: center;
-    box-shadow: $shadow;
+    box-shadow: $shadow-1;
     z-index: 10000;
 
     @media only screen and (max-width: $bp-medium) {
@@ -76,7 +76,7 @@
         background-color: $color-primary;
         color: $color-white;
         transform: translateY(-.5rem);
-        box-shadow: $shadow;
+        box-shadow: $shadow-1;
     }
 
 }

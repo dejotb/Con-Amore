@@ -13,12 +13,7 @@ html {
 }
 @media only screen and (max-width: 75em) {
   html {
-    font-size: 50%;
-  }
-}
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 
@@ -35,10 +30,6 @@ body {
   grid-template-rows: 100vh;
 }
 
-.blur {
-  filter: blur(10px);
-}
-
 .pg {
   max-width: 65ch;
   font-size: 1.6rem;
@@ -50,7 +41,7 @@ body {
 
 .heading-1 {
   font-family: "Architects Daughter", cursive;
-  font-size: 7.5rem;
+  font-size: 7rem;
   color: #45A86E;
   line-height: 1;
   font-weight: 400;
@@ -350,7 +341,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header__heading {
     margin: 0 auto;
-    font-size: 7rem;
     margin-bottom: 1rem;
   }
 }
@@ -372,6 +362,16 @@ body {
   width: 48vmin;
   transform-box: fill-box;
   justify-self: center;
+}
+@media only screen and (max-width: 50em) {
+  .header__img {
+    width: 35vmin;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__img {
+    width: 58vmin;
+  }
 }
 .header__btn {
   grid-area: btn;
@@ -430,27 +430,35 @@ body {
 
 .about {
   background-color: #45A86E;
-  margin: 0;
+  margin: -4rem 1rem 4rem;
   display: grid;
   justify-items: center;
   grid-row-gap: 4rem;
+  position: relative;
 }
 .about__offer-box {
   max-width: 126rem;
   background-color: inherit;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 50rem));
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
   grid-gap: 5rem;
   justify-content: space-evenly;
 }
 .about__offer {
   background-color: #fff;
   padding: 6rem 4rem;
-  margin: 0 1rem;
   display: grid;
   grid-gap: 4rem;
   justify-items: center;
   align-content: flex-start;
+  border-radius: 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+}
+.about__offer:hover {
+  transform: translate3d(0, -1rem, 0) scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about__icon {
   width: 10rem;
