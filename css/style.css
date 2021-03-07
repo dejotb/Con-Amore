@@ -92,7 +92,7 @@ body {
 }
 @keyframes dogEyes {
   0%, 100% {
-    transform: translate(-0.4rem, 0.4rem);
+    transform: translate(-0.3rem, 0.4rem);
   }
   20% {
     transform: translate(-0.1rem, 0.1rem);
@@ -101,7 +101,7 @@ body {
     transform: translate(-0.1rem, 0.1rem);
   }
   80% {
-    transform: translate(-0.4rem, 0.4rem);
+    transform: translate(-0.3rem, 0.4rem);
   }
 }
 @keyframes dogHead {
@@ -134,7 +134,7 @@ body {
     transform: translateY(0) translateX(-0.5rem);
   }
   70% {
-    transform: translateY(2.5rem) translateX(1.4rem);
+    transform: translateY(45%) translateX(10%);
   }
   90% {
     transform: translateY(0) translateX(-0.5rem);
@@ -145,16 +145,16 @@ body {
     transform: translate(0, 0);
   }
   20% {
-    transform: translate(-0.3rem, 0);
+    transform: translate(-0.3rem, 0.1rem);
   }
   40% {
-    transform: translate(-0.3rem, 0);
+    transform: translate(-0.3rem, 0.1rem);
   }
   60% {
-    transform: translate(-0.3rem, 0);
+    transform: translate(-0.3rem, 0.1rem);
   }
   80% {
-    transform: translate(-0.3rem, 0);
+    transform: translate(-0.3rem, 0.1rem);
   }
 }
 @keyframes sway {
@@ -348,7 +348,7 @@ body {
 }
 .header__img {
   grid-area: img;
-  width: 45vmin;
+  width: 50vmin;
   transform-box: fill-box;
   justify-self: center;
 }
@@ -379,7 +379,7 @@ body {
 
 #dogEyebrows {
   transform-box: fill-box;
-  transform-origin: bottom;
+  transform-origin: center;
   animation: eyebrows 3s infinite;
 }
 

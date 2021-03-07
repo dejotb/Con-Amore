@@ -27,7 +27,7 @@
 
   @keyframes dogEyes {
     0%, 100% {
-      transform: translate(-.4rem, .4rem) ;
+      transform: translate(-.3rem, .4rem) ;
     }
 
 
@@ -42,7 +42,7 @@
 
 
     80% {
-      transform: translate(-.4rem, .4rem) ;
+      transform: translate(-.3rem, .4rem) ;
     }
 
   }
@@ -97,7 +97,7 @@
     }
 
     70% {
-      transform: translateY(2.5rem) translateX(1.4rem);
+      transform: translateY(45%) translateX(10%);
     }
 
     90% {
@@ -117,22 +117,22 @@
       }
 
       20% {
-        transform: translate(-.3rem, 0);
+        transform: translate(-.3rem, .1rem);
       }
 
 
       40% {
-        transform: translate(-.3rem, 0);
+        transform: translate(-.3rem, .1rem);
       }
 
 
       60% {
-        transform: translate(-.3rem, 0);
+        transform: translate(-.3rem, .1rem);
       }
 
 
       80% {
-        transform: translate(-.3rem, 0);
+        transform: translate(-.3rem, .1rem);
       }
 
     }
