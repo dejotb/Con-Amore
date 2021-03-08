@@ -1,19 +1,32 @@
 
 
 .about {
-    background-color: $color-primary;
-    margin: -4rem 1rem 4rem;
+    background: linear-gradient(170deg, $color-primary, 65%, #2A9254 80%);
+    // margin: -4rem 0 4rem;
+    margin-top: -5rem;
+    padding-bottom: 15rem;
     display: grid;
     justify-items: center;
-    grid-row-gap: 4rem;
+    grid-row-gap: 6rem;
     position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color-white;
+        clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
+    }
 
     &__offer-box {
         max-width: 126rem;
-        background-color: inherit;
+        margin: 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
-        grid-gap: 5rem;
+        grid-gap: 2rem;
         justify-content: space-evenly;
     }
 
@@ -25,14 +38,14 @@
         justify-items: center;
         align-content: flex-start;
         border-radius: 3px;
-        box-shadow: $shadow-1;
+        box-shadow: $shadow-2;
         transition: all .2s;
         backface-visibility: hidden;
 
 
         &:hover {
             transform: translate3d(0, -1rem, 0) scale(1.01);
-            box-shadow: $shadow-2;
+            box-shadow: $shadow-3;
         }
     }
 

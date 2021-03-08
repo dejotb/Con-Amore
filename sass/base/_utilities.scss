@@ -2,6 +2,10 @@
 .pg {
     max-width: 65ch;
     font-size: 1.6rem;
+
+    & > p:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 }
 
 .blur {

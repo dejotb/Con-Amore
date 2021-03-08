@@ -11,18 +11,12 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 56.25%;
-  }
-}
 
 body {
   font-family: "Lato", sans-serif;
   color: #6D5D4B;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #45A86E;
 }
 
 .container {
@@ -33,6 +27,9 @@ body {
 .pg {
   max-width: 65ch;
   font-size: 1.6rem;
+}
+.pg > p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .blur {
@@ -354,7 +351,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .header__heading--sub {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 .header__img {
@@ -423,25 +420,35 @@ body {
 }
 
 .main {
-  max-width: 126rem;
   margin: 0 auto;
   transition: all 0.2s;
 }
 
 .about {
-  background-color: #45A86E;
-  margin: -4rem 1rem 4rem;
+  background: linear-gradient(170deg, #45A86E, 65%, #2A9254 80%);
+  margin-top: -5rem;
+  padding-bottom: 15rem;
   display: grid;
   justify-items: center;
-  grid-row-gap: 4rem;
+  grid-row-gap: 6rem;
   position: relative;
+}
+.about:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
 }
 .about__offer-box {
   max-width: 126rem;
-  background-color: inherit;
+  margin: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
-  grid-gap: 5rem;
+  grid-gap: 2rem;
   justify-content: space-evenly;
 }
 .about__offer {
@@ -452,7 +459,7 @@ body {
   justify-items: center;
   align-content: flex-start;
   border-radius: 3px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all 0.2s;
   backface-visibility: hidden;
 }
