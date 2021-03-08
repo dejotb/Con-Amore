@@ -1,10 +1,14 @@
 
 .heading-1 {
     font-family: $font-display;
-    font-size: 7rem;
+    font-size: 10rem;
     color: $color-primary;
     line-height: 1;
     font-weight: 400;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 7rem;
+    }
 }
 
 .heading-2 {
@@ -15,6 +19,11 @@
     text-transform: uppercase;
     margin-top: 10rem;
     font-weight: 400;
+    text-shadow: 1px 1px 1px $color-grey-dark-1;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 3rem;
+    }
 
     &--light { color: $color-grey-light-1; }
     &--dark { color: $color-grey-dark-1; }

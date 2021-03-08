@@ -17,13 +17,13 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $color-white;
+        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/linen.png);
         clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
     }
 
-    &__offer-box {
+    &__box {
         max-width: 126rem;
-        margin: 2rem;
+        margin: 0 2rem;
         padding-bottom: 4rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
@@ -31,7 +31,7 @@
         justify-content: space-evenly;
     }
 
-    &__offer {
+    &__card {
         background-color: $color-white;
         padding: 6rem 2rem;
         display: grid;
@@ -45,13 +45,18 @@
 
 
         &:hover {
-            transform: translate3d(0, -1rem, 0) scale(1.01);
+            transform: translate3d(0, -.5rem, 0) scale(1.01);
             box-shadow: $shadow-3;
+        }
+
+        &:hover .about__icon {
+            transform: scale(1.1);
         }
     }
 
     &__icon {
         width: 7rem;
+        transition: all .2s;
     }
 
     &__text {

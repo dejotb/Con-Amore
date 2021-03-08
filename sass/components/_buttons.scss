@@ -8,7 +8,7 @@
     background-color: $color-primary;
     text-decoration: none;
     transition: all .2s;
-    box-shadow: $shadow-1;
+    box-shadow: $shadow-2;
 }
 
 .btn:hover,
@@ -17,5 +17,5 @@
     background-color: $color-primary;
     color: $color-white;
     transform: translate3d(0, -.5rem, 0);
-    box-shadow: $shadow-1;
+    box-shadow: $shadow-3;
 }
