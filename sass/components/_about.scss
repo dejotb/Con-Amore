@@ -24,6 +24,7 @@
     &__offer-box {
         max-width: 126rem;
         margin: 2rem;
+        padding-bottom: 4rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
         grid-gap: 2rem;
@@ -32,7 +33,7 @@
 
     &__offer {
         background-color: $color-white;
-        padding: 6rem 4rem;
+        padding: 6rem 2rem;
         display: grid;
         grid-gap: 4rem;
         justify-items: center;
@@ -50,7 +51,7 @@
     }
 
     &__icon {
-        width: 10rem;
+        width: 7rem;
     }
 
     &__text {

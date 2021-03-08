@@ -67,6 +67,11 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media only screen and (max-width: 75em) {
+  .heading-3 {
+    font-size: 1.7rem;
+  }
+}
 
 .heading-4 {
   font-family: "Architects Daughter", cursive;
@@ -446,6 +451,7 @@ body {
 .about__offer-box {
   max-width: 126rem;
   margin: 2rem;
+  padding-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
   grid-gap: 2rem;
@@ -453,7 +459,7 @@ body {
 }
 .about__offer {
   background-color: #fff;
-  padding: 6rem 4rem;
+  padding: 6rem 2rem;
   display: grid;
   grid-gap: 4rem;
   justify-items: center;
@@ -468,7 +474,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about__icon {
-  width: 10rem;
+  width: 7rem;
 }
 .btn,
 .btn:link,
