@@ -16,11 +16,13 @@ function toggleHam() {
   if (header.classList.contains("blur") && main.classList.contains("blur")) {
     header.classList.remove("blur");
     main.classList.remove("blur");
+    ham.classList.remove("cross");
 
   } else {
 
     header.classList.add("blur");
     main.classList.add("blur");
+    ham.classList.add("cross");
 
   }
 }
