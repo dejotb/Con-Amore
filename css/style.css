@@ -622,19 +622,19 @@ body {
   transition: all 0.2s;
 }
 .team__img-1 {
-  background-image: url(../../img/wet-1.png);
+  background-image: url(../img/wet-1.png);
   background-position: -1rem 1rem;
 }
 .team__img-2 {
-  background-image: url(../../img/wet-2.png);
+  background-image: url(../img/wet-2.png);
   background-position: center;
 }
 .team__img-3 {
-  background-image: url(../../img/wet-3.png);
+  background-image: url(../img/wet-3.png);
   background-position: 1rem 1rem;
 }
 .team__img-4 {
-  background-image: url(../../img/wet-4.png);
+  background-image: url(../img/wet-4.png);
   background-position: -2rem 1rem;
 }
 .btn,
