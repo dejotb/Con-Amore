@@ -24,6 +24,11 @@ body {
   grid-template-rows: 100vh;
 }
 
+::selection {
+  background-color: #45A86E;
+  color: #fff;
+}
+
 .pg {
   max-width: 65ch;
   font-size: 1.6rem;
@@ -79,7 +84,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .heading-3 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -377,12 +382,12 @@ body {
 }
 @media only screen and (max-width: 50em) {
   .header__img {
-    width: 35vmin;
+    width: 34vmin;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .header__img {
-    width: 58vmin;
+    width: 50vmin;
   }
 }
 .header__btn {
