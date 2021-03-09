@@ -1,5 +1,85 @@
 
 
 .team {
-    background-color: $color-primary;
+    background: linear-gradient(170deg, $color-primary, 65%, #2A9254 80%);
+    margin: -1rem auto 0;
+    padding-bottom: 10rem;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 6rem;
+    position: relative;
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/linen.png);
+        clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
+    }
+
+    &__box {
+        max-width: 126rem;
+        margin: 0 2rem;
+        padding-bottom: 15rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
+        grid-gap: 2rem;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        background-color: $color-white;
+        padding: 5rem 3rem;
+        display: grid;
+        grid-gap: 4rem;
+        justify-items: center;
+        align-content: flex-start;
+        border-radius: 3px;
+        box-shadow: $shadow-2;
+        transition: all .2s;
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: translate3d(0, -.5rem, 0) ;
+            box-shadow: $shadow-3;
+        }
+
+        &:hover .team__img {
+            transform: scale(1.1);
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 4px rgba($color-primary, .9) solid;
+        transition: all .2s;
+
+        &-1 {
+            background-image: url(../../img/wet-1.png);
+            background-position: -1rem 1rem;
+
+        }
+        &-2 {
+            background-image: url(../../img/wet-2.png);
+            background-position: center;
+        }
+        &-3 {background-image: url(../../img/wet-3.png);
+            background-position: 1rem 1rem;}
+        &-4 {background-image: url(../../img/wet-4.png);
+            background-position: -2rem 1rem;}
+
+    }
+
+    &__text {
+
+    }
 }

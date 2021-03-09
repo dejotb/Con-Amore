@@ -3,7 +3,6 @@
 .header {
     background-color:   white;
     background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/linen.png);
-    // background-image: url(../img/double-bubble-outline.png);
     background-repeat: repeat;
     padding-top: 7rem;
     display: grid;
@@ -121,7 +120,7 @@
 #dogTongue {
     transform-box: fill-box;
     transform-origin: top;
-    animation: dogTongue .45s infinite;
+    animation: dogTongue .55s infinite;
 }
 
 

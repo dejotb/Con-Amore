@@ -3,7 +3,7 @@
 .about {
     background: linear-gradient(170deg, $color-primary, 65%, #2A9254 80%);
     // margin: -4rem 0 4rem;
-    margin-top: -5rem;
+    // margin-top: -5rem;
     padding-bottom: 15rem;
     display: grid;
     justify-items: center;
@@ -24,7 +24,7 @@
     &__box {
         max-width: 126rem;
         margin: 0 2rem;
-        padding-bottom: 4rem;
+        padding-bottom: 14rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
         grid-gap: 2rem;

@@ -21,6 +21,44 @@
 
 
 
+    // CAT EYES
+
+    @keyframes catEyes {
+      0%, 100% {
+        transform: translate(0, 0) ;
+      }
+
+      20% {
+        transform: translate(-.3rem, .1rem);
+      }
+
+
+      40% {
+        transform: translate(-.3rem, .1rem);
+      }
+
+
+      60% {
+        transform: translate(-.3rem, .1rem);
+      }
+
+
+      80% {
+        transform: translate(-.3rem, .1rem);
+      }
+
+    }
+
+
+    @keyframes sway {
+      0%, 100%{ transform: rotate(-7deg);}
+      50%{ transform: rotate(6deg); }
+  }
+
+  @keyframes sway2 {
+    0%, 100%{ transform: rotate(0);}
+    50%{ transform: rotate(6deg); }
+}
 
 
   // DOG EYES
@@ -65,10 +103,10 @@
   @keyframes dogTongue {
 
     0%, 100% {
-      transform: scale(1.1);
+      transform: scale(1);
     }
 
-    50%{ transform: scale(1.01);
+    50%{ transform: scale(1.05);
     }
 
   }
@@ -105,45 +143,3 @@
     }
 
   }
-
-
-
-
-    // CAT EYES
-
-    @keyframes catEyes {
-      0%, 100% {
-        transform: translate(0, 0) ;
-      }
-
-      20% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-
-      40% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-
-      60% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-
-      80% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-    }
-
-
-    @keyframes sway {
-      0%, 100%{ transform: rotate(-7deg);}
-      50%{ transform: rotate(6deg); }
-  }
-
-  @keyframes sway2 {
-    0%, 100%{ transform: rotate(0);}
-    50%{ transform: rotate(6deg); }
-}
