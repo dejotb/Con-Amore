@@ -724,12 +724,14 @@ body {
   grid-auto-flow: column;
   grid-gap: 2rem;
   transition: all 0.2s;
+  font-weight: 700;
 }
 .contact__link:hover .fas, .contact__link:active .fas, .contact__link:focus .fas {
-  color: #fff;
+  color: #2A9254;
 }
 
 .fas {
+  color: #45A86E;
   transition: all 0.2s;
 }
 
