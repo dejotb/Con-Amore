@@ -2,7 +2,7 @@
 
 .team {
     // background: linear-gradient(170deg, $color-primary, 65%, #2A9254 80%);
-    background: linear-gradient(rgba($color-primary, 1), 20%,  rgba($color-primary, 1)),  url(../img/background-cat.svg);
+    background: linear-gradient(rgba($color-primary, 1), 80%,  rgba($color-primary-dark, 1)),  url(../img/background-cat.svg);
     background-repeat: space;
     background-blend-mode: overlay;
     margin: -1rem auto 0;
@@ -21,8 +21,8 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/linen.png);
-        clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
+        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
+        clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
     }
 
     &__box {
@@ -36,7 +36,9 @@
     }
 
     &__card {
-        background-color: $color-white;
+        // background-color: $color-white;
+        background: url(../img/linedpaper.png);
+        background-position: center;
         padding: 5rem 3rem;
         display: grid;
         grid-gap: 4rem;
@@ -55,11 +57,12 @@
         }
 
         &:hover .team__img {
-            transform: scale(1.1) rotate(3deg);
+            transform: scale(1.05) rotate(3deg);
         }
     }
 
     &__img {
+        background-color: $color-white;
         display: block;
         width: 13rem;
         height: 13rem;

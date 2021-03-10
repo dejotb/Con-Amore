@@ -17,7 +17,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/linen.png);
+        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
         clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
     }
 
@@ -32,7 +32,7 @@
     }
 
     &__card {
-        background-color: $color-white;
+        background: url(../img/groovepaper.png);
         padding: 6rem 3rem;
         display: grid;
         grid-gap: 4rem;

@@ -16,13 +16,13 @@ function toggleHam() {
   if (header.classList.contains("blur") && main.classList.contains("blur")) {
     header.classList.remove("blur");
     main.classList.remove("blur");
-    ham.classList.remove("cross");
+    ham.classList.remove("iconX");
 
   } else {
 
     header.classList.add("blur");
     main.classList.add("blur");
-    ham.classList.add("cross");
+    ham.classList.add("iconX");
 
   }
 }
@@ -35,6 +35,7 @@ function toggleMenu() {
       menu.classList.remove("showMenu");
       header.classList.remove("blur");
       main.classList.remove("blur");
+      ham.classList.remove("iconX");
     } else {
       menu.classList.add("showMenu");
     }

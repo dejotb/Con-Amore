@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #6D5D4B;
+  color: #696969;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
   margin-top: 10rem;
   font-weight: 400;
-  text-shadow: 1px 1px 1px #696969;
+  text-shadow: 1px 1px 1px #aaa;
 }
 @media only screen and (max-width: 75em) {
   .heading-2 {
@@ -71,9 +71,6 @@ body {
 }
 .heading-2--light {
   color: #f9f7f6;
-}
-.heading-2--dark {
-  color: #696969;
 }
 
 .heading-3 {
@@ -90,7 +87,7 @@ body {
 
 .heading-4 {
   font-family: "Architects Daughter", cursive;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 .heading-4--light {
@@ -208,7 +205,7 @@ body {
   display: flex;
   padding: 0 12vw;
   align-items: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   z-index: 10000;
 }
 @media only screen and (max-width: 50em) {
@@ -259,7 +256,7 @@ body {
   text-transform: uppercase;
   color: #696969;
   display: block;
-  padding: 3px 5px;
+  padding: 3px 0.8rem;
   border-radius: 2px;
   transition: all 0.2s;
 }
@@ -292,7 +289,7 @@ body {
   width: 100%;
   background-color: #696969;
   position: relative;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 .hamburger__line::before, .hamburger__line::after {
   height: 4px;
@@ -301,7 +298,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 .hamburger__line::before {
   top: -1rem;
@@ -314,10 +311,10 @@ body {
   transform: translateY(0);
 }
 
-.cross .hamburger__line {
+.iconX .hamburger__line {
   background-color: transparent;
 }
-.cross .hamburger__line::before, .cross .hamburger__line::after {
+.iconX .hamburger__line::before, .iconX .hamburger__line::after {
   height: 4px;
   width: 100%;
   background-color: #45A86E;
@@ -325,18 +322,18 @@ body {
   display: block;
   position: absolute;
 }
-.cross .hamburger__line::before {
+.iconX .hamburger__line::before {
   top: 0;
   transform: rotate(225deg);
 }
-.cross .hamburger__line::after {
+.iconX .hamburger__line::after {
   top: 0;
   transform: rotate(-225deg);
 }
 
 .header {
   background-color: white;
-  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/linen.png);
+  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/groovepaper.png);
   background-repeat: repeat;
   padding-top: 7rem;
   display: grid;
@@ -465,6 +462,13 @@ body {
   margin-top: -4rem;
 }
 
+.footer {
+  background: #45A86E;
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 6rem;
+}
+
 .about {
   background: linear-gradient(#45a86e, 40%, #2a9254), url(../img/background-dog.svg);
   background-repeat: space;
@@ -482,7 +486,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/linen.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/groovepaper.png);
   clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
 }
 .about__box {
@@ -495,7 +499,7 @@ body {
   justify-content: space-evenly;
 }
 .about__card {
-  background-color: #fff;
+  background: url(../img/groovepaper.png);
   padding: 6rem 3rem;
   display: grid;
   grid-gap: 4rem;
@@ -524,7 +528,7 @@ body {
   justify-items: center;
   grid-row-gap: 6rem;
   position: relative;
-  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/linen.png);
+  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/groovepaper.png);
 }
 .service:after {
   content: "";
@@ -582,7 +586,8 @@ body {
   align-items: center;
 }
 .service__icon {
-  width: 7rem;
+  width: 6rem;
+  height: 6rem;
   transition: all 0.2s;
 }
 .service__title {
@@ -597,7 +602,7 @@ body {
 }
 
 .team {
-  background: linear-gradient(#45a86e, 20%, #45a86e), url(../img/background-cat.svg);
+  background: linear-gradient(#45a86e, 80%, #2a9254), url(../img/background-cat.svg);
   background-repeat: space;
   background-blend-mode: overlay;
   margin: -1rem auto 0;
@@ -614,8 +619,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/linen.png);
-  clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
+  background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/groovepaper.png);
+  clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
 }
 .team__box {
   max-width: 126rem;
@@ -627,7 +632,8 @@ body {
   justify-content: space-evenly;
 }
 .team__card {
-  background-color: #fff;
+  background: url(../img/linedpaper.png);
+  background-position: center;
   padding: 5rem 3rem;
   display: grid;
   grid-gap: 4rem;
@@ -643,9 +649,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .team__card:hover .team__img {
-  transform: scale(1.1) rotate(3deg);
+  transform: scale(1.05) rotate(3deg);
 }
 .team__img {
+  background-color: #fff;
   display: block;
   width: 13rem;
   height: 13rem;
@@ -671,6 +678,75 @@ body {
   background-image: url(../img/wet-4.png);
   background-position: -2rem 1rem;
 }
+.contact {
+  margin: -1rem auto 0;
+  padding-bottom: 10rem;
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 6rem;
+  position: relative;
+  background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/groovepaper.png);
+}
+.contact:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #45A86E;
+  clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
+}
+.contact__box {
+  max-width: 126rem;
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 50rem));
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+}
+.contact__card {
+  display: grid;
+  justify-content: center;
+}
+.contact__hours {
+  display: grid;
+}
+.contact__text {
+  margin-top: 2rem;
+}
+.contact__link, .contact__link:link, .contact__link:visited {
+  text-decoration: none;
+  color: #696969;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  transition: all 0.2s;
+}
+.contact__link:hover .fas, .contact__link:active .fas, .contact__link:focus .fas {
+  color: #fff;
+}
+
+.fas {
+  transition: all 0.2s;
+}
+
+.map {
+  position: relative;
+}
+.map:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #45A86E;
+  clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -681,6 +757,7 @@ body {
   text-decoration: none;
   transition: all 0.2s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  animation: heartBeat 2s 2s 2;
 }
 
 .btn:hover,
