@@ -30,7 +30,8 @@
         grid-row-gap: 7rem;
 
         @media only screen and (max-width: $bp-large) {
-            grid-template-columns: repeat(auto-fit, 14rem);
+            grid-template-columns: repeat(auto-fit, 12rem);
+            grid-auto-rows: 12rem;
         }
 
     }
@@ -81,6 +82,10 @@
         width: 15rem;
         padding-top: 5px;
         display: block;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 14rem;
+        }
     }
 
 }

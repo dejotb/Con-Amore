@@ -1,9 +1,9 @@
 
 
 .about {
-    background: linear-gradient(170deg, $color-primary, 65%, #2A9254 80%);
-    // margin: -4rem 0 4rem;
-    // margin-top: -5rem;
+    background: linear-gradient(rgba($color-primary, 1), 40%,  rgba($color-primary-dark, 1)),  url(../img/background-dog.svg);
+    background-repeat: space;
+    background-blend-mode: overlay;
     padding-bottom: 15rem;
     display: grid;
     justify-items: center;
@@ -33,7 +33,7 @@
 
     &__card {
         background-color: $color-white;
-        padding: 6rem 2rem;
+        padding: 6rem 3rem;
         display: grid;
         grid-gap: 4rem;
         justify-items: center;

@@ -466,7 +466,9 @@ body {
 }
 
 .about {
-  background: linear-gradient(170deg, #45A86E, 65%, #2A9254 80%);
+  background: linear-gradient(#45a86e, 40%, #2a9254), url(../img/background-dog.svg);
+  background-repeat: space;
+  background-blend-mode: overlay;
   padding-bottom: 15rem;
   display: grid;
   justify-items: center;
@@ -494,7 +496,7 @@ body {
 }
 .about__card {
   background-color: #fff;
-  padding: 6rem 2rem;
+  padding: 6rem 3rem;
   display: grid;
   grid-gap: 4rem;
   justify-items: center;
@@ -546,7 +548,8 @@ body {
 }
 @media only screen and (max-width: 62.5em) {
   .service__box {
-    grid-template-columns: repeat(auto-fit, 14rem);
+    grid-template-columns: repeat(auto-fit, 12rem);
+    grid-auto-rows: 12rem;
   }
 }
 .service__card {
@@ -587,9 +590,16 @@ body {
   padding-top: 5px;
   display: block;
 }
+@media only screen and (max-width: 62.5em) {
+  .service__title {
+    width: 14rem;
+  }
+}
 
 .team {
-  background: linear-gradient(170deg, #45A86E, 65%, #2A9254 80%);
+  background: linear-gradient(#45a86e, 20%, #45a86e), url(../img/background-cat.svg);
+  background-repeat: space;
+  background-blend-mode: overlay;
   margin: -1rem auto 0;
   padding-bottom: 10rem;
   display: grid;
@@ -633,7 +643,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .team__card:hover .team__img {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(3deg);
 }
 .team__img {
   display: block;
@@ -642,7 +652,7 @@ body {
   border-radius: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 4px rgba(69, 168, 110, 0.9) solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   transition: all 0.2s;
 }
 .team__img-1 {
