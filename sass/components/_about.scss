@@ -1,30 +1,22 @@
 
 
 .about {
+
+    @include componentLayout (6rem, 6rem);
     background: linear-gradient(rgba($color-primary, 1), 40%,  rgba($color-primary-dark, 1)),  url(../img/background-dog.svg);
     background-repeat: space;
     background-blend-mode: overlay;
-    padding-bottom: 15rem;
-    display: grid;
-    justify-items: center;
-    grid-row-gap: 6rem;
-    position: relative;
+
 
     &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        @include componentAfter;
         background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
-        clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
+        clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
     }
 
     &__box {
         max-width: 126rem;
         margin: 0 2rem;
-        padding-bottom: 14rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
         grid-gap: 2rem;
@@ -59,7 +51,9 @@
         transition: all .2s;
     }
 
-    &__text {
+    // &__text {
 
-    }
+    // }
 }
+
+

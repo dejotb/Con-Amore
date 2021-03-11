@@ -1,20 +1,10 @@
 
 .service {
-    margin: -5rem auto 0;
-    padding-bottom: 10rem;
-    display: grid;
-    justify-items: center;
-    grid-row-gap: 6rem;
-    position: relative;
+    @include componentLayout (6rem, 6rem);
     background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
 
     &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        @include componentAfter;
         background-color: $color-primary;
         clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
     }
@@ -22,7 +12,7 @@
     &__box {
         width: 100%;
         justify-content: center;
-        padding: 0 1rem 5rem;
+        // padding: 0 1rem 5rem;
         display: grid;
         grid-template-columns: repeat(5, 14rem);
         grid-auto-rows: 14rem;
@@ -32,6 +22,7 @@
         @media only screen and (max-width: $bp-large) {
             grid-template-columns: repeat(auto-fit, 12rem);
             grid-auto-rows: 12rem;
+            grid-column-gap: 2rem;
         }
 
     }

@@ -25,8 +25,12 @@ body {
 }
 
 ::selection {
-  background-color: #45A86E;
+  background-color: #FFC600;
   color: #fff;
+}
+
+* {
+  scroll-margin-top: 6rem;
 }
 
 .pg {
@@ -60,7 +64,6 @@ body {
   font-style: italic;
   line-height: 1;
   text-transform: uppercase;
-  margin-top: 10rem;
   font-weight: 400;
   text-shadow: 1px 1px 1px #aaa;
 }
@@ -89,6 +92,7 @@ body {
   font-family: "Architects Daughter", cursive;
   font-size: 2.5rem;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 .heading-4--light {
   color: #f9f7f6;
@@ -462,6 +466,20 @@ body {
   margin-top: -4rem;
 }
 
+.about,
+.service,
+.team,
+.contact {
+  padding-top: 6rem;
+  margin-top: -1rem;
+}
+
+.about__box,
+.service__box,
+.team__box {
+  padding-bottom: 12rem;
+}
+
 .footer {
   background: #45A86E;
   display: grid;
@@ -470,14 +488,15 @@ body {
 }
 
 .about {
-  background: linear-gradient(#45a86e, 40%, #2a9254), url(../img/background-dog.svg);
-  background-repeat: space;
-  background-blend-mode: overlay;
-  padding-bottom: 15rem;
+  padding-top: 6rem;
   display: grid;
   justify-items: center;
   grid-row-gap: 6rem;
   position: relative;
+  margin-top: -1rem;
+  background: linear-gradient(#45a86e, 40%, #2a9254), url(../img/background-dog.svg);
+  background-repeat: space;
+  background-blend-mode: overlay;
 }
 .about:after {
   content: "";
@@ -487,12 +506,11 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/groovepaper.png);
-  clip-path: polygon(82% 92%, 100% 90%, 100% 100%, 0 100%, 0 93%, 57% 91%);
+  clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
 }
 .about__box {
   max-width: 126rem;
   margin: 0 2rem;
-  padding-bottom: 14rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
   grid-gap: 2rem;
@@ -521,13 +539,14 @@ body {
   width: 7rem;
   transition: all 0.2s;
 }
+
 .service {
-  margin: -5rem auto 0;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
   display: grid;
   justify-items: center;
   grid-row-gap: 6rem;
   position: relative;
+  margin-top: -1rem;
   background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/groovepaper.png);
 }
 .service:after {
@@ -543,7 +562,6 @@ body {
 .service__box {
   width: 100%;
   justify-content: center;
-  padding: 0 1rem 5rem;
   display: grid;
   grid-template-columns: repeat(5, 14rem);
   grid-auto-rows: 14rem;
@@ -554,6 +572,7 @@ body {
   .service__box {
     grid-template-columns: repeat(auto-fit, 12rem);
     grid-auto-rows: 12rem;
+    grid-column-gap: 2rem;
   }
 }
 .service__card {
@@ -602,15 +621,15 @@ body {
 }
 
 .team {
-  background: linear-gradient(#45a86e, 80%, #2a9254), url(../img/background-cat.svg);
-  background-repeat: space;
-  background-blend-mode: overlay;
-  margin: -1rem auto 0;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
   display: grid;
   justify-items: center;
   grid-row-gap: 6rem;
   position: relative;
+  margin-top: -1rem;
+  background: linear-gradient(#45a86e, 80%, #2a9254), url(../img/background-cat.svg);
+  background-repeat: space;
+  background-blend-mode: overlay;
 }
 .team:after {
   content: "";
@@ -620,12 +639,11 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/groovepaper.png);
-  clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
+  clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
 }
 .team__box {
   max-width: 126rem;
   margin: 0 2rem;
-  padding-bottom: 15rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
   grid-gap: 2rem;
@@ -678,13 +696,14 @@ body {
   background-image: url(../img/wet-4.png);
   background-position: -2rem 1rem;
 }
+
 .contact {
-  margin: -1rem auto 0;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
   display: grid;
   justify-items: center;
   grid-row-gap: 6rem;
   position: relative;
+  margin-top: -1rem;
   background: linear-gradient(rgba(69, 168, 110, 0.01), 70%, rgba(69, 168, 110, 0.3)), url(../img/groovepaper.png);
 }
 .contact:after {
@@ -701,21 +720,26 @@ body {
   max-width: 126rem;
   margin: 0 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 50rem));
+  justify-items: center;
   grid-gap: 2rem;
-  justify-content: space-evenly;
+  padding-bottom: 6rem;
 }
 .contact__card {
   display: grid;
   justify-content: center;
-}
-.contact__hours {
-  display: grid;
+  grid-row-gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 .contact__text {
-  margin-top: 2rem;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+.contact__table {
+  text-align: left;
+  font-size: 1.6rem;
 }
 .contact__link, .contact__link:link, .contact__link:visited {
+  font-size: 1.8rem;
   text-decoration: none;
   color: #696969;
   display: grid;
@@ -724,10 +748,9 @@ body {
   grid-auto-flow: column;
   grid-gap: 2rem;
   transition: all 0.2s;
-  font-weight: 700;
 }
 .contact__link:hover .fas, .contact__link:active .fas, .contact__link:focus .fas {
-  color: #2A9254;
+  color: #2a9254;
 }
 
 .fas {
@@ -755,17 +778,17 @@ body {
   font-size: 2rem;
   color: #fff;
   padding: 1rem 2rem;
-  background-color: #45A86E;
+  background-color: #2a9254;
   text-decoration: none;
   transition: all 0.2s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  animation: heartBeat 2s 2s 2;
+  animation: heartBeat 2s 1.2s 3;
 }
 
 .btn:hover,
 .btn:active,
 .btn:focus {
-  background-color: #45A86E;
+  background-color: #2a9254;
   color: #fff;
   transform: translate3d(0, -0.5rem, 0);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -1,34 +1,23 @@
 
 
 .team {
-    // background: linear-gradient(170deg, $color-primary, 65%, #2A9254 80%);
+    @include componentLayout (6rem, 6rem);
     background: linear-gradient(rgba($color-primary, 1), 80%,  rgba($color-primary-dark, 1)),  url(../img/background-cat.svg);
     background-repeat: space;
     background-blend-mode: overlay;
-    margin: -1rem auto 0;
-    padding-bottom: 10rem;
-    display: grid;
-    justify-items: center;
-    grid-row-gap: 6rem;
-    position: relative;
 
 
 
     &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        @include componentAfter;
         background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
-        clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
+        clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
     }
 
     &__box {
         max-width: 126rem;
         margin: 0 2rem;
-        padding-bottom: 15rem;
+        // padding-bottom: 15rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
         grid-gap: 2rem;
@@ -89,7 +78,7 @@
 
     }
 
-    &__text {
+    // &__text {
 
-    }
+    // }
 }
