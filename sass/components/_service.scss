@@ -12,7 +12,7 @@
     &__box {
         width: 100%;
         justify-content: center;
-        // padding: 0 1rem 5rem;
+        padding: 0 1rem 12rem;
         display: grid;
         grid-template-columns: repeat(5, 14rem);
         grid-auto-rows: 14rem;
@@ -22,7 +22,7 @@
         @media only screen and (max-width: $bp-large) {
             grid-template-columns: repeat(auto-fit, 12rem);
             grid-auto-rows: 12rem;
-            grid-column-gap: 2rem;
+            grid-column-gap: 3rem;
         }
 
     }
@@ -76,7 +76,7 @@
         display: block;
 
         @media only screen and (max-width: $bp-large) {
-            width: 14rem;
+            width: 13rem;
         }
     }
 
