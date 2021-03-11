@@ -572,7 +572,6 @@ body {
   .service__box {
     grid-template-columns: repeat(auto-fit, 12rem);
     grid-auto-rows: 12rem;
-    grid-column-gap: 3rem;
   }
 }
 .service__card {
