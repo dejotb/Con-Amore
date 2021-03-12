@@ -749,7 +749,6 @@ body {
 }
 .contact__text {
   display: grid;
-  grid-template-columns: max-content;
   grid-row-gap: 2rem;
 }
 .contact__table {

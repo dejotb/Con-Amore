@@ -35,7 +35,6 @@
 
     &__text {
         display: grid;
-        grid-template-columns: max-content;
         grid-row-gap: 2rem;
 
     }
@@ -70,6 +69,7 @@
     &__link:active,
     &__link:focus{
         outline: none;
+        // color: $color-;
         text-shadow: 5px 6px 1.5rem $color-primary;
 
 
