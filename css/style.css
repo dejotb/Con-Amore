@@ -218,10 +218,12 @@ body {
 }
 .nav__logo {
   width: 15rem;
+  height: auto;
   margin-right: auto;
 }
 .nav__logo img {
   width: 100%;
+  height: 100%;
   display: block;
 }
 .nav__list {
@@ -534,6 +536,7 @@ body {
   transform: scale(1.1);
 }
 .about__icon {
+  height: 7rem;
   width: 7rem;
   transition: all 0.2s;
 }
