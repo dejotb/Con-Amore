@@ -35,6 +35,7 @@
 
     &__text {
         display: grid;
+        grid-template-columns: max-content;
         grid-row-gap: 2rem;
 
     }
@@ -61,20 +62,33 @@
         grid-auto-flow: column;
         grid-gap: 2rem;
         transition: all .2s;
+        // display: inline-block;
         // font-weight: 700;
     }
 
-    &__link:hover .fas,
-    &__link:active .fas,
-    &__link:focus .fas{
-        color: $color-primary-dark;
+    &__link:hover,
+    &__link:active,
+    &__link:focus{
+        outline: none;
+        text-shadow: 5px 6px 1.5rem $color-primary;
 
+
+    }
+
+
+    &__link:hover .contact__icon,
+    &__link:active .contact__icon,
+    &__link:focus .contact__icon {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        transition: all .2s;
     }
 }
 
-.fas {
-    color: $color-primary;
-    transition: all .2s;
-}
 
 

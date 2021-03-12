@@ -78,7 +78,22 @@
 
     }
 
-    // &__text {
+    &__link {
+        text-decoration: none;
+        color: $color-primary;
 
-    // }
+        &:hover,
+        &:active {
+            color: $color-primary
+        }
+
+        &:focus {
+            color: inherit;
+            background-color: $yellow;
+            outline: none;
+            font-size: 2rem;
+        }
+
+    }
+
 }
