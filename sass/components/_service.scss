@@ -22,7 +22,7 @@
         @media only screen and (max-width: $bp-large) {
             grid-template-columns: repeat(auto-fit, 12rem);
             grid-auto-rows: 12rem;
-            // grid-column-gap: 3rem;
+            // grid-column-gap: 2rem;
         }
 
     }
@@ -87,7 +87,7 @@
         display: block;
 
         @media only screen and (max-width: $bp-large) {
-            width: 14rem;
+            width: 12rem;
         }
     }
 

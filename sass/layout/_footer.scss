@@ -1,8 +1,75 @@
 
 .footer {
     background: $color-primary;
-
+    padding: 2rem 0;
     display: grid;
     justify-items: center;
-    grid-row-gap: 6rem;
+    grid-row-gap: 2rem;
+    background: linear-gradient(rgba($color-primary, 1), 80%,  rgba($color-primary-dark, 1));
+
+    &__list {
+        font-size: 1.6rem;
+        list-style: none;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__logo {
+        width: 6rem;
+        height: auto;
+        display: block;
+    }
+
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            &:not(:last-child) {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-grey-light-1;
+        display: block;
+        padding: 3px .8rem;
+        border-radius: 2px;
+        transition: all .2s;
+    }
+
+    &__link:hover,
+    &__link:active,
+    &__link:focus {
+        background-color: $color-white;
+        color: $color-primary;
+        transform: translateY(-.5rem);
+        box-shadow: $shadow-1;
+    }
+
+    &__text {
+        // color: $color-grey-light-1;
+        // text-shadow: 1px 1px 1px $color-grey-dark-1;
+        font-size: 1.4rem;
+    }
+
+    &__contact {
+        font-size: 1.2rem;
+        display: grid;
+        grid-gap: 1rem;
+        justify-items: start;
+    }
+
+
 }
