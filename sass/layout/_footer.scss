@@ -21,7 +21,7 @@
         width: 6rem;
         height: auto;
         display: block;
-        animation: heartBeat 1s infinite;
+        // animation: heartBeat 1s infinite;
     }
 
 
@@ -35,7 +35,7 @@
     &__link:link,
     &__link:visited {
         text-decoration: none;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: $color-grey-light-1;
         display: block;
         padding: 3px .8rem;
