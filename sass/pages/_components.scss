@@ -1,0 +1,79 @@
+
+
+
+.main-services {
+    padding-top: 11rem;
+    flex: 1;
+    display: grid;
+    grid-row-gap: 5rem;
+    justify-items: center;
+    align-content: flex-start;
+    background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
+    position: relative;
+    margin-bottom: -1rem;
+
+    &:after {
+        @include componentAfter;
+        background-color: $color-primary;
+        clip-path: polygon(100% 97%, 100% 100%, 0 100%, 0 100%, 45% 99%, 62% 99%, 83% 98%);
+    }
+
+    &__box {
+        margin: 0 auto;
+        width: 50%;
+        justify-self: start;
+
+
+
+
+    }
+
+    &__list {
+        list-style-type: none;
+        position: relative;
+    }
+
+    &__item {
+
+        &::before {
+            content: "";
+            background: url(../../img/icon-heart.svg);
+            position: absolute;
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            left: -2.5rem;
+            top: .5rem;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__icon {
+        display: block;
+        height: 15rem;
+        width: 15rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
