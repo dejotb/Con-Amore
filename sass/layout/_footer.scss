@@ -1,12 +1,12 @@
 
 .footer {
     background: $color-primary;
-    padding: 3rem 0 2rem;
+    padding: 5rem 0 2rem;
     margin-top: -1rem;
     display: grid;
     justify-items: center;
     grid-row-gap: 2rem;
-    background: linear-gradient(rgba($color-primary, 1), 80%,  rgba($color-primary-dark, 1));
+    background: linear-gradient(rgba($color-primary, 1), 50%,  rgba($color-primary-dark, 1));
 
     &__list {
         font-size: 1.6rem;

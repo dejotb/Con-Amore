@@ -4,13 +4,12 @@
 .btn:visited {
     font-size: 2rem;
     color: $color-white;
-    padding: 1rem 2rem;
     background-color: $color-primary;
     text-decoration: none;
     transition: all .2s;
     box-shadow: $shadow-2;
-    animation: heartBeat 1s 1.2s 3;
     border: 2px solid transparent;
+    z-index: 10;
 
 
 }
@@ -18,13 +17,14 @@
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background-color: $color-primary;
-    color: $color-white;
     transform: translate3d(0, -.5rem, 0);
     box-shadow: $shadow-3;
+    outline: none;
 }
 
 
 .btn:focus {
-    outline: none;
+
 }
+
+
