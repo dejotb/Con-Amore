@@ -4,11 +4,12 @@
 .main-services {
     padding-top: 11rem;
     flex: 1;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    grid-row-gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    // grid-template-rows: min-content 1fr min-content;
+    // grid-row-gap: 5rem;
     justify-items: center;
-    align-items: start;
+    align-items: center;
     background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
     position: relative;
     margin-bottom: -1rem;
@@ -23,6 +24,7 @@
     }
 
     &__list {
+        padding-top: 4rem;
         list-style-type: none;
         position: relative;
     }
