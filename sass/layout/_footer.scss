@@ -31,9 +31,7 @@
         }
 
         @media only screen and (max-width: $bp-small) {
-            &:not(:last-child) {
-                padding-bottom: 1rem;
-            }
+                padding: 1rem 0;
         }
     }
 
