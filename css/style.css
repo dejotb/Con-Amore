@@ -913,11 +913,6 @@ body {
   background-color: #45A86E;
   clip-path: polygon(100% 97%, 100% 100%, 0 100%, 0 100%, 45% 99%, 62% 99%, 83% 98%);
 }
-.main-services__box {
-  margin: 0 auto;
-  width: 50%;
-  justify-self: start;
-}
 .main-services__list {
   list-style-type: none;
   position: relative;
