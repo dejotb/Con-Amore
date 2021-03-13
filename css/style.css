@@ -482,8 +482,8 @@ body {
 
 .footer {
   background: #45A86E;
-  padding: 2rem 0;
-  margin-top: -5px;
+  padding: 3rem 0 2rem;
+  margin-top: -1rem;
   display: grid;
   justify-items: center;
   grid-row-gap: 2rem;
