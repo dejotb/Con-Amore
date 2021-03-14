@@ -45,6 +45,10 @@ body {
   filter: blur(10px);
 }
 
+.mt {
+  margin-top: -4rem;
+}
+
 .heading-1 {
   font-family: "Architects Daughter", cursive;
   font-size: 10rem;
