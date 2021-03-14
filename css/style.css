@@ -787,15 +787,16 @@ body {
 .team__link {
   text-decoration: none;
   color: #45A86E;
+  transition: all 0.2s;
 }
 .team__link:hover, .team__link:active {
-  color: #45A86E;
+  color: inherit;
+  background-color: #FFDC64;
 }
 .team__link:focus {
   color: inherit;
   background-color: #FFDC64;
   outline: none;
-  font-size: 2rem;
 }
 
 .contact {

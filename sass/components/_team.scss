@@ -81,17 +81,18 @@
     &__link {
         text-decoration: none;
         color: $color-primary;
+        transition: all .2s;
 
         &:hover,
         &:active {
-            color: $color-primary
+            color: inherit;
+            background-color: $yellow;
         }
 
         &:focus {
             color: inherit;
             background-color: $yellow;
             outline: none;
-            font-size: 2rem;
         }
 
     }
