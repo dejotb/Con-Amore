@@ -36,9 +36,27 @@
     color: $color-grey-dark-1;
     // text-transform: uppercase;
     font-weight: 700;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, rgba($color-primary, .8), 40%,  rgba($color-primary-light, .1));
+        bottom: 3px;
+        left: 0;
+        z-index: -1;
+    }
 
     @media only screen and (max-width: $bp-largest) {
         font-size: 1.9rem;
+
+        &:before {
+           display: none;
+        }
     }
 }
 
