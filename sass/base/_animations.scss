@@ -1,4 +1,4 @@
-
+// HEART BEAT
 
 @keyframes heartBeat {
     0% {
@@ -21,125 +21,117 @@
 
 
 
-    // CAT EYES
+// CAT EYES
 
-    @keyframes catEyes {
-      0%, 100% {
-        transform: translate(0, 0) ;
-      }
-
-      20% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-
-      40% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-
-      60% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-
-      80% {
-        transform: translate(-.3rem, .1rem);
-      }
-
-    }
-
-
-    @keyframes sway {
-      0%, 100%{ transform: rotate(-7deg);}
-      50%{ transform: rotate(6deg); }
+@keyframes catEyes {
+  0%, 100% {
+    transform: translate(0, 0) ;
   }
 
-  @keyframes sway2 {
-    0%, 100%{ transform: rotate(0);}
-    50%{ transform: rotate(6deg); }
+  20% {
+    transform: translate(-.3rem, .1rem);
+  }
+
+  40% {
+    transform: translate(-.3rem, .1rem);
+  }
+
+  60% {
+    transform: translate(-.3rem, .1rem);
+  }
+
+  80% {
+    transform: translate(-.3rem, .1rem);
+  }
+
 }
 
 
-  // DOG EYES
+@keyframes sway {
+  0%, 100%{ transform: rotate(-7deg);}
+  50%{ transform: rotate(6deg); }
+}
 
-  @keyframes dogEyes {
-    0%, 100% {
-      transform: translate(-6%, 7%) ;
-    }
-
-
-    20% {
-      transform: translate(-1%, 0);
-    }
-
-    70% {
-      transform: translate(-1%, 0);
-    }
+@keyframes sway2 {
+  0%, 100%{ transform: rotate(0);}
+  50%{ transform: rotate(6deg); }
+}
 
 
+// DOG EYES
 
-    80% {
-      transform: translate(-6%, 7%) ;
-    }
-
+@keyframes dogEyes {
+  0%, 100% {
+    transform: translate(-6%, 7%) ;
   }
+
+  20% {
+    transform: translate(-1%, 0);
+  }
+
+  70% {
+    transform: translate(-1%, 0);
+  }
+
+  80% {
+    transform: translate(-6%, 7%) ;
+  }
+
+}
 
 
 // DOG HEAD
 
-  @keyframes dogHead {
+@keyframes dogHead {
 
-    0%, 100%{ transform: rotate(-1deg) translateX(1px) scale(1.01);}
+  0%, 100%{ transform: rotate(-1deg) translateX(1px) scale(1.01);}
 
-    50% { transform: rotate(0deg) translateX(1px) translateY(2px) ;
-    }
-
+  50% { transform: rotate(0deg) translateX(1px) translateY(2px) ;
   }
 
+}
 
-  // DOG TONGUE
 
-  @keyframes dogTongue {
+// DOG TONGUE
 
-    0%, 100% {
-      transform: scale(1);
-    }
+@keyframes dogTongue {
 
-    50%{ transform: scale(1.05);
-    }
-
+  0%, 100% {
+    transform: scale(1);
   }
 
-
-
-
-  @keyframes eyebrows {
-
-    0%, 100% {
-        transform: translateY(0) translateX(-.5rem);
-      }
-
-
-    20% {
-      transform: translateY(0) translateX(-.5rem);
-    }
-
-
-    40% {
-      transform: translateY(0) translateX(-.5rem);
-    }
-
-    60% {
-      transform: translateY(0) translateX(-.5rem);
-    }
-
-    70% {
-      transform: translateY(45%) translateX(10%);
-    }
-
-    90% {
-      transform: translateY(0) translateX(-.5rem);
-    }
-
+  50%{ transform: scale(1.05);
   }
+
+}
+
+
+//DOG EYEBROWS
+
+@keyframes eyebrows {
+
+  0%, 100% {
+      transform: translateY(0) translateX(-.5rem);
+    }
+
+  20% {
+    transform: translateY(0) translateX(-.5rem);
+  }
+
+  40% {
+    transform: translateY(0) translateX(-.5rem);
+  }
+
+  60% {
+    transform: translateY(0) translateX(-.5rem);
+  }
+
+  70% {
+    transform: translateY(45%) translateX(10%);
+  }
+
+  90% {
+    transform: translateY(0) translateX(-.5rem);
+  }
+
+}

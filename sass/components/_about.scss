@@ -8,6 +8,7 @@
     background-blend-mode: overlay;
 
 
+
     &:after {
         @include componentAfter;
         background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);

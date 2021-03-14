@@ -13,22 +13,16 @@
     &__box {
         max-width: 126rem;
         margin: 0 2rem;
-        // padding-bottom: 14rem;
         display: grid;
         justify-items: center;
-        // grid-template-columns: repeat(auto-fit, minmax(5rem, 50rem) );
         grid-gap: 2rem;
-        // justify-items: center;
         padding-bottom: 6rem;
 
     }
 
     &__card {
         display: grid;
-        // grid-template-columns: 40rem;
         justify-content: center;
-        // background-color: pink;
-        // justify-items: center;
         grid-row-gap: 1rem;
         margin-bottom: 1.5rem;
     }
@@ -36,18 +30,14 @@
     &__text {
         display: grid;
         grid-row-gap: 2rem;
+        justify-items: start;
 
     }
 
     &__table {
         text-align: left;
         font-size: 1.6rem;
-        // display: grid;
-        // justify-content: start;
-        // background-color: $yellow;
     }
-
-
 
     &__link,
     &__link:link,
@@ -56,23 +46,18 @@
         text-decoration: none;
         color: $color-grey-dark-1;
         display: grid;
-        justify-content: start;
         align-items: center;
         grid-auto-flow: column;
         grid-gap: 2rem;
         transition: all .2s;
-        // display: inline-block;
-        // font-weight: 700;
+        padding: 6px;
     }
 
-    &__link:hover,
-    &__link:active,
-    &__link:focus{
+    &__link:hover:not(.contact__icon),
+    &__link:active:not(.contact__icon),
+    &__link:focus:not(.contact__icon) {
         outline: none;
-        // color: $color-;
-        text-shadow: 5px 6px 1.5rem $color-primary;
-
-
+        background-color: $color-yellow;
     }
 
 

@@ -6,8 +6,6 @@
     background-repeat: space;
     background-blend-mode: overlay;
 
-
-
     &:after {
         @include componentAfter;
         background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
@@ -17,7 +15,6 @@
     &__box {
         max-width: 126rem;
         margin: 0 2rem;
-        // padding-bottom: 15rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
         grid-gap: 2rem;
@@ -25,7 +22,6 @@
     }
 
     &__card {
-        // background-color: $color-white;
         background: url(../img/linedpaper.png);
         background-position: center;
         padding: 5rem 3rem;
@@ -58,7 +54,7 @@
         border-radius: 50%;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;        // border: 4px rgba($color-primary, .9) solid;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
         transition: all .2s;
 
 
@@ -86,12 +82,12 @@
         &:hover,
         &:active {
             color: inherit;
-            background-color: $yellow;
+            background-color: $color-yellow;
         }
 
         &:focus {
             color: inherit;
-            background-color: $yellow;
+            background-color: $color-yellow;
             outline: none;
         }
 

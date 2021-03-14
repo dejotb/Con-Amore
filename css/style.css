@@ -835,6 +835,7 @@ body {
 .contact__text {
   display: grid;
   grid-row-gap: 2rem;
+  justify-items: start;
 }
 .contact__table {
   text-align: left;
@@ -845,15 +846,15 @@ body {
   text-decoration: none;
   color: #696969;
   display: grid;
-  justify-content: start;
   align-items: center;
   grid-auto-flow: column;
   grid-gap: 2rem;
   transition: all 0.2s;
+  padding: 6px;
 }
-.contact__link:hover, .contact__link:active, .contact__link:focus {
+.contact__link:hover:not(.contact__icon), .contact__link:active:not(.contact__icon), .contact__link:focus:not(.contact__icon) {
   outline: none;
-  text-shadow: 5px 6px 1.5rem #45A86E;
+  background-color: #FFDC64;
 }
 .contact__link:hover .contact__icon, .contact__link:active .contact__icon, .contact__link:focus .contact__icon {
   transform: scale(1.1) rotate(10deg);
