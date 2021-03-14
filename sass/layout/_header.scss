@@ -19,8 +19,6 @@
     "btn       img"
     ;
 
-
-
     &:after {
         @include componentAfter;
         background-color: $color-primary;
@@ -38,7 +36,6 @@
             "heading"
             "btn"
         ;
-
     }
 
     &__heading {
@@ -49,9 +46,7 @@
 
         @media only screen and (max-width: $bp-small) {
             margin: 0 auto;
-            // font-size: 7rem;
             margin-bottom: 1rem;
-
         }
     }
 
@@ -65,7 +60,6 @@
 
         @media only screen and (max-width: $bp-small) {
             font-size: 1.9rem;
-
         }
     }
 
@@ -75,23 +69,18 @@
         transform-box: fill-box;
         justify-self: center;
 
-
         @media only screen and (max-width: $bp-medium) {
             width: 34vmin;
-
         }
 
         @media only screen and (max-width: $bp-small) {
             width: 50vmin;
-
         }
-
     }
 
     &__btn {
         grid-area: btn;
         padding: 1rem 2rem;
-        // display: block;
         justify-self: center;
         animation: heartBeat 1s 1.2s 3;
     }
@@ -99,12 +88,10 @@
 
 
 #dogEyes {
-
     transform-box: fill-box;
     transform-origin: center;
     animation: dogEyes 2.5s linear infinite;
 }
-
 
 #dogHead {
     transform-box: fill-box;
@@ -118,17 +105,11 @@
     animation: dogTongue .55s infinite;
 }
 
-
-
 #dogEyebrows {
     transform-box: fill-box;
     transform-origin: center;
     animation: eyebrows 3s infinite;
 }
-
-
-
-
 
 #catTail {
     transform-box: fill-box;
@@ -136,13 +117,11 @@
     animation: sway2 2.5s infinite;
 }
 
-
 #catEyes {
     transform-box: fill-box;
     transform-origin: center;
     animation: catEyes 5s 2s linear infinite;
 }
-
 
 #catYellow {
     transform-box: fill-box;

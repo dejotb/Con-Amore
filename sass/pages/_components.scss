@@ -1,13 +1,10 @@
 
 
-
 .main-services {
     padding: 11rem 2rem 0;
     flex: 1;
     display: flex;
     flex-direction: column;
-    // grid-template-rows: min-content 1fr min-content;
-    // grid-row-gap: 5rem;
     justify-items: center;
     align-items: center;
     background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
@@ -18,10 +15,6 @@
         @include componentAfter;
         background-color: $color-primary;
         clip-path: polygon(100% 97%, 100% 100%, 0 100%, 0 100%, 45% 99%, 62% 99%, 83% 98%);
-    }
-
-    &__box {
-        // margin: 0 2rem;
     }
 
     &__list {

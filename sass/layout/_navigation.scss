@@ -13,7 +13,6 @@
         padding: 0 5vw;
     }
 
-
     &__logo {
         width: 15rem;
         height: auto;
@@ -53,7 +52,6 @@
             transition: transform .8s cubic-bezier(.42,.97,.52,1.49);
             background: linear-gradient(rgba($color-primary, .3), 2%,  rgba($color-primary, .01)), white;
         }
-
     }
 
     &__item {
@@ -64,10 +62,10 @@
         }
 
         @media only screen and (max-width: $bp-small) {
+
             &:not(:last-child) {
                 margin-right: 0;
                 margin-bottom: 3rem;
-
             }
         }
     }
@@ -82,7 +80,6 @@
         padding: 3px .8rem;
         border-radius: 2px;
         transition: all .2s;
-        // box-shadow: $shadow-1;
     }
 
     &__link:hover,
@@ -139,7 +136,6 @@
             top: 1rem;
         }
     }
-
 }
 
 .showMenu {
@@ -148,9 +144,7 @@ transform: translateY(0);
 
 .iconX {
     .hamburger__line {
-
         background-color: transparent;
-
 
         &::before,
         &::after {

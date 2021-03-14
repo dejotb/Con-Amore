@@ -22,9 +22,7 @@
         @media only screen and (max-width: $bp-large) {
             grid-template-columns: repeat(auto-fit, 12rem);
             grid-auto-rows: 12rem;
-            // grid-column-gap: 2rem;
         }
-
     }
 
     &__card {
@@ -35,11 +33,11 @@
         box-shadow: $shadow-2;
 
         &:hover {
-            transform: translate3d(0, -.5rem, 0) ;
+            transform: translate3d(0, -.5rem, 0);
             box-shadow: $shadow-3;
         }
 
-        &:hover .service__icon{
+        &:hover .service__icon {
             transform: rotate(3deg);
         }
     }
@@ -62,7 +60,6 @@
     }
 
     &__link:focus .service__button{
-        // border: 5px $color-primary-dark solid;
         transform: rotate(3deg) scale(1.25) ;
         outline: none;
     }
