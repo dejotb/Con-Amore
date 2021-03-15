@@ -2,8 +2,8 @@
 const menu = document.querySelector(".nav__list");
 const ham = document.querySelector(".hamburger");
 
-const header = document.querySelector(".header");
-const main = document.querySelector(".main");
+const header = document.querySelector(".header-blur");
+const main = document.querySelector(".main-blur");
 const mediaQuery = window.matchMedia('(max-width: 600px)')
 
 

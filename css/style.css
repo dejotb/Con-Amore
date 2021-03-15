@@ -254,7 +254,6 @@ body {
   outline-width: 1px;
 }
 .nav__list {
-  margin-left: auto;
   font-size: 1.6rem;
   display: flex;
   list-style: none;
@@ -303,19 +302,13 @@ body {
 
 .hamburger {
   border: none;
+  outline: none;
   cursor: pointer;
   width: 3.5rem;
   height: 3rem;
   background-color: #fff;
-  display: none;
-  transition: transform 0.5s ease-in-out;
   z-index: 100;
-}
-.hamburger:hover, .hamburger:focus {
-  transform: rotate(360deg);
-  outline-offset: 5px;
-  outline-color: #45A86E;
-  outline-style: groove;
+  display: none;
 }
 @media only screen and (max-width: 37.5em) {
   .hamburger {
@@ -325,14 +318,14 @@ body {
 .hamburger__line {
   content: "";
   display: block;
-  height: 3px;
+  height: 4px;
   width: 100%;
   background-color: #696969;
   position: relative;
   transition: all 0.2s;
 }
 .hamburger__line::before, .hamburger__line::after {
-  height: 3px;
+  height: 4px;
   width: 100%;
   background-color: #696969;
   content: "";
@@ -913,8 +906,16 @@ body {
   flex-direction: column;
 }
 
+.header-services {
+  padding: 11rem 0 2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: url(../img/groovepaper.png);
+}
+
 .main-services {
-  padding: 11rem 2rem 0;
+  padding: 0 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -937,7 +938,6 @@ body {
 .main-services__list {
   display: grid;
   justify-items: start;
-  padding-top: 4rem;
   list-style-type: none;
   position: relative;
   z-index: 2;
@@ -957,7 +957,7 @@ body {
   transform: translateY(-2px);
 }
 .main-services__text {
-  padding: 4rem 0 2rem;
+  padding: 0 0 2rem;
   display: grid;
   z-index: 2;
 }
