@@ -96,13 +96,26 @@
 
 .hamburger {
     border: none;
-    outline: none;
+
     cursor: pointer;
     width: 3.5rem;
     height: 3rem;
     background-color: $color-white;
-    z-index: 100;
     display: none;
+    transition: transform .5s ease-in-out;
+    z-index: 100;
+
+    &:hover,
+    &:focus  {
+        transform: rotate(360deg);
+        outline-offset: 5px;
+        outline-color: $color-primary;
+        outline-style: groove;
+
+    }
+
+
+
 
     @media only screen and (max-width: $bp-small) {
         display: block;
@@ -111,7 +124,7 @@
     &__line {
     content: "";
     display: block;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: $color-grey-dark-1;
     position: relative;
@@ -120,7 +133,7 @@
 
     &::before,
     &::after {
-        height: 4px;
+        height: 3px;
         width: 100%;
         background-color: $color-grey-dark-1;
         content: "";

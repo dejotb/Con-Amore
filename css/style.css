@@ -303,13 +303,19 @@ body {
 
 .hamburger {
   border: none;
-  outline: none;
   cursor: pointer;
   width: 3.5rem;
   height: 3rem;
   background-color: #fff;
-  z-index: 100;
   display: none;
+  transition: transform 0.5s ease-in-out;
+  z-index: 100;
+}
+.hamburger:hover, .hamburger:focus {
+  transform: rotate(360deg);
+  outline-offset: 5px;
+  outline-color: #45A86E;
+  outline-style: groove;
 }
 @media only screen and (max-width: 37.5em) {
   .hamburger {
@@ -319,14 +325,14 @@ body {
 .hamburger__line {
   content: "";
   display: block;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background-color: #696969;
   position: relative;
   transition: all 0.2s;
 }
 .hamburger__line::before, .hamburger__line::after {
-  height: 4px;
+  height: 3px;
   width: 100%;
   background-color: #696969;
   content: "";
