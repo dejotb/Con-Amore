@@ -1,9 +1,9 @@
 
 // COLOR VARIABLES
+
 $color-primary: #45A86E;
 $color-primary-dark: #2a9254;
 $color-primary-light: lighten($color-primary, 15%);
-
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
@@ -14,10 +14,13 @@ $color-white: #fff;
 $color-yellow: #FFDC64;
 
 // FONT VARIABLES
+
 $font-primary: 'Lato', sans-serif;
 $font-display: 'Architects Daughter', cursive;
 
+
 // RESPONSIVE BREAKPOINTS
+
 $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
 $bp-medium: 50em;    // 800px;

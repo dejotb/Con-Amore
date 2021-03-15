@@ -17,7 +17,6 @@
         justify-items: center;
         grid-gap: 2rem;
         padding-bottom: 6rem;
-
     }
 
     &__card {
@@ -31,7 +30,6 @@
         display: grid;
         grid-row-gap: 2rem;
         justify-items: start;
-
     }
 
     &__table {
@@ -59,7 +57,6 @@
         outline: none;
         background-color: $color-yellow;
     }
-
 
     &__link:hover .contact__icon,
     &__link:active .contact__icon,

@@ -9,11 +9,9 @@
     margin-top: -1rem;
 }
 
-
 @mixin boxLayout {
     padding-bottom: 10rem;
 }
-
 
 @mixin componentAfter {
     content: '';

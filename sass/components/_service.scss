@@ -29,7 +29,6 @@
         background-color: $color-primary;
         transition: all .2s;
         border-radius: 5px;
-
         box-shadow: $shadow-2;
 
         &:hover {
@@ -56,7 +55,6 @@
         border: 2px transparent solid;
         transition: all .2s;
         outline: none;
-
     }
 
     &__link:focus .service__button{
@@ -72,7 +70,6 @@
         justify-items: center;
         align-items: center;
         transition: all .2s;
-
     }
 
     &__icon {
@@ -90,7 +87,6 @@
             width: 12rem;
         }
     }
-
 }
 
 

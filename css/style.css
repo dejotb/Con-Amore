@@ -7,6 +7,10 @@
   box-sizing: inherit;
 }
 
+* {
+  scroll-margin-top: 6rem;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -27,10 +31,6 @@ body {
 
 ::selection {
   background-color: #FFDC64;
-}
-
-* {
-  scroll-margin-top: 6rem;
 }
 
 .pg {

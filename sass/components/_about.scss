@@ -7,8 +7,6 @@
     background-repeat: space;
     background-blend-mode: overlay;
 
-
-
     &:after {
         @include componentAfter;
         background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
@@ -35,7 +33,6 @@
         box-shadow: $shadow-2;
         transition: all .2s;
         backface-visibility: hidden;
-
 
         &:hover {
             transform: translate3d(0, -.5rem, 0) scale(1.01);
