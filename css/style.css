@@ -46,7 +46,7 @@ body {
 }
 
 .mt {
-  margin-top: -4rem;
+  margin-top: -1rem;
 }
 
 .heading-1 {
@@ -219,6 +219,26 @@ body {
   }
   90% {
     transform: translateY(0) translateX(-0.5rem);
+  }
+}
+@keyframes patch {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(10%);
+  }
+  90% {
+    transform: translateY(0);
   }
 }
 .nav {
@@ -462,6 +482,12 @@ body {
   transform-box: fill-box;
   transform-origin: top;
   animation: dogTongue 0.55s infinite;
+}
+
+#dogPatch {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: patch 3s infinite;
 }
 
 #dogEyebrows {
@@ -907,7 +933,7 @@ body {
 }
 
 .header-services {
-  padding: 11rem 0 2rem;
+  padding: 11rem 2rem 2rem;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -915,7 +941,7 @@ body {
 }
 
 .main-services {
-  padding: 0 2rem 0;
+  padding: 0 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
