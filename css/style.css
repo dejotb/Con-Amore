@@ -187,10 +187,10 @@ body {
 }
 @keyframes dogHead {
   0%, 100% {
-    transform: rotate(-1deg) translateX(1px) scale(1.01);
+    transform: rotate(-1deg) scale(1.01);
   }
   50% {
-    transform: rotate(0deg) translateX(1px) translateY(2px);
+    transform: rotate(0deg) translateY(1px);
   }
 }
 @keyframes dogTongue {
