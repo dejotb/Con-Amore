@@ -13,7 +13,6 @@
         padding: 0 5vw;
     }
 
-
     &__logo {
         width: 15rem;
         height: auto;
@@ -27,7 +26,7 @@
     }
 
     &__logo-link:focus {
-        outline-color: $color-primary;
+        outline-color: initial;
         outline-style: groove;
         outline-offset: 3px;
         outline-width: 1px;
@@ -39,7 +38,7 @@
         list-style: none;
 
         @media only screen and (max-width: $bp-small) {
-            border-top: 1px solid $color-primary;
+            // border-top: 1px solid $color-primary;
             background-color: $color-white;
             position: absolute;
             top: 100%;
@@ -53,7 +52,6 @@
             transition: transform .8s cubic-bezier(.42,.97,.52,1.49);
             background: linear-gradient(rgba($color-primary, .3), 2%,  rgba($color-primary, .01)), white;
         }
-
     }
 
     &__item {
@@ -64,10 +62,10 @@
         }
 
         @media only screen and (max-width: $bp-small) {
+
             &:not(:last-child) {
                 margin-right: 0;
                 margin-bottom: 3rem;
-
             }
         }
     }
@@ -82,7 +80,6 @@
         padding: 3px .8rem;
         border-radius: 2px;
         transition: all .2s;
-        // box-shadow: $shadow-1;
     }
 
     &__link:hover,
@@ -98,31 +95,41 @@
 
 .hamburger {
     border: none;
-    outline: none;
     cursor: pointer;
     width: 3.5rem;
     height: 3rem;
     background-color: $color-white;
     z-index: 100;
     display: none;
+    transition: transform .5s;
+
+
+    &:focus {
+        // outline-color: $color-yellow;
+        outline-style: ridge;
+        outline-offset: 3px;
+        outline-width: 2px;
+    }
+
 
     @media only screen and (max-width: $bp-small) {
         display: block;
     }
 
     &__line {
-    content: "";
     display: block;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: $color-grey-dark-1;
     position: relative;
     transition: all .2s;
 
 
+
+
     &::before,
     &::after {
-        height: 4px;
+        height: 3px;
         width: 100%;
         background-color: $color-grey-dark-1;
         content: "";
@@ -139,7 +146,6 @@
             top: 1rem;
         }
     }
-
 }
 
 .showMenu {
@@ -148,9 +154,7 @@ transform: translateY(0);
 
 .iconX {
     .hamburger__line {
-
         background-color: transparent;
-
 
         &::before,
         &::after {
