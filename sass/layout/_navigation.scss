@@ -105,10 +105,10 @@
 
 
     &:focus {
-        // outline-color: $color-yellow;
+        outline-color: initial;
         outline-style: ridge;
         outline-offset: 3px;
-        outline-width: 2px;
+        outline-width: 1px;
     }
 
 

@@ -330,9 +330,10 @@ body {
   transition: transform 0.5s;
 }
 .hamburger:focus {
+  outline-color: initial;
   outline-style: ridge;
   outline-offset: 3px;
-  outline-width: 2px;
+  outline-width: 1px;
 }
 @media only screen and (max-width: 37.5em) {
   .hamburger {
