@@ -4,9 +4,6 @@ const ham = document.querySelector(".hamburger");
 
 const header = document.querySelector(".header-blur");
 const main = document.querySelector(".main-blur");
-const mediaQuery = window.matchMedia('(max-width: 600px)')
-
-
 
 // TOGGLE HAMBURGER MENU AND BLUR
 
@@ -36,6 +33,7 @@ function toggleMenu() {
       header.classList.remove("blur");
       main.classList.remove("blur");
       ham.classList.remove("iconX");
+
     } else {
       menu.classList.add("showMenu");
     }
