@@ -38,35 +38,6 @@
         ;
     }
 
-    &__heading {
-        grid-area: heading;
-        text-align: center;
-        display: block;
-        margin-bottom: 5px;
-
-        @media only screen and (max-width: $bp-small) {
-            margin: 0 auto;
-            margin-bottom: 1rem;
-        }
-    }
-
-    &__heading--sub {
-        font-family: $font-primary;
-        font-size: 2.2rem;
-        line-height: 1.5;
-        display: block;
-        color: $color-grey-dark-1;
-        text-transform: uppercase;
-
-        @media only screen and (max-width: $bp-large) {
-            font-size: 1.8rem;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            font-size: 1.6rem;
-        }
-    }
-
     &__img {
         grid-area: img;
         width: 48vmin;
@@ -93,6 +64,41 @@
           }
     }
 }
+
+
+.heading {
+
+    &__heading {
+    grid-area: heading;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        }
+    }
+
+    &--sub {
+        font-family: $font-primary;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        display: block;
+        text-align: center;
+        color: $color-grey-dark-1;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.8rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
 
 
 .dogEyes {

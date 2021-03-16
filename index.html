@@ -15,8 +15,8 @@
         <div class="nav__logo">
             <a href="index.html" class="nav__logo-link"><img src="img/logo.png" alt="odnośnik do strony strony głównej"></a>
         </div>
-        <button class="hamburger" aria-label="Hamburger Menu" role="button">
-            <div class="hamburger__line"></div>
+        <button class="hamburger" aria-label="Nawigacja" aria-expanded="false">
+            <span class="hamburger__line"></span>
         </button>
         <ul class="nav__list">
             <li class="nav__item">
@@ -35,16 +35,16 @@
 
     </nav>
     <header class="header header-blur">
-        <h1 class="heading-1 header__heading">
-            <div class="header__heading">Con Amore</div>
-            <span class="header__heading--sub">Przychodnia Weterynaryjna</span>
-            <span class="header__heading--sub">Salon Strzyżeń</span>
+        <h1 class="heading--1 header__heading">
+            <div class="heading__heading">Con Amore</div>
+            <span class="heading--sub">Przychodnia Weterynaryjna</span>
+            <span class="heading--sub">Salon Strzyżeń</span>
         </h1>
-        <a href="#kontakt" class="btn header__btn" role="button" title="Kontakt">
+        <a href="#kontakt" class="btn header__btn" alt="link do sekcji: kontakt">
             Skontaktuj się z nami!
         </a>
         <div class="header__img">
-            <svg width="100%" height="100%" viewBox="0 0 540 498" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="100%" height="100%" viewBox="0 0 540 498" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <g class="catYellow">
                 <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M99.2023 493.531C82.5537 496.425 68.5429 496.498 56.951 496.224C48.6449 496.023 41.5711 496.215 35.6656 494.499C24.384 491.231 17.6387 487.325 14.8548 476.545C11.7606 464.57 10.3094 445.192 22.5677 422.83C24.9317 418.512 30.2439 415.08 34.543 411.639C24.5027 402.713 24.2653 388.51 29.4863 371.369C28.6465 370.127 24.6669 389.377 21.5909 389.971C20.2857 390.226 15.6399 386.712 14.8184 382.386C13.8965 377.594 15.2839 371.588 15.503 371.058C17.94 365.253 23.4621 356.71 33.6758 351.097C41.7536 346.661 51.7574 344.406 59.8536 343.42C85.5749 339.806 107.499 356.418 113.989 366.203C116.207 369.561 120.241 375.887 119.073 382.212C118.434 385.717 117.275 388.775 113.615 390.436C109.836 392.134 100.005 371.141 101.667 368.293C106.596 386.082 108.357 398.149 96.82 410.544C99.3301 413.082 102.57 414.432 104.971 416.559C108.312 419.526 110.703 423.222 113.167 426.727C119.894 436.284 122.514 445.895 123.646 455.488C124.768 464.981 124.458 474.473 118.069 482.25C117.393 483.071 115.887 485.189 114.911 486.065C113.049 487.736 110.904 489.954 108.211 491.085C106.431 491.834 104.651 492.801 102.817 493.13C101.512 493.349 100.27 493.34 99.2023 493.531Z" fill="#FDFDEB" stroke="black" stroke-width="0.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M107.253 420.309C104.889 423.294 101.923 425.521 100.526 428.36C96.775 436.036 97.341 443.32 99.0022 449.508C100.682 455.769 103.539 460.908 110.695 464.167C114.227 465.773 118.69 465.983 123.154 465.226C123.656 448.513 119.01 433.836 107.253 420.309Z" fill="#FBF250" stroke="#FBF250" stroke-width="0.00588235" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -177,19 +177,19 @@
     </header>
     <main class="main main-blur">
         <section id="oferta" class="about">
-            <h2 class="heading-2 heading-2--light">Oferta</h2>
+            <h2 class="heading--2 heading--light">Oferta</h2>
             <div class="about__box">
                 <div class="about__card">
-                    <img class="about__icon" src="img/icon-cross.svg" alt=""></img>
-                    <h3 class="heading-3">Przychodnia Weterynaryjna</h3>
+                    <img class="about__icon" src="img/icon-cross.svg" alt="">
+                    <h3 class="heading--3">Przychodnia Weterynaryjna</h3>
                     <div class="pg">
                         <p>Zajmujemy się małymi zwierzętami domowymi i towarzyszącymi – szczególnie psami i kotami.</p>
                         <p>W naszej przychodni weterynaryjnej oferujemy szeroki wachlarz usług z zakresu interny i chirurgii, oraz specjalistyczne usługi z wielu innych dziedzin.</p>
                     </div>
                 </div>
                 <div class="about__card">
-                    <img class="about__icon" src="img/icon-cut.svg" alt=""></img>
-                    <h3 class="heading-3">Salon Strzyżeń</h3>
+                    <img class="about__icon" src="img/icon-cut.svg" alt="">
+                    <h3 class="heading--3">Salon Strzyżeń</h3>
                     <div class="pg">
                         <p> W naszym salonie pielęgnacji oferujemy strzyżenie psów i kotów. W cenę zabiegu wliczone jest obcinanie pazurów oraz czyszczenie uszu. Oferujemy bezstresowe strzyżenie psów, także w obecności właściciela psa.</p>
                         <p>Zapraszamy pieski małych i średnich ras oraz wszystkie wielorasowe psiaki do skorzystania z profesjonalnego strzyżenia, w bezstresowej atmosferze.</p>
@@ -200,7 +200,7 @@
 
 
         <section id="specjalizacje" class="service">
-            <h2 class="heading-2">Specjalizacje</h2>
+            <h2 class="heading--2">Specjalizacje</h2>
             <div class="service__box">
                 <div class="service__card">
                     <a href="pages/profilaktyka_leczenie_ogólne.html" class="service__link" role="button" title="Profilaktyka i Leczenie Ogólne">
@@ -327,11 +327,11 @@
         </section>
 
         <section id="kadra" class="team">
-            <h2 class="heading-2 heading-2--light">Nasza Kadra</h2>
+            <h2 class="heading--2 heading--light">Nasza Kadra</h2>
             <div class="team__box">
                 <div class="team__card">
                     <div class="team__img team__img-1"></div>
-                    <h3 class="heading-3">lek. wet. Carolina Imparato</h3>
+                    <h3 class="heading--3">lek. wet. Carolina Imparato</h3>
                     <div class="pg">
                         <p>Specjalnością Pani doktor jest rozród małych zwierząt. W szczególności inseminacja, ustalanie prawidłowego terminu krycia, cytologia, prowadzenie ciąży, neonatologia i pediatria.</p>
                         <p>Pani doktor jest absolwentką Wydziału Medycyny Weterynaryjnej w Warszawie. Po studiach odbyła dwuletni staż w Specjalistycznej Klinice Rozdrodu we Włoszech u dr L. Salamon oraz w całodobowej lecznicy w Nowarze pod Mediolanem.
@@ -341,7 +341,7 @@
                 </div>
                 <div class="team__card">
                     <div class="team__img team__img-2"></div>
-                    <h3 class="heading-3">lek. wet. Agnieszka Książyk</h3>
+                    <h3 class="heading--3">lek. wet. Agnieszka Książyk</h3>
                     <div class="pg">
                         <p>Pani doktor specjalizuje się w internie, badaniach laboratoryjnych i mikrobiologicznych oraz konsultuje gryzonie, i małe ssaki.</p>
                         <p>Pani weterynarz jest absolwentką Wydziału Medycyny Weterynaryjnej SGGW w Warszawie. Doświadczenie zdobywała w laboratorium weterynaryjnym w dziale mikrobiologii.
@@ -351,7 +351,7 @@
                 </div>
                 <div class="team__card">
                     <div class="team__img team__img-3"></div>
-                    <h3 class="heading-3">lek. wet. Oktawiusz Krawczyński</h3>
+                    <h3 class="heading--3">lek. wet. Oktawiusz Krawczyński</h3>
                     <div class="pg">
                         <p>Pan doktor specjalizuje się w chirurgii i ortopedii. W naszej przychodni wykonuje zabiegi chirurgiczne, operacje na jamie brzusznej i klatce piersiowej, a także zabiegi ortopedyczne, konsultuje również przypadki ortopedyczne.</p>
                         <p>Jest absolwentem Wydziału Medycyny Weterynaryjnej w Warszawie. Odbył studia podyplomowe z zakresu chorób psów i kotów.
@@ -360,7 +360,7 @@
                 </div>
                 <div class="team__card">
                     <div class="team__img team__img-4"></div>
-                    <h3 class="heading-3">Ewa Wasilewska</h3>
+                    <h3 class="heading--3">Ewa Wasilewska</h3>
                     <div class="pg">
                         <p>Pani Ewa zajmuje sie w naszej przychodni groomingiem czyli strzyżeniem i kąpaniem psów, i kotów. W swojej pracy jest niezwykle sprawna manualnie oraz ma zmysł artystyczny.Jej ulubioną rasą jest yorkshire terrier, w których się specjalizuje i których jest wieloletnią hodowczynią.</p>
                         <p>Prywatnie właścicielka yorka, chihuahua oraz dwóch kotów rasy: brytyjski niebieski.
@@ -371,10 +371,10 @@
         </section>
 
         <section id="kontakt" class="contact">
-            <h2 class="heading-2">Kontakt</h2>
+            <h2 class="heading--2">Kontakt</h2>
             <div class="contact__box">
                 <div class="contact__card">
-                    <h3 class="heading-4">Przychodnia Weterynaryjna Con Amore</h3>
+                    <h3 class="heading--4">Przychodnia Weterynaryjna Con Amore</h3>
                     <div class="contact__text">
                             <a href="#map" class="contact__link">
                                 <img src="img/icon-map-marker.svg" alt="" class="contact__icon">
@@ -396,7 +396,7 @@
                     </div>
                 </div>
                 <div class="contact__card">
-                    <h3 class="heading-4 ">Godziny otwarcia:</h3>
+                    <h3 class="heading--4 ">Godziny otwarcia:</h3>
                     <div class="contact__text">
                         <table class="contact__table">
                             <tr>
@@ -424,9 +424,9 @@
                 </div>
             </div>
         </section>
-        <section id="map" class="map">
+        <div id="map" class="map">
             <iframe title="Mapa dojazdu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.21452931534!2d21.223594002364184!3d52.14860818779438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192b43ac00fe31%3A0xbf407091d3a42283!2sGabinet%20weterynaryjny%20ConAmore!5e0!3m2!1spl!2spl!4v1592157461587!5m2!1spl!2spl" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" display="block"></iframe>
-        </section>
+        </div>
 
     </main>
     <footer class="footer">

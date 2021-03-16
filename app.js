@@ -37,6 +37,12 @@ function toggleMenu() {
     }
   }
 
+  ham.addEventListener( 'click', function() {
+    const isOpened = ham.getAttribute( 'aria-expanded' ) === 'true';
+    ham.classList.toggle( 'btn-menu_open', !isOpened );
+    ham.setAttribute( 'aria-expanded', String( !isOpened ) );
+  } );
+
 const menuLinks = document.querySelectorAll(".nav__item");
 
 menuLinks.forEach(
@@ -44,8 +50,3 @@ menuLinks.forEach(
         nav__link.addEventListener("click", toggleMenu);
     }
   )
-
-
-
-
-
