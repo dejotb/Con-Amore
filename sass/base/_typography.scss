@@ -1,13 +1,17 @@
 
 .heading-1 {
     font-family: $font-display;
-    font-size: 10vmin;
+    font-size: 8.5rem;
     color: $color-primary;
     line-height: 1;
     font-weight: 400;
 
+    @media only screen and (max-width: $bp-large) {
+        font-size: 6rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
-        font-size: 5rem;
+        font-size: 5.5rem;
     }
 }
 

@@ -51,14 +51,19 @@ body {
 
 .heading-1 {
   font-family: "Architects Daughter", cursive;
-  font-size: 10vmin;
+  font-size: 8.5rem;
   color: #45A86E;
   line-height: 1;
   font-weight: 400;
 }
+@media only screen and (max-width: 62.5em) {
+  .heading-1 {
+    font-size: 6rem;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .heading-1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
 }
 
@@ -436,11 +441,16 @@ body {
 }
 .header__heading--sub {
   font-family: "Lato", sans-serif;
-  font-size: 3vmin;
+  font-size: 2.2rem;
   line-height: 1.5;
   display: block;
   color: #696969;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 62.5em) {
+  .header__heading--sub {
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (max-width: 37.5em) {
   .header__heading--sub {
