@@ -1,7 +1,6 @@
 
 const menu = document.querySelector(".nav__list");
 const ham = document.querySelector(".hamburger");
-
 const header = document.querySelector(".header-blur");
 const main = document.querySelector(".main-blur");
 
@@ -24,7 +23,6 @@ function toggleHam() {
   }
 }
 
-
 ham.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -38,7 +36,6 @@ function toggleMenu() {
       menu.classList.add("showMenu");
     }
   }
-
 
 const menuLinks = document.querySelectorAll(".nav__item");
 
