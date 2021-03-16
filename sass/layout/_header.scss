@@ -87,53 +87,69 @@
         padding: 1rem 2rem;
         justify-self: center;
         animation: heartBeat 1s 1.2s 3;
+
+        @media (prefers-reduced-motion) {
+              animation: none;
+          }
     }
 }
 
-#dogEyes {
+
+.dogEyes {
     transform-box: fill-box;
     transform-origin: center;
     animation: dogEyes 2.5s linear infinite;
 }
 
-#dogHead {
+.dogHead {
     transform-box: fill-box;
     transform-origin: bottom right;
     animation: dogHead 2s linear infinite;
 }
 
-#dogTongue {
+.dogTongue {
     transform-box: fill-box;
     transform-origin: top;
     animation: dogTongue .55s infinite;
 }
 
-#dogPatch {
+.dogPatch {
     transform-box: fill-box;
     transform-origin: center;
     animation: patch 3s infinite;
 }
 
-#dogEyebrows {
+.dogEyebrows {
     transform-box: fill-box;
     transform-origin: center;
     animation: eyebrows 3s infinite;
 }
 
-#catTail {
+.catTail {
     transform-box: fill-box;
     transform-origin: top left;
     animation: sway2 2.5s infinite;
+
+    @media (prefers-reduced-motion) {
+        animation: none;
+    }
 }
 
-#catEyes {
+.catEyes {
     transform-box: fill-box;
     transform-origin: center;
     animation: catEyes 5s 2s linear infinite;
 }
 
-#catYellow {
+.catYellow {
     transform-box: fill-box;
     transform-origin: bottom;
     animation: sway 4s infinite;
+
+    @media (prefers-reduced-motion) {
+        animation: none;
+    }
 }
+
+
+

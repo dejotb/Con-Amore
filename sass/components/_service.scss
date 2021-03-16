@@ -53,8 +53,13 @@
         width: 100%;
         height: 100%;
         border: 2px transparent solid;
-        transition: all .2s;
+        transition: transform .2s;
         outline: none;
+        border: 3px solid transparent;
+    }
+
+    &__link:focus {
+        border-color: $color-yellow;
     }
 
     &__link:focus .service__button{

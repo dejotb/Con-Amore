@@ -8,6 +8,10 @@
 
 * {
     scroll-margin-top: 6rem;
+
+    &:focus {
+        outline-color: $color-yellow;
+    }
 }
 
 html {
@@ -31,6 +35,3 @@ body {
 ::selection {
     background-color: $color-yellow;
 }
-
-
-

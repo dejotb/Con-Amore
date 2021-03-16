@@ -10,6 +10,9 @@
 * {
   scroll-margin-top: 6rem;
 }
+*:focus {
+  outline-color: #FFDC64;
+}
 
 html {
   box-sizing: border-box;
@@ -266,6 +269,7 @@ body {
   width: 15rem;
   height: auto;
   margin-right: auto;
+  outline-width: 5px;
 }
 .nav__logo img {
   width: 100%;
@@ -273,10 +277,8 @@ body {
   display: block;
 }
 .nav__logo-link:focus {
-  outline-color: initial;
-  outline-style: groove;
-  outline-offset: 3px;
-  outline-width: 1px;
+  outline-color: #FFDC64;
+  outline-width: 3px;
 }
 .nav__list {
   font-size: 1.6rem;
@@ -335,7 +337,7 @@ body {
   transition: transform 0.5s;
 }
 .hamburger:focus {
-  outline-color: initial;
+  outline-color: #FFDC64;
   outline-style: ridge;
   outline-offset: 3px;
   outline-width: 1px;
@@ -479,53 +481,68 @@ body {
   justify-self: center;
   animation: heartBeat 1s 1.2s 3;
 }
+@media (prefers-reduced-motion) {
+  .header__btn {
+    animation: none;
+  }
+}
 
-#dogEyes {
+.dogEyes {
   transform-box: fill-box;
   transform-origin: center;
   animation: dogEyes 2.5s linear infinite;
 }
 
-#dogHead {
+.dogHead {
   transform-box: fill-box;
   transform-origin: bottom right;
   animation: dogHead 2s linear infinite;
 }
 
-#dogTongue {
+.dogTongue {
   transform-box: fill-box;
   transform-origin: top;
   animation: dogTongue 0.55s infinite;
 }
 
-#dogPatch {
+.dogPatch {
   transform-box: fill-box;
   transform-origin: center;
   animation: patch 3s infinite;
 }
 
-#dogEyebrows {
+.dogEyebrows {
   transform-box: fill-box;
   transform-origin: center;
   animation: eyebrows 3s infinite;
 }
 
-#catTail {
+.catTail {
   transform-box: fill-box;
   transform-origin: top left;
   animation: sway2 2.5s infinite;
 }
+@media (prefers-reduced-motion) {
+  .catTail {
+    animation: none;
+  }
+}
 
-#catEyes {
+.catEyes {
   transform-box: fill-box;
   transform-origin: center;
   animation: catEyes 5s 2s linear infinite;
 }
 
-#catYellow {
+.catYellow {
   transform-box: fill-box;
   transform-origin: bottom;
   animation: sway 4s infinite;
+}
+@media (prefers-reduced-motion) {
+  .catYellow {
+    animation: none;
+  }
 }
 
 .main {
@@ -598,6 +615,7 @@ body {
 }
 .footer__text {
   font-size: 1.4rem;
+  color: #f9f7f6;
 }
 .footer__contact {
   font-size: 1.3rem;
@@ -717,8 +735,12 @@ body {
   width: 100%;
   height: 100%;
   border: 2px transparent solid;
-  transition: all 0.2s;
+  transition: transform 0.2s;
   outline: none;
+  border: 3px solid transparent;
+}
+.service__link:focus {
+  border-color: #FFDC64;
 }
 .service__link:focus .service__button {
   transform: rotate(3deg) scale(1.25);

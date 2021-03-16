@@ -17,6 +17,7 @@
         width: 15rem;
         height: auto;
         margin-right: auto;
+        outline-width: 5px;
 
         img {
             width: 100%;
@@ -26,10 +27,8 @@
     }
 
     &__logo-link:focus {
-        outline-color: initial;
-        outline-style: groove;
-        outline-offset: 3px;
-        outline-width: 1px;
+        outline-color: $color-yellow;
+        outline-width: 3px;
     }
 
     &__list {
@@ -38,7 +37,6 @@
         list-style: none;
 
         @media only screen and (max-width: $bp-small) {
-            // border-top: 1px solid $color-primary;
             background-color: $color-white;
             position: absolute;
             top: 100%;
@@ -105,7 +103,7 @@
 
 
     &:focus {
-        outline-color: initial;
+        outline-color: $color-yellow;
         outline-style: ridge;
         outline-offset: 3px;
         outline-width: 1px;
