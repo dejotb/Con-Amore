@@ -605,19 +605,35 @@ body {
   transform: translateY(-0.5rem);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.footer__link__icon {
-  font-size: 1.8rem;
-  display: inline-block;
-}
 .footer__text {
   font-size: 1.4rem;
   color: #f9f7f6;
+  font-style: italic;
 }
 .footer__contact {
   font-size: 1.3rem;
   display: grid;
   grid-gap: 1rem;
   justify-items: start;
+}
+
+.box {
+  max-width: 126rem;
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+}
+.box__card {
+  display: grid;
+  grid-gap: 4rem;
+  justify-items: center;
+  align-content: flex-start;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.2s;
+  backface-visibility: hidden;
 }
 
 .about {
@@ -641,25 +657,9 @@ body {
   background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/groovepaper.png);
   clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
 }
-.about__box {
-  max-width: 126rem;
-  margin: 0 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
-  grid-gap: 2rem;
-  justify-content: space-evenly;
-}
 .about__card {
   background: url(../img/groovepaper.png);
   padding: 6rem 3rem;
-  display: grid;
-  grid-gap: 4rem;
-  justify-items: center;
-  align-content: flex-start;
-  border-radius: 3px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: all 0.2s;
-  backface-visibility: hidden;
 }
 .about__card:hover {
   transform: translate3d(0, -0.5rem, 0) scale(1.01);
@@ -693,8 +693,9 @@ body {
   background-color: #45A86E;
   clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
 }
-.service__box {
+.service__list {
   width: 100%;
+  list-style-type: none;
   justify-content: center;
   padding: 0 1rem 12rem;
   display: grid;
@@ -704,22 +705,22 @@ body {
   grid-row-gap: 7rem;
 }
 @media only screen and (max-width: 62.5em) {
-  .service__box {
+  .service__list {
     grid-template-columns: repeat(auto-fit, 12rem);
     grid-auto-rows: 12rem;
   }
 }
-.service__card {
+.service__item {
   background-color: #45A86E;
   transition: all 0.2s;
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.service__card:hover {
+.service__item:hover {
   transform: translate3d(0, -0.5rem, 0);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.service__card:hover .service__icon {
+.service__item:hover .service__icon {
   transform: rotate(3deg);
 }
 .service__link, .service__link:link, .service__link:visited, .service__link:focus {
@@ -787,26 +788,10 @@ body {
   background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), url(../img/groovepaper.png);
   clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
 }
-.team__box {
-  max-width: 126rem;
-  margin: 0 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
-  grid-gap: 2rem;
-  justify-content: space-evenly;
-}
 .team__card {
   background: url(../img/linedpaper.png);
   background-position: center;
   padding: 5rem 3rem;
-  display: grid;
-  grid-gap: 4rem;
-  justify-items: center;
-  align-content: flex-start;
-  border-radius: 3px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: all 0.2s;
-  backface-visibility: hidden;
 }
 .team__card:hover {
   transform: translate3d(0, -0.5rem, 0);
@@ -899,6 +884,9 @@ body {
   text-align: left;
   font-size: 1.6rem;
 }
+.contact__table th:first-of-type {
+  padding: 5px 1rem;
+}
 .contact__link, .contact__link:link, .contact__link:visited {
   font-size: 1.8rem;
   text-decoration: none;
@@ -956,6 +944,11 @@ body {
   transform: translate3d(0, -0.5rem, 0);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   outline: none;
+}
+
+.icon {
+  font-size: 1.8rem;
+  display: inline-block;
 }
 
 .container-services {

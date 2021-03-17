@@ -13,26 +13,9 @@
         clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
     }
 
-    &__box {
-        max-width: 126rem;
-        margin: 0 2rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
-        grid-gap: 2rem;
-        justify-content: space-evenly;
-    }
-
     &__card {
         background: url(../img/groovepaper.png);
         padding: 6rem 3rem;
-        display: grid;
-        grid-gap: 4rem;
-        justify-items: center;
-        align-content: flex-start;
-        border-radius: 3px;
-        box-shadow: $shadow-2;
-        transition: all .2s;
-        backface-visibility: hidden;
 
         &:hover {
             transform: translate3d(0, -.5rem, 0) scale(1.01);
@@ -50,5 +33,3 @@
         transition: all .2s;
     }
 }
-
-
