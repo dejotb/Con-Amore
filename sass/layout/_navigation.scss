@@ -32,9 +32,11 @@
     }
 
     &__list {
-        font-size: 1.6rem;
-        display: flex;
         list-style: none;
+        font-family: $font-display;
+        font-size: 1.7rem;
+        display: flex;
+
 
         @media only screen and (max-width: $bp-small) {
             background-color: $color-white;
@@ -73,7 +75,7 @@
     &__link:visited {
         text-decoration: none;
         text-transform: uppercase;
-        color: $color-grey-dark-1;
+        color: $color-grey-dark-2;
         display: block;
         padding: 3px .8rem;
         border-radius: 2px;

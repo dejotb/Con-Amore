@@ -18,7 +18,7 @@
         padding: 6rem 3rem;
 
         &:hover {
-            transform: translate3d(0, -.5rem, 0) scale(1.01);
+            transform: translate3d(0, -.5rem, 0);
             box-shadow: $shadow-3;
         }
 

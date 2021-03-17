@@ -18,7 +18,7 @@
         padding: 5rem 3rem;
 
         &:hover {
-            transform: translate3d(0, -.5rem, 0) ;
+            // transform: translate3d((0, -.2rem, 0)) ;
             box-shadow: $shadow-3;
         }
 
@@ -58,18 +58,14 @@
 
     &__link {
         text-decoration: none;
-        color: $color-primary;
+        color: $color-primary-dark;
         transition: all .2s;
 
         &:hover,
-        &:active {
-            color: inherit;
-            background-color: $color-yellow;
-        }
-
+        &:active,
         &:focus {
-            color: inherit;
             background-color: $color-yellow;
+            color: $color-grey-dark-2;
             outline: none;
         }
     }

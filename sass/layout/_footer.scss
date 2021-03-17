@@ -53,9 +53,10 @@
     }
 
     &__text {
+        font-family: $font-display;
         font-size: 1.4rem;
         color: $color-grey-light-1;
-        font-style: italic;
+        // font-style: italic;
     }
 
     &__contact {

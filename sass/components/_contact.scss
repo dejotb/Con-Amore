@@ -60,6 +60,8 @@
     &__link:focus:not(.contact__icon) {
         outline: none;
         background-color: $color-yellow;
+        color: $color-grey-dark-2;
+        font-weight: 700;
     }
 
     &__link:hover .contact__icon,
