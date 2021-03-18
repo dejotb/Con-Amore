@@ -4,7 +4,7 @@
 .btn:visited {
     font-size: 2rem;
     color: $color-white;
-    background-color: $color-primary-dark;
+    background: linear-gradient(to bottom right, $color-primary-dark 60%, $color-primary);
     text-decoration: none;
     transition: all .2s;
     box-shadow: $shadow-2;
