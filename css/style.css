@@ -445,7 +445,7 @@ body {
   grid-area: btn;
   padding: 1rem 2.5rem;
   justify-self: center;
-  animation: heartBeat 1s 1.2s 3;
+  animation: heartBeat 1.2s 3s 3;
 }
 @media (prefers-reduced-motion) {
   .header__btn {
