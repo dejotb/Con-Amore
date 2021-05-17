@@ -2,7 +2,7 @@
 const menu = document.querySelector(".nav__list");
 const ham = document.querySelector(".hamburger");
 const header = document.querySelector(".header-blur");
-const main = document.querySelector(".main");
+const main = document.querySelector(".main-blur");
 const menuLinks = document.querySelectorAll(".nav__item");
 // TOGGLE HAMBURGER MENU AND BLUR
 
