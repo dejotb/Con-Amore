@@ -1,78 +1,85 @@
-
-
 .contact {
-    @include componentLayout (6rem, 6rem);
-    background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
+  @include componentLayout(6rem, 6rem);
+  background: linear-gradient(
+      rgba($color-primary, 0.01),
+      70%,
+      rgba($color-primary, 0.3)
+    ),
+    url(../img/groovepaper.png);
 
-    &:after {
-        @include componentAfter;
-        background-color: $color-primary;
-        clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
+  &:after {
+    @include componentAfter;
+    background-color: $color-primary;
+    clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
+  }
+
+  &__box {
+    max-width: 126rem;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 2rem;
+    padding-bottom: 6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
     }
+  }
 
-    &__box {
-        max-width: 126rem;
-        margin: 0 2rem;
-        display: grid;
-        justify-items: center;
-        grid-gap: 2rem;
-        padding-bottom: 6rem;
+  &__card {
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    display: grid;
+    grid-row-gap: 2rem;
+    justify-items: start;
+  }
+
+  &__table {
+    text-align: left;
+    font-size: 1.6rem;
+
+    th:first-of-type {
+      padding: 5px 1rem;
     }
+  }
 
-    &__card {
-        display: grid;
-        justify-content: center;
-        grid-row-gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
+  &__link,
+  &__link:link,
+  &__link:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $color-grey-dark-1;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    transition: all 0.2s;
+    padding: 6px;
+  }
 
-    &__text {
-        display: grid;
-        grid-row-gap: 2rem;
-        justify-items: start;
-    }
+  &__link:hover:not(.contact__icon),
+  &__link:active:not(.contact__icon),
+  &__link:focus:not(.contact__icon) {
+    outline: none;
+    background-color: $color-yellow;
+    color: $color-grey-dark-2;
+  }
 
-    &__table {
-        text-align: left;
-        font-size: 1.6rem;
+  &__link:hover .contact__icon,
+  &__link:active .contact__icon,
+  &__link:focus .contact__icon {
+    transform: scale(1.1) rotate(10deg);
+  }
 
-        th:first-of-type {
-            padding: 5px 1rem;
-        }
-    }
-
-    &__link,
-    &__link:link,
-    &__link:visited {
-        font-size: 1.8rem;
-        text-decoration: none;
-        color: $color-grey-dark-1;
-        display: grid;
-        align-items: center;
-        grid-auto-flow: column;
-        grid-gap: 2rem;
-        transition: all .2s;
-        padding: 6px;
-    }
-
-    &__link:hover:not(.contact__icon),
-    &__link:active:not(.contact__icon),
-    &__link:focus:not(.contact__icon) {
-        outline: none;
-        background-color: $color-yellow;
-        color: $color-grey-dark-2;
-        font-weight: 700;
-    }
-
-    &__link:hover .contact__icon,
-    &__link:active .contact__icon,
-    &__link:focus .contact__icon {
-        transform: scale(1.1) rotate(10deg);
-    }
-
-    &__icon {
-        width: 3rem;
-        height: 3rem;
-        transition: all .2s;
-    }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.2s;
+  }
 }

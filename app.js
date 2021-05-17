@@ -6,14 +6,16 @@ const main = document.querySelector(".main");
 const menuLinks = document.querySelectorAll(".nav__item");
 // TOGGLE HAMBURGER MENU AND BLUR
 
+
 function toggleHam() {
   const blurHeader = header.classList.contains("blur");
   const blurMain = main.classList.contains("blur");
   const isOpened = ham.getAttribute( 'aria-expanded' ) === 'true';
   const menuOpen = menu.classList.contains("showMenu")
 
-  console.log(blurHeader, blurMain);
+  // console.log(blurHeader, blurMain);
   if ( !blurHeader && !blurMain) {
+
     header.classList.toggle("blur");
     main.classList.toggle("blur");
     ham.classList.toggle("iconX");
@@ -23,21 +25,46 @@ function toggleHam() {
 
   if (menuOpen) {
     menu.classList.remove("showMenu");
+    console.log(menu.classList.contains('showMenu'));
     header.classList.toggle("blur");
     main.classList.toggle("blur");
     ham.classList.toggle("iconX");
   } else {
     menu.classList.add("showMenu");
+    console.log(menu.classList.contains('showMenu'));
   }
+
+  window.addEventListener('resize', function(e){
+  if (e.target.innerWidth > 600 && menu.classList.contains('showMenu')) {
+    header.classList.remove("blur");
+    main.classList.remove("blur");
+  } else if (e.target.innerWidth < 600 && menu.classList.contains('showMenu')) {
+    header.classList.add("blur");
+    main.classList.add("blur");
+  }
+})
 }
 
 
 ham.addEventListener("click", toggleHam);
 
 
+function toggleMenu () {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    header.classList.remove("blur");
+    main.classList.remove("blur");
+    ham.classList.remove("iconX");
+
+  } else {
+    menu.classList.add("showMenu");
+  }
+
+}
+
 menuLinks.forEach(
   function(nav__link) {
-      nav__link.addEventListener("click", toggleHam);
+      nav__link.addEventListener("click", toggleMenu);
   }
 )
 

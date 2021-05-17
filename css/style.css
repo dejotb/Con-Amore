@@ -113,9 +113,10 @@ body {
 }
 .heading--4 {
   font-family: "Architects Daughter", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+  margin: 0 1rem;
 }
 .heading--light {
   color: #f9f7f6;
@@ -862,9 +863,15 @@ body {
   max-width: 126rem;
   margin: 0 2rem;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   grid-gap: 2rem;
   padding-bottom: 6rem;
+}
+@media only screen and (max-width: 50em) {
+  .contact__box {
+    grid-template-columns: 1fr;
+  }
 }
 .contact__card {
   display: grid;
@@ -899,7 +906,6 @@ body {
   outline: none;
   background-color: #FFDC64;
   color: #363636;
-  font-weight: 700;
 }
 .contact__link:hover .contact__icon, .contact__link:active .contact__icon, .contact__link:focus .contact__icon {
   transform: scale(1.1) rotate(10deg);
