@@ -1,3 +1,4 @@
+"use strict"
 
 const menu = document.querySelector(".nav__list");
 const ham = document.querySelector(".hamburger");
@@ -69,3 +70,21 @@ menuLinks.forEach(
 )
 
 
+// navbar opacity change
+
+const container = document.querySelector('.container')
+const nav = document.querySelector('.nav')
+
+
+function obCalltoAction(e) {
+  // console.log(e[0].target);
+  if (e[0].intersectionRatio === 1) {
+    nav.classList.remove('nav--fill')
+  } else {
+    nav.classList.add('nav--fill')
+  }
+}
+
+const ob = new IntersectionObserver(obCalltoAction, {target: container, threshold: 1});
+
+ob.observe(container.firstElementChild)

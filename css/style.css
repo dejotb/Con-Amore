@@ -32,6 +32,10 @@ body {
   grid-template-rows: 100vh;
 }
 
+.trigger {
+  position: absolute;
+}
+
 ::selection {
   background-color: #FFDC64;
   color: #363636;
@@ -246,15 +250,20 @@ body {
   }
 }
 .nav {
-  background-color: #fff;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   height: 7rem;
   display: flex;
   padding: 0 12vw;
+  box-shadow: none;
   align-items: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   z-index: 10000;
+  transition: all 0.2s;
+}
+.nav--fill {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 @media only screen and (max-width: 50em) {
   .nav {

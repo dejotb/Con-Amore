@@ -1,179 +1,179 @@
 .nav {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  padding: 0 12vw;
+  box-shadow: none;
+  align-items: center;
+  z-index: 10000;
+  transition: all 0.2s;
+
+  &--fill {
     background-color: $color-white;
-    position: fixed;
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    padding: 0 12vw;
-    align-items: center;
     box-shadow: $shadow-2;
-    z-index: 10000;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        padding: 0 5vw;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 5vw;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+    margin-right: auto;
+    outline-width: 5px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &__logo-link:focus {
+    outline-color: $color-yellow;
+    outline-width: 3px;
+  }
+
+  &__list {
+    list-style: none;
+    font-family: $font-display;
+    font-size: 1.7rem;
+    display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+      background-color: $color-white;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      flex-direction: column;
+      align-self: flex-start;
+      align-items: center;
+      padding: 4rem 0;
+      transform: translateX(150%);
+      transition: transform 0.8s cubic-bezier(0.42, 0.97, 0.52, 1.49);
+      background: linear-gradient(
+          rgba($color-primary, 0.3),
+          2%,
+          rgba($color-primary, 0.01)
+        ),
+        white;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1rem;
     }
 
-    &__logo {
-        width: 15rem;
-        height: auto;
-        margin-right: auto;
-        outline-width: 5px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
+    @media only screen and (max-width: $bp-small) {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
     }
+  }
 
-    &__logo-link:focus {
-        outline-color: $color-yellow;
-        outline-width: 3px;
-    }
+  &__link,
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-grey-dark-2;
+    display: block;
+    padding: 3px 0.8rem;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
 
-    &__list {
-        list-style: none;
-        font-family: $font-display;
-        font-size: 1.7rem;
-        display: flex;
-
-
-        @media only screen and (max-width: $bp-small) {
-            background-color: $color-white;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            left: 0;
-            flex-direction: column;
-            align-self: flex-start;
-            align-items: center;
-            padding: 4rem 0;
-            transform: translateX(150%);
-            transition: transform .8s cubic-bezier(.42,.97,.52,1.49);
-            background: linear-gradient(rgba($color-primary, .3), 2%,  rgba($color-primary, .01)), white;
-        }
-    }
-
-    &__item {
-
-        &:not(:last-child) {
-            margin-right: 1rem;
-
-        }
-
-        @media only screen and (max-width: $bp-small) {
-
-            &:not(:last-child) {
-                margin-right: 0;
-                margin-bottom: 3rem;
-            }
-        }
-    }
-
-    &__link,
-    &__link:link,
-    &__link:visited {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $color-grey-dark-2;
-        display: block;
-        padding: 3px .8rem;
-        border-radius: 2px;
-        transition: all .2s;
-    }
-
-    &__link:hover,
-    &__link:active,
-    &__link:focus {
-        background-color: $color-primary;
-        color: $color-white;
-        transform: translateY(-.5rem);
-        box-shadow: $shadow-2;
-    }
-
+  &__link:hover,
+  &__link:active,
+  &__link:focus {
+    background-color: $color-primary;
+    color: $color-white;
+    transform: translateY(-0.5rem);
+    box-shadow: $shadow-2;
+  }
 }
 
 .hamburger {
-    border: none;
-    cursor: pointer;
-    width: 3.5rem;
-    height: 3rem;
-    background-color: $color-white;
-    z-index: 100;
-    display: none;
-    transition: transform .5s;
+  border: none;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3rem;
+  background-color: $color-white;
+  z-index: 100;
+  display: none;
+  transition: transform 0.5s;
 
+  &:focus {
+    outline-color: $color-yellow;
+    outline-style: ridge;
+    outline-offset: 3px;
+    outline-width: 1px;
+  }
 
-    &:focus {
-        outline-color: $color-yellow;
-        outline-style: ridge;
-        outline-offset: 3px;
-        outline-width: 1px;
-    }
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+  }
 
-
-    @media only screen and (max-width: $bp-small) {
-        display: block;
-    }
-
-    &__line {
+  &__line {
     display: block;
     height: 3px;
     width: 100%;
     background-color: $color-grey-dark-1;
     position: relative;
-    transition: all .2s;
-
-
-
+    transition: all 0.2s;
 
     &::before,
     &::after {
-        height: 3px;
-        width: 100%;
-        background-color: $color-grey-dark-1;
-        content: "";
-        display: block;
-        position: absolute;
-        transition: all .5s;
+      height: 3px;
+      width: 100%;
+      background-color: $color-grey-dark-1;
+      content: "";
+      display: block;
+      position: absolute;
+      transition: all 0.5s;
     }
 
-        &::before {
-            top: -1rem;
-
-        }
-        &::after {
-            top: 1rem;
-        }
+    &::before {
+      top: -1rem;
     }
+    &::after {
+      top: 1rem;
+    }
+  }
 }
 
 .showMenu {
-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .iconX {
-    .hamburger__line {
-        background-color: transparent;
+  .hamburger__line {
+    background-color: transparent;
 
-        &::before,
-        &::after {
-            height: 4px;
-            width: 100%;
-            background-color: $color-primary;
-            content: "";
-            display: block;
-            position: absolute;
-        }
-
-        &::before {
-            top: 0;
-            transform: rotate(225deg);
-        }
-
-        &::after {
-            top: 0;
-            transform: rotate(-225deg);
-        }
+    &::before,
+    &::after {
+      height: 4px;
+      width: 100%;
+      background-color: $color-primary;
+      content: "";
+      display: block;
+      position: absolute;
     }
+
+    &::before {
+      top: 0;
+      transform: rotate(225deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-225deg);
+    }
+  }
 }

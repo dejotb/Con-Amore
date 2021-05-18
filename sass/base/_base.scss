@@ -1,38 +1,42 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 * {
-    scroll-margin-top: 6rem;
+  scroll-margin-top: 6rem;
 
-    &:focus {
-        outline-color: $color-yellow;
-    }
+  &:focus {
+    outline-color: $color-yellow;
+  }
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-grey-dark-1;
-    font-weight: 400;
-    line-height: 1.6;
+  font-family: $font-primary;
+  color: $color-grey-dark-1;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 100vh;
+  display: grid;
+  grid-template-rows: 100vh;
+}
+
+.trigger {
+  position: absolute;
 }
 
 ::selection {
-    background-color: $color-yellow;
-    color: $color-grey-dark-2;
+  background-color: $color-yellow;
+  color: $color-grey-dark-2;
 }
