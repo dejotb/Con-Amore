@@ -74,14 +74,18 @@ menuLinks.forEach(
 
 const container = document.querySelector('.container')
 const nav = document.querySelector('.nav')
+const logo = document.querySelector('.nav__logo')
 
 
 function obCalltoAction(e) {
   // console.log(e[0].target);
   if (e[0].intersectionRatio === 1) {
     nav.classList.remove('nav--fill')
+    logo.classList.remove('nav__logo--fill')
+
   } else {
     nav.classList.add('nav--fill')
+    logo.classList.add('nav__logo--fill')
   }
 }
 
