@@ -1,18 +1,18 @@
 .nav {
-  background-color: transparent;
+  background-color: $color-white;
+  box-shadow: $shadow-2;
   position: fixed;
   width: 100%;
   height: 7rem;
   display: flex;
   padding: 0 12vw;
-  box-shadow: none;
   align-items: center;
   z-index: 10000;
   transition: all 0.15s;
 
-  &--fill {
-    background-color: $color-white;
-    box-shadow: $shadow-2;
+  &--initial {
+    background-color: transparent;
+    box-shadow: none;
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -20,23 +20,26 @@
   }
 
   &__logo {
-    width: 17rem;
-    height: auto;
+    width: 15rem;
+    padding-top: 0;
     margin-right: auto;
     outline-width: 5px;
     transition: all 0.2s;
-    padding-top: 10px;
+
+    z-index: 999;
 
     img {
       width: 100%;
       height: 100%;
       display: block;
+      z-index: 999;
     }
   }
 
-  &__logo--fill {
-    width: 15rem;
-    padding-top: 0;
+  &__logo--initial {
+    width: 16.5rem;
+    height: auto;
+    padding-top: 2px;
   }
 
   &__logo-link:focus {
@@ -49,6 +52,7 @@
     font-family: $font-display;
     font-size: 1.7rem;
     display: flex;
+    transition: all 0.2s;
 
     @media only screen and (max-width: $bp-small) {
       background-color: $color-white;
@@ -60,8 +64,8 @@
       align-self: flex-start;
       align-items: center;
       padding: 4rem 0;
-      transform: translateX(150%);
-      transition: transform 0.8s cubic-bezier(0.42, 0.97, 0.52, 1.49);
+      transform: translateX(120%);
+      transition: transform 0.5s;
       background: linear-gradient(
           rgba($color-primary, 0.3),
           2%,

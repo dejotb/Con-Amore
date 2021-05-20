@@ -5,6 +5,11 @@ const ham = document.querySelector(".hamburger");
 const header = document.querySelector(".header-blur");
 const main = document.querySelector(".main-blur");
 const menuLinks = document.querySelectorAll(".nav__item");
+
+
+const container = document.querySelector('.container')
+const nav = document.querySelector('.nav')
+const logo = document.querySelector('.nav__logo')
 // TOGGLE HAMBURGER MENU AND BLUR
 
 
@@ -30,9 +35,11 @@ function toggleHam() {
     header.classList.toggle("blur");
     main.classList.toggle("blur");
     ham.classList.toggle("iconX");
+    logo.classList.add('nav__logo--initial')
   } else {
     menu.classList.add("showMenu");
     console.log(menu.classList.contains('showMenu'));
+    logo.classList.remove('nav__logo--initial')
   }
 
   window.addEventListener('resize', function(e){
@@ -72,20 +79,18 @@ menuLinks.forEach(
 
 // navbar opacity change
 
-const container = document.querySelector('.container')
-const nav = document.querySelector('.nav')
-const logo = document.querySelector('.nav__logo')
+
 
 
 function obCalltoAction(e) {
-  // console.log(e[0].target);
-  if (e[0].intersectionRatio === 1) {
-    nav.classList.remove('nav--fill')
-    logo.classList.remove('nav__logo--fill')
+  if (e[0].intersectionRatio === 0) {
+    nav.classList.remove('nav--initial')
+    logo.classList.remove('nav__logo--initial')
+
 
   } else {
-    nav.classList.add('nav--fill')
-    logo.classList.add('nav__logo--fill')
+    nav.classList.add('nav--initial')
+    logo.classList.add('nav__logo--initial')
   }
 }
 
