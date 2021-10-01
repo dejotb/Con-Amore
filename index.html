@@ -831,7 +831,20 @@
             />
           </g>
         </svg> -->
-      <img class="header__img" src="./img/hero.svg" alt="" />
+
+      <picture class="header__img">
+        <source
+          srcset="img/hero-small.svg 1x, img/her-small.png 2x"
+          media="(max-width: 768px)"
+        />
+        <img srcset="img/hero.svg 1x, img/her-small.png 2x" alt="" />
+      </picture>
+
+      <!-- <img
+        srcset="img/hero.svg 1x, img/her-small.png 2x"
+        alt=""
+        class="header__img"
+      /> -->
       <!-- </div> -->
       <h1 class="heading--1 header__heading">
         <div class="heading__heading">Con Amore</div>

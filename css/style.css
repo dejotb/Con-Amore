@@ -264,7 +264,7 @@ body {
   background-color: transparent;
   box-shadow: none;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 60em) {
   .nav {
     padding: 0 5vw;
   }
@@ -442,9 +442,9 @@ body {
   width: 59vmax;
   justify-self: center;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 60em) {
   .header__img {
-    width: 55vmax;
+    width: 75vmax;
   }
 }
 @media only screen and (max-width: 50em) {
@@ -868,7 +868,7 @@ body {
   grid-gap: 2rem;
   padding-bottom: 6rem;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 60em) {
   .contact__box {
     grid-template-columns: 1fr;
   }
