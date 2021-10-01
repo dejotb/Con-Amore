@@ -427,7 +427,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -0.5rem;
   background-color: #45a86e;
   clip-path: polygon(82% 92%, 400% 85%, 50% 500%, 0 500%, 0 93%, 57% 90%);
 }
@@ -444,7 +444,7 @@ body {
 }
 @media only screen and (max-width: 50em) {
   .header__img {
-    width: 34vmax;
+    width: 55vmax;
   }
 }
 @media only screen and (max-width: 50em) {
@@ -658,7 +658,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -0.5rem;
   background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), white;
   clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
 }
@@ -693,7 +693,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -0.5rem;
   background-color: #45a86e;
   clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
 }
@@ -788,7 +788,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -0.5rem;
   background: linear-gradient(rgba(255, 255, 255, 0.02), 90%, rgba(69, 168, 110, 0.03)), white;
   clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
 }
@@ -855,7 +855,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -0.5rem;
   background-color: #45a86e;
   clip-path: polygon(35% 99%, 88% 98%, 100% 98%, 100% 100%, 0 100%, 0 97%);
 }
@@ -986,7 +986,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -0.5rem;
   background-color: #45a86e;
   clip-path: polygon(100% 97%, 100% 100%, 0 100%, 0 100%, 45% 99%, 62% 99%, 83% 98%);
 }
