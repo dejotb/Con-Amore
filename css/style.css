@@ -885,6 +885,7 @@ body {
   justify-items: start;
 }
 .contact__table {
+  padding-top: 1rem;
   text-align: left;
   font-size: 1.6rem;
 }
