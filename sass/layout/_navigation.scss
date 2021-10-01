@@ -49,8 +49,9 @@
 
   &__list {
     list-style: none;
-    font-family: $font-display;
+    font-family: $font-primary;
     font-size: 1.7rem;
+    font-weight: 600;
     display: flex;
     transition: all 0.2s;
 
@@ -64,8 +65,8 @@
       align-self: flex-start;
       align-items: center;
       padding: 4rem 0;
-      transform: translateX(120%);
-      transition: transform 0.5s;
+      transform: translateX(150%);
+      transition: transform 0.8s cubic-bezier(0.42, 0.97, 0.52, 1.49);
       background: linear-gradient(
           rgba($color-primary, 0.3),
           2%,

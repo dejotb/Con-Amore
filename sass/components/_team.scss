@@ -1,72 +1,93 @@
-
-
 .team {
-    @include componentLayout (6rem, 6rem);
-    background: linear-gradient(rgba($color-primary, 1), 80%,  rgba($color-primary-dark, 1)),  url(../img/background-cat.svg);
-    background-repeat: space;
-    background-blend-mode: overlay;
+  @include componentLayout(6rem, 6rem);
+  background: linear-gradient(
+      rgba($color-primary, 1),
+      80%,
+      rgba($color-primary-dark, 1)
+    ),
+    url(../img/background-cat.svg);
+  background-repeat: space;
+  background-blend-mode: overlay;
 
-    &:after {
-        @include componentAfter;
-        background: linear-gradient(rgba($color-white, .02), 90%,  rgba($color-primary, .03)), url(../img/groovepaper.png);
-        clip-path: polygon(27% 99%, 66% 99%, 89% 98%, 100% 99%, 100% 100%, 0 100%, 0 98%);
+  &:after {
+    @include componentAfter;
+    background: linear-gradient(
+        rgba($color-white, 0.02),
+        90%,
+        rgba($color-primary, 0.03)
+      ),
+      white;
+    clip-path: polygon(
+      27% 99%,
+      66% 99%,
+      89% 98%,
+      100% 99%,
+      100% 100%,
+      0 100%,
+      0 98%
+    );
+  }
+
+  &__card {
+    background: url(../img/linedpaper.png);
+    background-position: center;
+    padding: 5rem 3rem;
+
+    &:hover {
+      // transform: translate3d((0, -.2rem, 0)) ;
+      box-shadow: $shadow-3;
     }
 
-    &__card {
-        background: url(../img/linedpaper.png);
-        background-position: center;
-        padding: 5rem 3rem;
+    &:hover .team__img {
+      transform: scale(1.05) rotate(3deg);
+    }
+  }
 
-        &:hover {
-            // transform: translate3d((0, -.2rem, 0)) ;
-            box-shadow: $shadow-3;
-        }
+  &__img {
+    background-color: $color-white;
+    display: block;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: all 0.2s;
 
-        &:hover .team__img {
-            transform: scale(1.05) rotate(3deg);
-        }
+    &-1 {
+      background-image: url(../img/wet-1.png);
+      background-position: -1rem 1rem;
     }
 
-    &__img {
-        background-color: $color-white;
-        display: block;
-        width: 13rem;
-        height: 13rem;
-        border-radius: 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-        transition: all .2s;
-
-
-        &-1 {
-            background-image: url(../img/wet-1.png);
-            background-position: -1rem 1rem;
-        }
-
-        &-2 {
-            background-image: url(../img/wet-2.png);
-            background-position: center;
-        }
-
-        &-3 {background-image: url(../img/wet-3.png);
-            background-position: 1rem 1rem;}
-
-        &-4 {background-image: url(../img/wet-4.png);
-            background-position: -2rem 1rem;}
+    &-2 {
+      background-image: url(../img/wet-2.png);
+      background-position: center;
     }
 
-    &__link {
-        text-decoration: none;
-        color: $color-primary-dark;
-        transition: all .2s;
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $color-yellow;
-            color: $color-grey-dark-2;
-            outline: none;
-        }
+    &-3 {
+      background-image: url(../img/wet-3.png);
+      background-position: 1rem 1rem;
     }
+
+    &-4 {
+      background-image: url(../img/wet-4.png);
+      background-position: -2rem 1rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-primary-dark;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $color-yellow;
+      color: $color-grey-dark-2;
+      outline: none;
+    }
+  }
 }

@@ -1,22 +1,19 @@
-
-
 .box {
-    max-width: 126rem;
-    margin: 0 2rem;
+  max-width: 126rem;
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem));
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+
+  &__card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 45rem) );
-    grid-gap: 2rem;
-    justify-content: space-evenly;
-
-
-    &__card {
-        display: grid;
-        grid-gap: 4rem;
-        justify-items: center;
-        align-content: flex-start;
-        border-radius: 3px;
-        box-shadow: $shadow-2;
-        transition: all .2s;
-        backface-visibility: hidden;
-    }
+    grid-gap: 4rem;
+    justify-items: center;
+    align-content: flex-start;
+    border-radius: 3px;
+    box-shadow: $shadow-2;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+  }
 }

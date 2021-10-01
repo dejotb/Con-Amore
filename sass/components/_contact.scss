@@ -1,11 +1,11 @@
 .contact {
   @include componentLayout(6rem, 6rem);
-  background: linear-gradient(
-      rgba($color-primary, 0.01),
-      70%,
-      rgba($color-primary, 0.3)
-    ),
-    url(../img/groovepaper.png);
+  // background: linear-gradient(
+  //     rgba($color-primary, 0.01),
+  //     70%,
+  //     rgba($color-primary, 0.3)
+  //   ),
+  //   url(../img/groovepaper.png);
 
   &:after {
     @include componentAfter;

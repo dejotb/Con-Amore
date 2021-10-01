@@ -1,161 +1,157 @@
-
-
 .header {
-    background-color:   white;
-    background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
-    background-repeat: repeat;
-    padding-top: 7rem;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-template-columns: max-content max-content;
-    position: relative;
-    transition: all .2s;
+  background-color: white;
+  // background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
+  // background-repeat: repeat;
+  padding-top: 20rem;
+  // padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 5rem;
+  // grid-template-rows: max-content max-content max-content;
+  position: relative;
+  // transition: all 0.2s;
 
-    grid-template-areas:
-    "heading   img"
-    "btn       img"
-    ;
+  // grid-template-areas:
+  // "heading   img"
+  // "btn       img";
 
-    &:after {
-        @include componentAfter;
-        background-color: $color-primary;
-        clip-path: polygon(82% 92%, 100% 85%, 100% 100%, 0 100%, 0 93%, 57% 90%);
+  // "img"
+  // "heading"
+  // "time";
+
+  &:after {
+    @include componentAfter;
+    background-color: $color-primary;
+    clip-path: polygon(82% 92%, 400% 85%, 50% 500%, 0 500%, 0 93%, 57% 90%);
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding-top: 15rem;
+    align-content: flex-start;
+    // grid-template-columns: 1fr;
+    // grid-row-gap: 3rem;
+    // grid-template-areas:
+    //   "img"
+    //   "heading"
+    //   "time";
+  }
+
+  &__img {
+    display: block;
+    // grid-area: img;
+    width: 59vmax;
+    // transform-box: fill-box;
+    justify-self: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 34vmax;
     }
-
 
     @media only screen and (max-width: $bp-small) {
-        padding-top: 15rem;
-        align-content: flex-start;
-        grid-template-columns: 1fr;
-        grid-row-gap: 3rem;
-        grid-template-areas:
-            "img"
-            "heading"
-            "btn"
-        ;
+      width: 40vmax;
     }
+  }
 
-    &__img {
-        grid-area: img;
-        width: 48vmin;
-        transform-box: fill-box;
-        justify-self: center;
+  &__time {
+    padding-bottom: 12rem;
+    display: block;
+    // grid-area: time;
+    // padding: 10rem 2.5rem;
+    // justify-self: center;
+    // animation: heartBeat 1.2s 3s 3;
 
-        @media only screen and (max-width: $bp-medium) {
-            width: 34vmin;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            width: 50vmin;
-        }
-    }
-
-    &__btn {
-        grid-area: btn;
-        padding: 1rem 2.5rem;
-        justify-self: center;
-        animation: heartBeat 1.2s 3s 3;
-
-        @media (prefers-reduced-motion) {
-              animation: none;
-          }
-    }
+    // @media (prefers-reduced-motion) {
+    //   animation: none;
+    // }
+  }
 }
 
-
 .heading {
-
-    &__heading {
-    grid-area: heading;
+  &__heading {
+    // grid-area: heading;
     text-align: center;
     display: block;
     margin-bottom: 5px;
 
     @media only screen and (max-width: $bp-small) {
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        }
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &--sub {
+    font-family: $font-primary;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    color: $color-grey-dark-1;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.8rem;
     }
 
-    &--sub {
-        font-family: $font-primary;
-        font-size: 2.2rem;
-        line-height: 1.5;
-        display: block;
-        text-align: center;
-        color: $color-grey-dark-1;
-        text-transform: uppercase;
-
-        @media only screen and (max-width: $bp-large) {
-            font-size: 1.8rem;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            font-size: 1.6rem;
-        }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
     }
+  }
 }
 
-
-
 .dogEyes {
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: dogEyes 2.5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: dogEyes 2.5s linear infinite;
 }
 
 .dogHead {
-    transform-box: fill-box;
-    transform-origin: bottom right;
-    animation: dogHead 2s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom right;
+  animation: dogHead 2s linear infinite;
 }
 
 .dogTongue {
-    transform-box: fill-box;
-    transform-origin: top;
-    animation: dogTongue .55s infinite;
+  transform-box: fill-box;
+  transform-origin: top;
+  animation: dogTongue 0.55s infinite;
 }
 
 .dogPatch {
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: patch 3s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: patch 3s infinite;
 }
 
 .dogEyebrows {
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: eyebrows 3s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: eyebrows 3s infinite;
 }
 
 .catTail {
-    transform-box: fill-box;
-    transform-origin: top left;
-    animation: sway2 2.5s infinite;
+  transform-box: fill-box;
+  transform-origin: top left;
+  animation: sway2 2.5s infinite;
 
-    @media (prefers-reduced-motion) {
-        animation: none;
-    }
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
 }
 
 .catEyes {
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: catEyes 5s 2s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: catEyes 5s 2s linear infinite;
 }
 
 .catYellow {
-    transform-box: fill-box;
-    transform-origin: bottom;
-    animation: sway 4s infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: sway 4s infinite;
 
-    @media (prefers-reduced-motion) {
-        animation: none;
-    }
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
 }
-
-
-

@@ -1,17 +1,13 @@
-
-
 .container-services {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-
 .header-services {
-    padding: 11rem 2rem 2rem;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    background: url(../img/groovepaper.png);
-
+  padding: 11rem 2rem 2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  //   background: url(../img/groovepaper.png);
 }

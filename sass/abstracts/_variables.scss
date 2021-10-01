@@ -1,7 +1,6 @@
-
 // COLOR VARIABLES
 
-$color-primary: #45A86E;
+$color-primary: #45a86e;
 $color-primary-dark: #2a9254;
 $color-primary-light: lighten($color-primary, 15%);
 
@@ -12,24 +11,23 @@ $color-grey-dark-1: #696969;
 $color-grey-dark-2: darken($color-grey-dark-1, 20%);
 
 $color-white: #fff;
-$color-yellow: #FFDC64;
+$color-yellow: #ffdc64;
 
 // FONT VARIABLES
 
-$font-primary: 'Lato', sans-serif;
-$font-display: 'Architects Daughter', cursive;
-
+$font-primary: "Lato", sans-serif;
+$font-display: "Architects Daughter", cursive;
 
 // RESPONSIVE BREAKPOINTS
 
-$bp-largest: 75em;   // 1200px
-$bp-large: 62.5em;   // 1000px
-$bp-medium: 50em;    // 800px;
-$bp-small: 37.5em;    // 600px;
-
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 50em; // 600px;
 
 // SHADOW VARIABLES
 
 $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-$shadow-2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+$shadow-2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 $shadow-3: rgba(0, 0, 0, 0.35) 0px 5px 15px;

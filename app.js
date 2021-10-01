@@ -19,7 +19,6 @@ function toggleHam() {
   const isOpened = ham.getAttribute( 'aria-expanded' ) === 'true';
   const menuOpen = menu.classList.contains("showMenu")
 
-  // console.log(blurHeader, blurMain);
   if ( !blurHeader && !blurMain) {
 
     header.classList.toggle("blur");
@@ -69,6 +68,8 @@ function toggleMenu () {
   }
 
 }
+
+
 
 menuLinks.forEach(
   function(nav__link) {
