@@ -2,7 +2,7 @@
   background-color: white;
   // background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
   // background-repeat: repeat;
-  padding-top: 20rem;
+  padding-top: 14rem;
   // padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
@@ -41,16 +41,16 @@
   &__img {
     display: block;
     // grid-area: img;
-    width: 59vmax;
+    width: 70vw;
     // transform-box: fill-box;
     justify-self: center;
 
     @media only screen and (max-width: $bp-medium) {
-      width: 75vmax;
+      width: 75vw;
     }
 
     @media only screen and (max-width: $bp-small) {
-      width: 40vmax;
+      width: 90vw;
     }
   }
 

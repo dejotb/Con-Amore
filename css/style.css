@@ -63,7 +63,7 @@ body {
   line-height: 1;
   font-weight: 400;
 }
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 60em) {
   .heading--1 {
     font-size: 6rem;
   }
@@ -264,7 +264,7 @@ body {
   background-color: transparent;
   box-shadow: none;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 55em) {
   .nav {
     padding: 0 5vw;
   }
@@ -412,7 +412,7 @@ body {
 
 .header {
   background-color: white;
-  padding-top: 20rem;
+  padding-top: 14rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -439,17 +439,17 @@ body {
 }
 .header__img {
   display: block;
-  width: 59vmax;
+  width: 70vw;
   justify-self: center;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 55em) {
   .header__img {
-    width: 75vmax;
+    width: 75vw;
   }
 }
 @media only screen and (max-width: 50em) {
   .header__img {
-    width: 40vmax;
+    width: 90vw;
   }
 }
 .header__time {
@@ -477,7 +477,7 @@ body {
   color: #696969;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 60em) {
   .heading--sub {
     font-size: 1.8rem;
   }
@@ -708,7 +708,7 @@ body {
   grid-column-gap: 6rem;
   grid-row-gap: 7rem;
 }
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 60em) {
   .service__list {
     grid-template-columns: repeat(auto-fit, 12rem);
     grid-auto-rows: 12rem;
@@ -765,7 +765,7 @@ body {
   padding-top: 5px;
   display: block;
 }
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 60em) {
   .service__title {
     width: 12rem;
   }
@@ -868,7 +868,7 @@ body {
   grid-gap: 2rem;
   padding-bottom: 6rem;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 55em) {
   .contact__box {
     grid-template-columns: 1fr;
   }
