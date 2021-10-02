@@ -1,26 +1,13 @@
 .header {
   background-color: white;
-  // background: linear-gradient(rgba($color-primary, .01), 70%,  rgba($color-primary, .3)), url(../img/groovepaper.png);
-  // background-repeat: repeat;
   padding-top: 14rem;
-  // padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   justify-content: space-evenly;
   grid-gap: 5rem;
-  // grid-template-rows: max-content max-content max-content;
   position: relative;
-  // transition: all 0.2s;
-
-  // grid-template-areas:
-  // "heading   img"
-  // "btn       img";
-
-  // "img"
-  // "heading"
-  // "time";
 
   &:after {
     @include componentAfter;
@@ -30,19 +17,12 @@
   @media only screen and (max-width: $bp-small) {
     padding-top: 15rem;
     align-content: flex-start;
-    // grid-template-columns: 1fr;
-    // grid-row-gap: 3rem;
-    // grid-template-areas:
-    //   "img"
-    //   "heading"
-    //   "time";
   }
 
   &__img {
     display: block;
-    // grid-area: img;
     width: 70vw;
-    // transform-box: fill-box;
+
     justify-self: center;
 
     @media only screen and (max-width: $bp-medium) {
@@ -57,20 +37,11 @@
   &__time {
     padding-bottom: 12rem;
     display: block;
-    // grid-area: time;
-    // padding: 10rem 2.5rem;
-    // justify-self: center;
-    // animation: heartBeat 1.2s 3s 3;
-
-    // @media (prefers-reduced-motion) {
-    //   animation: none;
-    // }
   }
 }
 
 .heading {
   &__heading {
-    // grid-area: heading;
     text-align: center;
     display: block;
     margin-bottom: 5px;
@@ -97,61 +68,5 @@
     @media only screen and (max-width: $bp-small) {
       font-size: 1.6rem;
     }
-  }
-}
-
-.dogEyes {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: dogEyes 2.5s linear infinite;
-}
-
-.dogHead {
-  transform-box: fill-box;
-  transform-origin: bottom right;
-  animation: dogHead 2s linear infinite;
-}
-
-.dogTongue {
-  transform-box: fill-box;
-  transform-origin: top;
-  animation: dogTongue 0.55s infinite;
-}
-
-.dogPatch {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: patch 3s infinite;
-}
-
-.dogEyebrows {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: eyebrows 3s infinite;
-}
-
-.catTail {
-  transform-box: fill-box;
-  transform-origin: top left;
-  animation: sway2 2.5s infinite;
-
-  @media (prefers-reduced-motion) {
-    animation: none;
-  }
-}
-
-.catEyes {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: catEyes 5s 2s linear infinite;
-}
-
-.catYellow {
-  transform-box: fill-box;
-  transform-origin: bottom;
-  animation: sway 4s infinite;
-
-  @media (prefers-reduced-motion) {
-    animation: none;
   }
 }
