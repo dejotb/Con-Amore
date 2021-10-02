@@ -584,7 +584,7 @@ body {
 }
 @media only screen and (max-width: 55em) {
   .footer__img {
-    width: 12rem;
+    width: 14rem;
   }
 }
 .footer__list {
