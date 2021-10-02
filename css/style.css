@@ -575,6 +575,18 @@ body {
   grid-row-gap: 2rem;
   background: linear-gradient(#45a86e, 50%, #2a9254);
 }
+.footer__box {
+  display: flex;
+}
+.footer__img {
+  display: block;
+  width: 20rem;
+}
+@media only screen and (max-width: 60em) {
+  .footer__img {
+    width: 12rem;
+  }
+}
 .footer__list {
   font-size: 1.6rem;
   list-style: none;
@@ -582,11 +594,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.footer__logo {
-  width: 6rem;
-  height: auto;
-  display: block;
 }
 @media only screen and (max-width: 50em) {
   .footer__item {
@@ -620,6 +627,64 @@ body {
   display: grid;
   grid-gap: 1rem;
   justify-items: start;
+}
+
+.dogEyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: dogEyes 2.5s linear infinite;
+}
+
+.dogHead {
+  transform-box: fill-box;
+  transform-origin: bottom right;
+  animation: dogHead 2s linear infinite;
+}
+
+.dogTongue {
+  transform-box: fill-box;
+  transform-origin: top;
+  animation: dogTongue 0.55s infinite;
+}
+
+.dogPatch {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: patch 3s infinite;
+}
+
+.dogEyebrows {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: eyebrows 3s infinite;
+}
+
+.catTail {
+  transform-box: fill-box;
+  transform-origin: top left;
+  animation: sway2 2.5s infinite;
+}
+@media (prefers-reduced-motion) {
+  .catTail {
+    animation: none;
+  }
+}
+
+.catEyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: catEyes 5s 2s linear infinite;
+}
+
+.catYellow {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: sway 4s infinite;
+}
+@media (prefers-reduced-motion) {
+  .catYellow {
+    animation: none;
+  }
 }
 
 .box {

@@ -42,8 +42,442 @@
     </nav>
 
     <header class="header header-blur">
-      <!-- <div class=""> -->
-      <!-- <svg
+      <picture class="header__img">
+        <source srcset="img/hero-small.svg" media="(max-width: 768px)" />
+        <img srcset="img/hero.svg 1x, img/hero-small.svg 2x" alt="" />
+      </picture>
+
+      <!-- <img
+        srcset="img/hero.svg 1x, img/her-small.png 2x"
+        alt=""
+        class="header__img"
+      /> -->
+      <!-- </div> -->
+      <h1 class="heading--1 header__heading">
+        <div class="heading__heading">Con Amore</div>
+        <span class="heading--sub">Przychodnia Weterynaryjna</span>
+        <span class="heading--sub">Salon Strzyżeń</span>
+      </h1>
+      <!-- <a href="#kontakt" class="btn header__btn"> Skontaktuj się z nami! </a> -->
+
+      <div class="header__time contact__card">
+        <a
+          class="contact__link"
+          style="justify-content: center"
+          href="tel:570 200 207"
+        >
+          <img
+            src="img/icon-phone.svg"
+            alt="telefon kontaktowy"
+            class="contact__icon"
+          />
+          570 200 207
+        </a>
+        <a
+          class="contact__link"
+          style="justify-content: center"
+          href="tel:22 612 25 00"
+        >
+          <img
+            src="img/icon-phone.svg"
+            alt="telefon kontaktowy"
+            class="contact__icon"
+          />
+          22 612 25 00
+        </a>
+        <div class="contact__text">
+          <table class="contact__table">
+            <thead>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">poniedziałek:</th>
+                <td>10.00 – 20.00</td>
+              </tr>
+              <tr>
+                <th scope="row">wtorek, środa:</th>
+                <td>10.00 - 19.00</td>
+              </tr>
+              <tr>
+                <th scope="row">czwartek, piątek:</th>
+                <td>10.00 - 20.00</td>
+              </tr>
+              <tr>
+                <th scope="row">sobota:</th>
+                <td>10.00 - 15.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-blur">
+      <section id="oferta" class="about">
+        <h2 class="heading--2 heading--light">Oferta</h2>
+        <div class="box about__box">
+          <div class="box__card about__card">
+            <img class="about__icon" src="img/icon-cross.svg" alt="" />
+            <h3 class="heading--3">Przychodnia Weterynaryjna</h3>
+            <div class="pg">
+              <p>
+                Zajmujemy się małymi zwierzętami domowymi i towarzyszącymi –
+                szczególnie psami i kotami.
+              </p>
+              <p>
+                W naszej przychodni weterynaryjnej oferujemy szeroki wachlarz
+                usług z zakresu interny i chirurgii, oraz specjalistyczne usługi
+                z wielu innych dziedzin.
+              </p>
+            </div>
+          </div>
+          <div class="box__card about__card">
+            <img class="about__icon" src="img/icon-cut.svg" alt="" />
+            <h3 class="heading--3">Salon Strzyżeń</h3>
+            <div class="pg">
+              <p>
+                W naszym salonie pielęgnacji oferujemy strzyżenie psów i kotów.
+                W cenę zabiegu wliczone jest obcinanie pazurów oraz czyszczenie
+                uszu. Oferujemy bezstresowe strzyżenie psów, także w obecności
+                właściciela psa.
+              </p>
+              <p>
+                Zapraszamy pieski małych i średnich ras oraz wszystkie
+                wielorasowe psiaki do skorzystania z profesjonalnego strzyżenia,
+                w bezstresowej atmosferze.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="specjalizacje" class="service">
+        <h2 class="heading--2">Specjalizacje</h2>
+        <ul class="service__list">
+          <li class="service__item">
+            <a
+              href="pages/profilaktyka_leczenie_ogólne.html"
+              class="service__link"
+            >
+              <div class="service__button">
+                <img src="img/service-1.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Profilaktyka i Leczenie Ogólne</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/chirurgia.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-2.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Chirurgia</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a
+              href="pages/diagnostyka_laboratoryjna.html"
+              class="service__link"
+            >
+              <div class="service__button">
+                <img src="img/service-3.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Diagnostyka Laboratoryjna</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/usg.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-4.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">USG</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/kardiologia.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-5.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Kardiologia</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/dermatologia.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-6a.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Dermatologia</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/stomatologia.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-7.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Stomatologia</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/onkologia.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-8a.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Onkologia</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a
+              href="pages/rozród_ginekologia_położnictwo.html"
+              class="service__link"
+            >
+              <div class="service__button">
+                <img src="img/service-9.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title"
+                >Rozród, Ginekologia i Położnictwo</span
+              >
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/neonatologia_pediatria.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-10a.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Neonatologia i Pediatria</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/strzyżenie_psów_i_kotów.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-11a.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Strzyżenie Psów i Kotów</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a
+              href="pages/paszporty_znakowanie_zwierząt.html"
+              class="service__link"
+            >
+              <div class="service__button">
+                <img src="img/service-12.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title"
+                >Paszporty i Znakowanie Zwierząt</span
+              >
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/porady_żywieniowe.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-13.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Porady Żywieniowe</span>
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/sterylizacja.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-14.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title"
+                >Bezpłatna Sterylizacja i Kastracja Dzikich Kotów</span
+              >
+            </a>
+          </li>
+          <li class="service__item">
+            <a href="pages/inne.html" class="service__link">
+              <div class="service__button">
+                <img src="img/service-15.svg" alt="" class="service__icon" />
+              </div>
+              <span class="service__title">Inne</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="kadra" class="team">
+        <h2 class="heading--2 heading--light">Nasza Kadra</h2>
+        <div class="box team__box">
+          <div class="box__card team__card">
+            <div class="team__img team__img-1"></div>
+            <h3 class="heading--3">lek. wet. Carolina Imparato</h3>
+            <div class="pg">
+              <p>
+                Specjalnością Pani doktor jest rozród małych zwierząt. W
+                szczególności inseminacja, ustalanie prawidłowego terminu
+                krycia, cytologia, prowadzenie ciąży, neonatologia i pediatria.
+              </p>
+              <p>
+                Pani doktor jest absolwentką Wydziału Medycyny Weterynaryjnej w
+                Warszawie. Po studiach odbyła dwuletni staż w Specjalistycznej
+                Klinice Rozdrodu we Włoszech u dr L. Salamon oraz w całodobowej
+                lecznicy w Nowarze pod Mediolanem.
+              </p>
+              <p>
+                Prywatnie prowadzi hodowlę psów rasy chihuahua oraz pomeranian,
+                czyli szpic miniaturowy, (<a
+                  href="http://www.persempre.pl/"
+                  rel="”noopener"
+                  noreferrer”
+                  target="_blank"
+                  class="team__link"
+                  >www.persempre.pl</a
+                >)
+              </p>
+            </div>
+          </div>
+          <div class="box__card team__card">
+            <div class="team__img team__img-2"></div>
+            <h3 class="heading--3">lek. wet. Agnieszka Książyk</h3>
+            <div class="pg">
+              <p>
+                Pani doktor specjalizuje się w internie, badaniach
+                laboratoryjnych i mikrobiologicznych oraz konsultuje gryzonie, i
+                małe ssaki.
+              </p>
+              <p>
+                Pani weterynarz jest absolwentką Wydziału Medycyny
+                Weterynaryjnej SGGW w Warszawie. Doświadczenie zdobywała w
+                laboratorium weterynaryjnym w dziale mikrobiologii.
+              </p>
+              <p>Prywatnie włascicielka dwóch chihuahua i konia.</p>
+            </div>
+          </div>
+          <div class="box__card team__card">
+            <div class="team__img team__img-3"></div>
+            <h3 class="heading--3">lek. wet. Oktawiusz Krawczyński</h3>
+            <div class="pg">
+              <p>
+                Pan doktor specjalizuje się w chirurgii i ortopedii. W naszej
+                przychodni wykonuje zabiegi chirurgiczne, operacje na jamie
+                brzusznej i klatce piersiowej, a także zabiegi ortopedyczne,
+                konsultuje również przypadki ortopedyczne.
+              </p>
+              <p>
+                Jest absolwentem Wydziału Medycyny Weterynaryjnej w Warszawie.
+                Odbył studia podyplomowe z zakresu chorób psów i kotów.
+              </p>
+            </div>
+          </div>
+          <div class="box__card team__card">
+            <div class="team__img team__img-4"></div>
+            <h3 class="heading--3">Ewa Wasilewska</h3>
+            <div class="pg">
+              <p>
+                Pani Ewa zajmuje sie w naszej przychodni groomingiem czyli
+                strzyżeniem i kąpaniem psów, i kotów. W swojej pracy jest
+                niezwykle sprawna manualnie oraz ma zmysł artystyczny.Jej
+                ulubioną rasą jest yorkshire terrier, w których się specjalizuje
+                i których jest wieloletnią hodowczynią.
+              </p>
+              <p>
+                Prywatnie właścicielka yorka, chihuahua oraz dwóch kotów rasy:
+                brytyjski niebieski.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="contact">
+        <h2 class="heading--2">Kontakt</h2>
+        <h3 class="heading--4">Przychodnia Weterynaryjna Con Amore</h3>
+        <div class="contact__box">
+          <div class="contact__card">
+            <address class="contact__text">
+              <a href="#map" class="contact__link">
+                <img
+                  src="img/icon-map-marker.svg"
+                  alt="adres"
+                  class="contact__icon"
+                />
+                ul. Piłsudskiego 26, 05-410 Józefów
+              </a>
+              <a class="contact__link" href="tel:570 200 207">
+                <img
+                  src="img/icon-phone.svg"
+                  alt="telefon kontaktowy"
+                  class="contact__icon"
+                />
+                570 200 207
+              </a>
+              <a class="contact__link" href="tel:22 612 25 00">
+                <img
+                  src="img/icon-phone.svg"
+                  alt="telefon kontaktowy"
+                  class="contact__icon"
+                />
+                22 612 25 00
+              </a>
+              <a class="contact__link" href="mailto:conamore.vet@gmail.com">
+                <img
+                  src="img/icon-mail.svg"
+                  alt="adres e-mail"
+                  class="contact__icon"
+                />
+                conamore.vet@gmail.com
+              </a>
+            </address>
+          </div>
+          <div class="contact__card">
+            <div class="contact__text">
+              <table class="contact__table">
+                <thead>
+                  <th scope="col">Dzień tygodnia</th>
+                  <th scope="col">Godziny otwarcia</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">poniedziałek:</th>
+                    <td>10.00 – 20.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">wtorek, środa:</th>
+                    <td>10.00 - 19.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">czwartek, piątek:</th>
+                    <td>10.00 - 20.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">sobota:</th>
+                    <td>10.00 - 15.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pg">
+                <p>
+                  * W niedziele i święta realizujemy tylko wcześniej umówione
+                  wizyty.
+                </p>
+                <p>* Wizyty domowe należy wcześniej umówić telefonicznie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="map" class="map">
+        <iframe
+          title="Mapa dojazdu"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.21452931534!2d21.223594002364184!3d52.14860818779438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192b43ac00fe31%3A0xbf407091d3a42283!2sGabinet%20weterynaryjny%20ConAmore!5e0!3m2!1spl!2spl!4v1592157461587!5m2!1spl!2spl"
+          width="100%"
+          height="500"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          display="block"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__img">
+        <svg
           width="100%"
           height="100%"
           viewBox="0 0 540 498"
@@ -830,445 +1264,9 @@
               stroke-width="0.1"
             />
           </g>
-        </svg> -->
-
-      <picture class="header__img">
-        <source srcset="img/hero-small.svg" media="(max-width: 768px)" />
-        <img srcset="img/hero.svg 1x, img/hero-small.svg 2x" alt="" />
-      </picture>
-
-      <!-- <img
-        srcset="img/hero.svg 1x, img/her-small.png 2x"
-        alt=""
-        class="header__img"
-      /> -->
-      <!-- </div> -->
-      <h1 class="heading--1 header__heading">
-        <div class="heading__heading">Con Amore</div>
-        <span class="heading--sub">Przychodnia Weterynaryjna</span>
-        <span class="heading--sub">Salon Strzyżeń</span>
-      </h1>
-      <!-- <a href="#kontakt" class="btn header__btn"> Skontaktuj się z nami! </a> -->
-
-      <div class="header__time contact__card">
-        <a
-          class="contact__link"
-          style="justify-content: center"
-          href="tel:570 200 207"
-        >
-          <img
-            src="img/icon-phone.svg"
-            alt="telefon kontaktowy"
-            class="contact__icon"
-          />
-          570 200 207
-        </a>
-        <a
-          class="contact__link"
-          style="justify-content: center"
-          href="tel:22 612 25 00"
-        >
-          <img
-            src="img/icon-phone.svg"
-            alt="telefon kontaktowy"
-            class="contact__icon"
-          />
-          22 612 25 00
-        </a>
-        <div class="contact__text">
-          <table class="contact__table">
-            <thead>
-              <th scope="col"></th>
-              <th scope="col"></th>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">poniedziałek:</th>
-                <td>10.00 – 20.00</td>
-              </tr>
-              <tr>
-                <th scope="row">wtorek, środa:</th>
-                <td>10.00 - 19.00</td>
-              </tr>
-              <tr>
-                <th scope="row">czwartek, piątek:</th>
-                <td>10.00 - 20.00</td>
-              </tr>
-              <tr>
-                <th scope="row">sobota:</th>
-                <td>10.00 - 15.00</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        </svg>
       </div>
-    </header>
 
-    <main class="main main-blur">
-      <section id="oferta" class="about">
-        <h2 class="heading--2 heading--light">Oferta</h2>
-        <div class="box about__box">
-          <div class="box__card about__card">
-            <img class="about__icon" src="img/icon-cross.svg" alt="" />
-            <h3 class="heading--3">Przychodnia Weterynaryjna</h3>
-            <div class="pg">
-              <p>
-                Zajmujemy się małymi zwierzętami domowymi i towarzyszącymi –
-                szczególnie psami i kotami.
-              </p>
-              <p>
-                W naszej przychodni weterynaryjnej oferujemy szeroki wachlarz
-                usług z zakresu interny i chirurgii, oraz specjalistyczne usługi
-                z wielu innych dziedzin.
-              </p>
-            </div>
-          </div>
-          <div class="box__card about__card">
-            <img class="about__icon" src="img/icon-cut.svg" alt="" />
-            <h3 class="heading--3">Salon Strzyżeń</h3>
-            <div class="pg">
-              <p>
-                W naszym salonie pielęgnacji oferujemy strzyżenie psów i kotów.
-                W cenę zabiegu wliczone jest obcinanie pazurów oraz czyszczenie
-                uszu. Oferujemy bezstresowe strzyżenie psów, także w obecności
-                właściciela psa.
-              </p>
-              <p>
-                Zapraszamy pieski małych i średnich ras oraz wszystkie
-                wielorasowe psiaki do skorzystania z profesjonalnego strzyżenia,
-                w bezstresowej atmosferze.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="specjalizacje" class="service">
-        <h2 class="heading--2">Specjalizacje</h2>
-        <ul class="service__list">
-          <li class="service__item">
-            <a
-              href="pages/profilaktyka_leczenie_ogólne.html"
-              class="service__link"
-            >
-              <div class="service__button">
-                <img src="img/service-1.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Profilaktyka i Leczenie Ogólne</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/chirurgia.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-2.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Chirurgia</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a
-              href="pages/diagnostyka_laboratoryjna.html"
-              class="service__link"
-            >
-              <div class="service__button">
-                <img src="img/service-3.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Diagnostyka Laboratoryjna</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/usg.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-4.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">USG</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/kardiologia.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-5.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Kardiologia</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/dermatologia.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-6a.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Dermatologia</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/stomatologia.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-7.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Stomatologia</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/onkologia.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-8a.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Onkologia</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a
-              href="pages/rozród_ginekologia_położnictwo.html"
-              class="service__link"
-            >
-              <div class="service__button">
-                <img src="img/service-9.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title"
-                >Rozród, Ginekologia i Położnictwo</span
-              >
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/neonatologia_pediatria.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-10a.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Neonatologia i Pediatria</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/strzyżenie_psów_i_kotów.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-11a.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Strzyżenie Psów i Kotów</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a
-              href="pages/paszporty_znakowanie_zwierząt.html"
-              class="service__link"
-            >
-              <div class="service__button">
-                <img src="img/service-12.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title"
-                >Paszporty i Znakowanie Zwierząt</span
-              >
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/porady_żywieniowe.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-13.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Porady Żywieniowe</span>
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/sterylizacja.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-14.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title"
-                >Bezpłatna Sterylizacja i Kastracja Dzikich Kotów</span
-              >
-            </a>
-          </li>
-          <li class="service__item">
-            <a href="pages/inne.html" class="service__link">
-              <div class="service__button">
-                <img src="img/service-15.svg" alt="" class="service__icon" />
-              </div>
-              <span class="service__title">Inne</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="kadra" class="team">
-        <h2 class="heading--2 heading--light">Nasza Kadra</h2>
-        <div class="box team__box">
-          <div class="box__card team__card">
-            <div class="team__img team__img-1"></div>
-            <h3 class="heading--3">lek. wet. Carolina Imparato</h3>
-            <div class="pg">
-              <p>
-                Specjalnością Pani doktor jest rozród małych zwierząt. W
-                szczególności inseminacja, ustalanie prawidłowego terminu
-                krycia, cytologia, prowadzenie ciąży, neonatologia i pediatria.
-              </p>
-              <p>
-                Pani doktor jest absolwentką Wydziału Medycyny Weterynaryjnej w
-                Warszawie. Po studiach odbyła dwuletni staż w Specjalistycznej
-                Klinice Rozdrodu we Włoszech u dr L. Salamon oraz w całodobowej
-                lecznicy w Nowarze pod Mediolanem.
-              </p>
-              <p>
-                Prywatnie prowadzi hodowlę psów rasy chihuahua oraz pomeranian,
-                czyli szpic miniaturowy, (<a
-                  href="http://www.persempre.pl/"
-                  rel="”noopener"
-                  noreferrer”
-                  target="_blank"
-                  class="team__link"
-                  >www.persempre.pl</a
-                >)
-              </p>
-            </div>
-          </div>
-          <div class="box__card team__card">
-            <div class="team__img team__img-2"></div>
-            <h3 class="heading--3">lek. wet. Agnieszka Książyk</h3>
-            <div class="pg">
-              <p>
-                Pani doktor specjalizuje się w internie, badaniach
-                laboratoryjnych i mikrobiologicznych oraz konsultuje gryzonie, i
-                małe ssaki.
-              </p>
-              <p>
-                Pani weterynarz jest absolwentką Wydziału Medycyny
-                Weterynaryjnej SGGW w Warszawie. Doświadczenie zdobywała w
-                laboratorium weterynaryjnym w dziale mikrobiologii.
-              </p>
-              <p>Prywatnie włascicielka dwóch chihuahua i konia.</p>
-            </div>
-          </div>
-          <div class="box__card team__card">
-            <div class="team__img team__img-3"></div>
-            <h3 class="heading--3">lek. wet. Oktawiusz Krawczyński</h3>
-            <div class="pg">
-              <p>
-                Pan doktor specjalizuje się w chirurgii i ortopedii. W naszej
-                przychodni wykonuje zabiegi chirurgiczne, operacje na jamie
-                brzusznej i klatce piersiowej, a także zabiegi ortopedyczne,
-                konsultuje również przypadki ortopedyczne.
-              </p>
-              <p>
-                Jest absolwentem Wydziału Medycyny Weterynaryjnej w Warszawie.
-                Odbył studia podyplomowe z zakresu chorób psów i kotów.
-              </p>
-            </div>
-          </div>
-          <div class="box__card team__card">
-            <div class="team__img team__img-4"></div>
-            <h3 class="heading--3">Ewa Wasilewska</h3>
-            <div class="pg">
-              <p>
-                Pani Ewa zajmuje sie w naszej przychodni groomingiem czyli
-                strzyżeniem i kąpaniem psów, i kotów. W swojej pracy jest
-                niezwykle sprawna manualnie oraz ma zmysł artystyczny.Jej
-                ulubioną rasą jest yorkshire terrier, w których się specjalizuje
-                i których jest wieloletnią hodowczynią.
-              </p>
-              <p>
-                Prywatnie właścicielka yorka, chihuahua oraz dwóch kotów rasy:
-                brytyjski niebieski.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="kontakt" class="contact">
-        <h2 class="heading--2">Kontakt</h2>
-        <h3 class="heading--4">Przychodnia Weterynaryjna Con Amore</h3>
-        <div class="contact__box">
-          <div class="contact__card">
-            <address class="contact__text">
-              <a href="#map" class="contact__link">
-                <img
-                  src="img/icon-map-marker.svg"
-                  alt="adres"
-                  class="contact__icon"
-                />
-                ul. Piłsudskiego 26, 05-410 Józefów
-              </a>
-              <a class="contact__link" href="tel:570 200 207">
-                <img
-                  src="img/icon-phone.svg"
-                  alt="telefon kontaktowy"
-                  class="contact__icon"
-                />
-                570 200 207
-              </a>
-              <a class="contact__link" href="tel:22 612 25 00">
-                <img
-                  src="img/icon-phone.svg"
-                  alt="telefon kontaktowy"
-                  class="contact__icon"
-                />
-                22 612 25 00
-              </a>
-              <a class="contact__link" href="mailto:conamore.vet@gmail.com">
-                <img
-                  src="img/icon-mail.svg"
-                  alt="adres e-mail"
-                  class="contact__icon"
-                />
-                conamore.vet@gmail.com
-              </a>
-            </address>
-          </div>
-          <div class="contact__card">
-            <div class="contact__text">
-              <table class="contact__table">
-                <thead>
-                  <th scope="col">Dzień tygodnia</th>
-                  <th scope="col">Godziny otwarcia</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">poniedziałek:</th>
-                    <td>10.00 – 20.00</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">wtorek, środa:</th>
-                    <td>10.00 - 19.00</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">czwartek, piątek:</th>
-                    <td>10.00 - 20.00</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">sobota:</th>
-                    <td>10.00 - 15.00</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="pg">
-                <p>
-                  * W niedziele i święta realizujemy tylko wcześniej umówione
-                  wizyty.
-                </p>
-                <p>* Wizyty domowe należy wcześniej umówić telefonicznie.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div id="map" class="map">
-        <iframe
-          title="Mapa dojazdu"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.21452931534!2d21.223594002364184!3d52.14860818779438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192b43ac00fe31%3A0xbf407091d3a42283!2sGabinet%20weterynaryjny%20ConAmore!5e0!3m2!1spl!2spl!4v1592157461587!5m2!1spl!2spl"
-          width="100%"
-          height="500"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-          display="block"
-        ></iframe>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <a href="#top">
-        <img src="img/logo-footer.png" alt="logo firmy" class="footer__logo" />
-      </a>
       <ul class="footer__list">
         <li class="footer__item">
           <a href="#top" class="footer__link">Start</a>
