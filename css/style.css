@@ -74,7 +74,7 @@ body {
   }
 }
 .heading--2 {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 4rem;
   font-style: italic;
   line-height: 1;
@@ -296,7 +296,7 @@ body {
   list-style: none;
   font-family: "Lato", sans-serif;
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   transition: all 0.2s;
 }
@@ -313,7 +313,7 @@ body {
     padding: 4rem 0;
     transform: translateX(150%);
     transition: transform 0.8s cubic-bezier(0.42, 0.97, 0.52, 1.49);
-    background: linear-gradient(rgba(69, 168, 110, 0.3), 2%, rgba(69, 168, 110, 0.01)), white;
+    background: white;
   }
 }
 .nav__item:not(:last-child) {
@@ -1095,7 +1095,7 @@ body {
   z-index: -1;
 }
 .main-services__btn {
-  margin: auto 0 2rem;
+  margin: auto 0 2.5rem;
   padding: 0 1rem;
 }
 
