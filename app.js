@@ -1,5 +1,30 @@
 "use strict"
 
+// gsap animations
+
+const animationElements = function () {
+  const sectionsText = document.querySelectorAll('.service');
+  const sectionsProducts = document.querySelectorAll('.service__item');
+
+    gsap.fromTo(
+      sectionsProducts,
+      { y: '+=100', opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 2.5,
+        ease: "elastic.out(1, 0.3)",
+        scrollTrigger: {
+          trigger: sectionsText,
+          start: 'top 70%',
+        },
+      }
+    );
+};
+
+animationElements()
+
 const menu = document.querySelector(".nav__list");
 const ham = document.querySelector(".hamburger");
 const header = document.querySelector(".header-blur");
