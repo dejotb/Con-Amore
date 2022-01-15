@@ -3,11 +3,11 @@
 // gsap animations
 
 const animationElements = function () {
-  const sectionsText = document.querySelectorAll('.service');
-  const sectionsProducts = document.querySelectorAll('.service__item');
+  const section = document.querySelectorAll('.service');
+  const sectionsItems = document.querySelectorAll('.service__item');
 
     gsap.fromTo(
-      sectionsProducts,
+      sectionsItems,
       { y: '+=100', opacity: 0 },
       {
         y: 0,
@@ -16,14 +16,13 @@ const animationElements = function () {
         duration: 2.5,
         ease: "elastic.out(1, 0.3)",
         scrollTrigger: {
-          trigger: sectionsText,
+          trigger: section,
           start: 'top 70%',
         },
       }
     );
 };
 
-animationElements()
 
 const menu = document.querySelector(".nav__list");
 const ham = document.querySelector(".hamburger");
@@ -35,6 +34,7 @@ const menuLinks = document.querySelectorAll(".nav__item");
 const container = document.querySelector('.container')
 const nav = document.querySelector('.nav')
 const logo = document.querySelector('.nav__logo')
+
 // TOGGLE HAMBURGER MENU AND BLUR
 
 
@@ -78,9 +78,6 @@ function toggleHam() {
 }
 
 
-ham.addEventListener("click", toggleHam);
-
-
 function toggleMenu () {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
@@ -94,19 +91,7 @@ function toggleMenu () {
 
 }
 
-
-
-menuLinks.forEach(
-  function(nav__link) {
-      nav__link.addEventListener("click", toggleMenu);
-  }
-)
-
-
 // navbar opacity change
-
-
-
 
 function obCalltoAction(e) {
   if (e[0].intersectionRatio === 0) {
@@ -122,4 +107,20 @@ function obCalltoAction(e) {
 
 const ob = new IntersectionObserver(obCalltoAction, {target: container, threshold: 1});
 
-ob.observe(container.firstElementChild)
+ob.observe(container.firstElementChild);
+
+
+// run all functions
+
+const startFunctions = function() {
+  animationElements();
+  ham.addEventListener("click", toggleHam);
+  menuLinks.forEach(
+    function(nav__link) {
+        nav__link.addEventListener("click", toggleMenu);
+    }
+  );
+}
+
+
+startFunctions()
