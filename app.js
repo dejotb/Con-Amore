@@ -70,11 +70,9 @@ function toggleHam() {
   if (e.target.innerWidth > 600 && menu.classList.contains('showMenu')) {
     header.classList.remove("blur");
     main.classList.remove("blur");
-    ham.classList.add("iconX");
   } else if (e.target.innerWidth < 600 && menu.classList.contains('showMenu')) {
     header.classList.add("blur");
     main.classList.add("blur");
-    ham.classList.add("iconX");
   }
 })
 }
