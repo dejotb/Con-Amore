@@ -49,7 +49,7 @@ body {
 }
 
 .blur {
-  filter: blur(10px);
+  filter: blur(5px);
 }
 
 .mt {
@@ -312,7 +312,7 @@ body {
     align-items: center;
     padding: 4rem 0;
     transform: translateX(150%);
-    transition: transform 0.8s cubic-bezier(0.42, 0.97, 0.52, 1.49);
+    transition: transform 0.5s ease-in-out;
     background: white;
   }
 }
@@ -506,6 +506,39 @@ body {
 .about__box,
 .team__box {
   padding-bottom: 12rem;
+}
+
+.consent__popup {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  background-color: #fff;
+  padding: 2rem;
+  z-index: 1000;
+  transition: opacity 0.8s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media only screen and (min-width: 60em) {
+  .consent__popup {
+    background-image: url(../img/cookie-bite-solid.svg);
+    background-size: 8rem;
+    background-repeat: no-repeat;
+    background-position: 15vw;
+  }
+}
+.consent__popup.hidden {
+  opacity: 0;
+}
+.consent__buttons {
+  display: flex;
+  grid-gap: 2rem;
 }
 
 .footer {
@@ -949,6 +982,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border: 2px solid transparent;
   z-index: 10;
+  padding: 3px 0.8rem;
 }
 
 .btn:hover,

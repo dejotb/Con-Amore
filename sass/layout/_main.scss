@@ -17,3 +17,40 @@
 .team__box {
   padding-bottom: 12rem;
 }
+
+.consent {
+  &__popup {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #fff;
+    padding: 2rem;
+    z-index: 1000;
+    transition: opacity 0.8s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    @media only screen and (min-width: $bp-large) {
+      background-image: url(../img/cookie-bite-solid.svg);
+      background-size: 8rem;
+      background-repeat: no-repeat;
+      background-position: 15vw;
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    grid-gap: 2rem;
+  }
+}
