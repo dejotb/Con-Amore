@@ -1,5 +1,33 @@
 "use strict"
 
+const cookieStorage = {
+  getItem: (key) => {
+    const cookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((acc, [key, value]) => ({...acc, [key.trim()]: value }), {});
+    return cookies[key];
+  },
+  setItem: (key, value) => {
+    document.cookie = `${key}=${value}`
+  }
+
+
+}
+
+const storageType = cookieStorage;
+const consentPropertyName = 'jdc_consent';
+
+const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+
+const saveToSotrage = () => storageType.setItem(consentPropertyName, true);
+
+window.addEventListener('load', function() {
+  if (shouldShowPopup()) {
+    const consent = confirm('Agree to the terms and conditions of the site?');
+    if (consent) {
+      saveToSotrage();
+    }
+  }
+})
+
 // gsap animations
 
 const animationElements = function () {
