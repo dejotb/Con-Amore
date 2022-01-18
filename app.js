@@ -27,12 +27,14 @@ const handleCookies = function () {
     const consentPopup = document.querySelector('.consent__popup');
     const acceptBtn = document.querySelector('.accept');
 
-   const acceptFn = () => {
+   const acceptFn = (e) => {
+     e.preventDefault();
      saveToSotrage(storageType);
      consentPopup.classList.add('hidden');
    };
 
    acceptBtn.addEventListener('click', acceptFn);
+
 
     if (shouldShowPopup(storageType)) {
       setTimeout(() => {
