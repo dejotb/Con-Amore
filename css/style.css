@@ -527,7 +527,7 @@ body {
 }
 @media only screen and (min-width: 60em) {
   .consent__popup {
-    background-image: url(../img/cookie-bite-solid.svg);
+    background-image: url(../img/cookie.svg);
     background-size: 8rem;
     background-repeat: no-repeat;
     background-position: 15vw;
@@ -537,8 +537,10 @@ body {
   opacity: 0;
 }
 .consent__buttons {
+  width: 100%;
   display: flex;
-  grid-gap: 2rem;
+  justify-content: center;
+  grid-gap: 0.5rem;
 }
 
 .footer {
@@ -974,7 +976,7 @@ body {
 .btn,
 .btn:link,
 .btn:visited {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   background: linear-gradient(to bottom right, #2a9254 60%, #45a86e);
   text-decoration: none;

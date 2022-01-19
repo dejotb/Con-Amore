@@ -38,7 +38,7 @@
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     @media only screen and (min-width: $bp-large) {
-      background-image: url(../img/cookie-bite-solid.svg);
+      background-image: url(../img/cookie.svg);
       background-size: 8rem;
       background-repeat: no-repeat;
       background-position: 15vw;
@@ -50,7 +50,9 @@
   }
 
   &__buttons {
+    width: 100%;
     display: flex;
-    grid-gap: 2rem;
+    justify-content: center;
+    grid-gap: 0.5rem;
   }
 }
