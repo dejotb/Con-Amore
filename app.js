@@ -21,7 +21,7 @@ const handleCookies = function () {
       wyświetlała się więcej.
     </p>
     <div class="consent__buttons">
-      <a href="../consent/polityka-prywatnosci.html" class="btn"
+      <a href="${!document.querySelector('.container-services') ? 'consent/polityka-prywatnosci.html': '../consent/polityka-prywatnosci.html'}" class="btn"
         >Dowiedz się więcej</a
       >
       <button  class="accept btn">Akceptuję</button>
