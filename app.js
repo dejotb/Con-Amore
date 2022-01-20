@@ -1,6 +1,80 @@
 "use strict"
 
+// Allowing cookies storage
 
+const handleCookies = function () {
+
+  if(!document.querySelector('.container')) {
+    console.log(document.querySelector('.container'));
+    return;
+
+  } else {
+
+    const html = `
+    <div class="consent__popup hidden">
+    <p class="pg">
+      W naszym Serwisie używamy plików cookies. Korzystając dalej z Serwisu,
+      wyrażasz zgodę na stosowanie plików cookies zgodnie z Polityką
+      prywatności. Wyrażenie zgody jest dobrowolne, w każdej chwili można ją
+      cofnąć poprzez zmianę ustawień dotyczących plików „cookies” w używanej
+      przeglądarce internetowej. Kliknij „Akceptuję”, aby ta informacja nie
+      wyświetlała się więcej.
+    </p>
+    <div class="consent__buttons">
+      <a href="../consent/polityka-prywatnosci.html" class="btn"
+        >Dowiedz się więcej</a
+      >
+      <button  class="accept btn">Akceptuję</button>
+    </div>
+  </div>
+  `
+    document.querySelector('.container').insertAdjacentHTML('beforeend', html)
+  }
+
+
+
+
+  const cookieStorage = {
+    getItem: (key) => {
+      const cookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((acc, [key, value]) => ({...acc, [key.trim()]: value }), {});
+      return cookies[key];
+    },
+    setItem: (key, value) => {
+      document.cookie = `${key}=${value}`
+    }
+
+
+  }
+
+  const storageType = cookieStorage;
+  const consentPropertyName = 'jdc_consent';
+
+  const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+
+  const saveToSotrage = () => storageType.setItem(consentPropertyName, true);
+
+  window.addEventListener('load', function() {
+
+    const consentPopup = document.querySelector('.consent__popup');
+    const acceptBtn = document.querySelector('.accept');
+
+   const acceptFn = () => {
+     saveToSotrage(storageType);
+     consentPopup.classList.add('hidden');
+   };
+
+   acceptBtn.addEventListener('click', acceptFn);
+
+
+    if (shouldShowPopup(storageType)) {
+      setTimeout(() => {
+        consentPopup.classList.remove('hidden');
+      }, 1500)
+    }
+  })
+}
+
+handleCookies()
 
 
 // gsap animations

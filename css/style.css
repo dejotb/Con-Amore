@@ -533,6 +533,8 @@ body {
   }
 }
 .consent__popup.hidden {
+  transition: transform 1s, opacity 2s;
+  transform: translateY(100%);
   opacity: 0;
 }
 .consent__buttons {
@@ -975,6 +977,7 @@ body {
 .btn,
 .btn:link,
 .btn:visited {
+  cursor: pointer;
   font-size: 1.5rem;
   color: #fff;
   background: linear-gradient(to bottom right, #2a9254 60%, #45a86e);
