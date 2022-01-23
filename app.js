@@ -5,7 +5,6 @@
 const handleCookies = function () {
 
   if(!document.querySelector('.container')) {
-    console.log(document.querySelector('.container'));
     return;
 
   } else {
@@ -140,14 +139,12 @@ function toggleHam() {
 
   if (menuOpen) {
     menu.classList.remove("showMenu");
-    console.log(menu.classList.contains('showMenu'));
     header.classList.toggle("blur");
     main.classList.toggle("blur");
     ham.classList.toggle("iconX");
     logo.classList.add('nav__logo--initial')
   } else {
     menu.classList.add("showMenu");
-    console.log(menu.classList.contains('showMenu'));
     logo.classList.remove('nav__logo--initial')
   }
 
