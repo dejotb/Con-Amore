@@ -84,7 +84,7 @@ const animationElements = function () {
 
     gsap.fromTo(
       sectionsItems,
-      { y: '+=100', opacity: 0 },
+      { y: '+=80', opacity: 0 },
       {
         y: 0,
         opacity: 1,
