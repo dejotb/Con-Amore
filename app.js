@@ -30,9 +30,6 @@ const handleCookies = function () {
     document.querySelector('.container').insertAdjacentHTML('beforeend', html)
   }
 
-
-
-
   const cookieStorage = {
     getItem: (key) => {
       const cookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((acc, [key, value]) => ({...acc, [key.trim()]: value }), {});
@@ -41,8 +38,6 @@ const handleCookies = function () {
     setItem: (key, value) => {
       document.cookie = `${key}=${value}`
     }
-
-
   }
 
   const storageType = cookieStorage;
@@ -64,7 +59,6 @@ const handleCookies = function () {
 
    acceptBtn.addEventListener('click', acceptFn);
 
-
     if (shouldShowPopup(storageType)) {
       setTimeout(() => {
         consentPopup.classList.remove('hidden');
@@ -78,28 +72,28 @@ handleCookies()
 
 // gsap animations
 
-const animationElements = function () {
-  const section = document.querySelectorAll('.service');
-  const sectionsItems = document.querySelectorAll('.service__item');
+// const animationElements = function () {
+//   const section = document.querySelectorAll('.service');
+//   const sectionsItems = document.querySelectorAll('.service__item');
 
-    gsap.fromTo(
-      sectionsItems,
-      { y: '+=80', opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.2,
-        duration: 2.5,
-        ease: "elastic.out(1, 0.3)",
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 70%',
-        },
-      }
-    );
-};
+//     gsap.fromTo(
+//       sectionsItems,
+//       { y: '+=80', opacity: 0 },
+//       {
+//         y: 0,
+//         opacity: 1,
+//         stagger: 0.2,
+//         duration: 2.5,
+//         ease: "elastic.out(1, 0.3)",
+//         scrollTrigger: {
+//           trigger: section,
+//           start: 'top 70%',
+//         },
+//       }
+//     );
+// };
 
-animationElements();
+// animationElements();
 
 
 // Handling navigation
@@ -116,7 +110,6 @@ const nav = document.querySelector('.nav')
 const logo = document.querySelector('.nav__logo')
 
 // TOGGLE HAMBURGER MENU AND BLUR
-
 
 function toggleHam() {
   const blurHeader = header.classList.contains("blur");
